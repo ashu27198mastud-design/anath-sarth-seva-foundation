@@ -311,7 +311,7 @@ PAGES["programs/holistic-learning.html"] = {
         <h1 class="heading-display">Holistic Learning</h1>
         <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
         <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/holistic-learning.jpg" alt="Children learning in a phygital classroom" style="width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+          <img src="../assets/images/programs/holistic-learning.jpg" alt="Children learning in a phygital classroom" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
         </div>
       </div>
     </section>
@@ -349,7 +349,7 @@ PAGES["programs/womens-equity.html"] = {
         <h1 class="heading-display">Women's Equity</h1>
         <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Breaking gender-based economic barriers by providing marginalized women with financial literacy, livelihood tools, and sustainable opportunities.</p>
         <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/womens-equity.jpg" alt="Women artisans working together and building financial independence" style="width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+          <img src="../assets/images/programs/womens-equity.jpg" alt="Women artisans working together and building financial independence" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
         </div>
       </div>
     </section>
@@ -388,7 +388,7 @@ PAGES["programs/resilient-communities.html"] = {
         <h1 class="heading-display">Resilient Communities</h1>
         <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
         <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/resilient-communities.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+          <img src="../assets/images/programs/resilient-communities.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
         </div>
       </div>
     </section>
@@ -426,7 +426,7 @@ PAGES["programs/inclusive-wellness.html"] = {
         <h1 class="heading-display">Inclusive Wellness</h1>
         <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
         <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Health worker providing care to community members" style="width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+          <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Health worker providing care to community members" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
         </div>
       </div>
     </section>
@@ -465,7 +465,7 @@ PAGES["programs/climate-resilience.html"] = {
         <h1 class="heading-display">Climate Resilience</h1>
         <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
         <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/climate-resilience.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+          <img src="../assets/images/programs/climate-resilience.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
         </div>
       </div>
     </section>
@@ -503,7 +503,7 @@ PAGES["programs/eco-conservation.html"] = {
         <h1 class="heading-display">Eco-Conservation</h1>
         <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
         <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/eco-conservation.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+          <img src="../assets/images/programs/eco-conservation.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
         </div>
       </div>
     </section>
