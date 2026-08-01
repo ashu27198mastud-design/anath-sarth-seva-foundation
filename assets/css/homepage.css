@@ -5,7 +5,7 @@
   align-items: center;
   padding-top: 140px; /* Increased to make room for hanging logo */
   padding-bottom: 80px;
-  background-color: var(--ivory);
+  background-color: var(--canvas);
 }
 
 .hero__inner {
@@ -28,25 +28,25 @@
 }
 
 .hero__headline {
-  font-family: var(--font-serif);
+  font-family: var(--display);
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 700;
-  color: var(--dark-text);
+  color: var(--ink);
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero__subheadline {
-  font-family: var(--font-serif);
+  font-family: var(--display);
   font-size: 1.2rem;
-  color: var(--royal-blue);
+  color: var(--navy);
   font-style: italic;
   margin-bottom: 16px;
 }
 
 .hero__text {
   font-size: 1.1rem;
-  color: var(--muted-text);
+  color: var(--muted);
   line-height: 1.7;
   margin-bottom: 32px;
   max-width: 540px;
@@ -93,12 +93,12 @@
 .hero__image {
   width: 100%;
   border-radius: var(--br-card-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--e3);
 }
 
 /* Purpose Section */
 .purpose {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .purpose__inner {
@@ -110,7 +110,7 @@
 .purpose__visual {
   border-radius: var(--br-card-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--e2);
 }
 
 .purpose__visual img {
@@ -122,14 +122,14 @@
 }
 
 .purpose__text {
-  color: var(--muted-text);
+  color: var(--muted);
   line-height: 1.8;
   margin-bottom: 24px;
 }
 
 /* Pillars Section */
 .pillars {
-  background-color: var(--ivory);
+  background-color: var(--canvas);
 }
 
 .pillars__inner {
@@ -141,7 +141,7 @@
 }
 
 .pillars__subtitle {
-  color: var(--muted-text);
+  color: var(--muted);
   max-width: 640px;
   margin: 0 auto 48px;
 }
@@ -166,7 +166,7 @@
 
 /* Root to Rise Section */
 .root-to-rise {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .root-to-rise__header {
@@ -215,25 +215,25 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: var(--royal-blue);
+  background-color: var(--navy);
   color: var(--gold);
-  font-family: var(--font-serif);
+  font-family: var(--display);
   font-size: 1.5rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 24px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--e2);
 }
 
 .root-to-rise__step-title {
-  color: var(--dark-text);
+  color: var(--ink);
   margin-bottom: 12px;
 }
 
 .root-to-rise__step-text {
-  color: var(--muted-text);
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -253,9 +253,9 @@
 .featured-story__filter-btn {
   padding: 10px 20px;
   border-radius: 40px;
-  border: 2px solid var(--royal-blue);
+  border: 2px solid var(--navy);
   background-color: transparent;
-  color: var(--royal-blue);
+  color: var(--navy);
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -263,8 +263,8 @@
 
 .featured-story__filter-btn--active,
 .featured-story__filter-btn:hover {
-  background-color: var(--royal-blue);
-  color: var(--white);
+  background-color: var(--navy);
+  color: #fff;
 }
 
 .featured-story__content {
@@ -294,14 +294,14 @@
 }
 
 .featured-story__text {
-  color: var(--muted-text);
+  color: var(--muted);
   line-height: 1.7;
   margin-bottom: 24px;
 }
 
 /* Trust Section */
 .trust {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .trust__grid {
@@ -324,7 +324,7 @@
 
 .trust__panel {
   margin-top: 64px;
-  background-color: var(--ivory);
+  background-color: var(--canvas);
   border-radius: var(--br-card-lg);
   padding: 48px;
   border: 2px dashed rgba(10, 10, 112, 0.1);
@@ -352,14 +352,14 @@
   align-items: center;
   gap: 12px;
   padding: 16px;
-  background-color: var(--white);
+  background-color: #fff;
   border-radius: 12px;
 }
 
 /* Impact Philosophy */
 .impact-philosophy {
-  background: linear-gradient(135deg, var(--royal-blue), #12127A);
-  color: var(--white);
+  background: linear-gradient(135deg, var(--navy), #12127A);
+  color: #fff;
 }
 
 .impact-philosophy__inner {
@@ -367,7 +367,7 @@
 }
 
 .impact-philosophy__heading {
-  color: var(--white);
+  color: #fff;
 }
 
 .impact-philosophy__text {
@@ -430,7 +430,7 @@
 
 /* Get Involved */
 .get-involved {
-  background-color: var(--ivory);
+  background-color: var(--canvas);
 }
 
 .get-involved__grid {
@@ -459,7 +459,7 @@
 }
 
 .get-involved__card:nth-child(3) {
-  border-top: 3px solid var(--royal-blue);
+  border-top: 3px solid var(--navy);
 }
 
 .get-involved__card-icon {
@@ -486,7 +486,7 @@
 
 /* Volunteer Preview */
 .volunteer-preview {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .volunteer-preview__benefits {
@@ -513,7 +513,7 @@
   align-items: flex-start;
   gap: 16px;
   padding: 20px;
-  background-color: var(--ivory);
+  background-color: var(--canvas);
   border-radius: 16px;
 }
 
@@ -554,17 +554,17 @@
 
 .donation-preview__purpose-card {
   padding: 24px;
-  background-color: var(--white);
+  background-color: #fff;
   border-radius: 16px;
   text-align: center;
   border-bottom: 3px solid var(--gold);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--e1);
   transition: all var(--transition-fast);
 }
 
 .donation-preview__purpose-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--e2);
 }
 
 .donation-preview__purpose-icon {
@@ -574,12 +574,12 @@
 
 .donation-preview__purpose-title {
   font-weight: 700;
-  color: var(--dark-text);
+  color: var(--ink);
 }
 
 /* Partnership CTA */
 .partnership-cta {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .partnership-cta__audiences {
@@ -592,17 +592,17 @@
 
 .partnership-cta__audience-tag {
   padding: 10px 20px;
-  background-color: var(--ivory);
+  background-color: var(--canvas);
   border-radius: 40px;
   font-size: 0.85rem;
-  color: var(--royal-blue);
+  color: var(--navy);
   font-weight: 500;
   border: 1px solid rgba(10, 10, 112, 0.1);
 }
 
 /* Final CTA */
 .final-cta {
-  background: linear-gradient(135deg, var(--royal-blue) 0%, #12127A 60%, #1a1a5e 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, #12127A 60%, #1a1a5e 100%);
   position: relative;
   overflow: hidden;
   padding: 80px 0;
@@ -633,7 +633,7 @@
 }
 
 .final-cta__heading {
-  color: var(--white);
+  color: #fff;
   max-width: 800px;
   margin: 0 auto 40px;
 }
