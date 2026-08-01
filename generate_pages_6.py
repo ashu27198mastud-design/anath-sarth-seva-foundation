@@ -7,40 +7,40 @@ PAGES["impact.html"] = {
     "impact_active": "header__nav-link--active",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: var(--royal-blue); color: white; padding: 180px 0 80px;">
+    <section class="inner-hero inner-hero inner-hero--blue">
       <div class="container text-center reveal">
         <h1 class="heading-display text-white">Our Impact</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0; opacity: 0.9;">Measurable, community-led change driven by the Root-to-Rise model.</p>
+        <p class="text-lg container-narrow mt-24 opacity-90">Measurable, community-led change driven by the Root-to-Rise model.</p>
       </div>
     </section>
     
-    <section class="section" style="background-color: #050538; color: white;">
+    <section class="section bg-navy-deep text-white">
       <div class="container reveal">
-        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+        <div class="stats-grid grid-auto-fit gap-40 text-center">
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: NUMBER OF COMMUNITIES REACHED]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: NUMBER OF COMMUNITIES REACHED]</h3>
             <p class="text-md">Communities Reached</p>
           </div>
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: NUMBER OF LEARNERS SUPPORTED]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: NUMBER OF LEARNERS SUPPORTED]</h3>
             <p class="text-md">Learners Supported</p>
           </div>
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: NUMBER OF WOMEN ENTREPRENEURS]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: NUMBER OF WOMEN ENTREPRENEURS]</h3>
             <p class="text-md">Women Entrepreneurs Enabled</p>
           </div>
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: HECTARES RESTORED]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: HECTARES RESTORED]</h3>
             <p class="text-md">Hectares Restored</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section watermark-bg">
+    <section class="section">
         <div class="container reveal">
             <h2 class="heading-lg text-center">How We Measure</h2>
-            <p class="text-md text-center" style="max-width: 800px; margin: 24px auto 40px;">Our impact tracking is tied directly to our Root-to-Rise model, using data-driven metrics to ensure sustained growth and ultimate community independence.</p>
+            <p class="text-md text-center container-narrow my-24-40">Our impact tracking is tied directly to our Root-to-Rise model, using data-driven metrics to ensure sustained growth and ultimate community independence.</p>
             <div class="features-grid">
                 """ + build_3d_card("Holistic Learning", "Tracking student retention, skill acquisition, and transition to higher education.", ICONS["graduation"]) + """
                 """ + build_3d_card("Women's Equity", "Measuring micro-enterprise revenue, financial independence, and community leadership roles.", ICONS["gem"]) + """
@@ -52,26 +52,26 @@ PAGES["impact.html"] = {
         </div>
     </section>
 
-    <section class="section" style="background-color: var(--ivory);">
-      <div class="container reveal text-center" style="max-width: 800px;">
-        <div class="story-block" style="background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(10,10,112,0.05);">
-            <img src="assets/images/hero/hero-visual.jpg" alt="Beneficiary story" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 24px; border: 2px solid var(--gold);">
-            <blockquote style="font-size: 20px; font-style: italic; color: var(--gray); line-height: 1.6; margin-bottom: 24px;">"Since the incubator opened, our cooperative has doubled its production. We are now exporting our crafts and my daughters can go to a good school without us leaving the village."</blockquote>
-            <p style="font-weight: 600; color: var(--royal-blue);">Priya M.</p>
-            <p style="font-size: 14px; color: var(--gray);">Maharashtra</p>
+    <section class="section bg-ivory">
+      <div class="container reveal text-center max-w-800">
+        <div class="story-block card--white-lg">
+            <img src="assets/images/hero/hero-visual.jpg" alt="Beneficiary story" class="avatar--lg">
+            <blockquote class="quote-text">"Since the incubator opened, our cooperative has doubled its production. We are now exporting our crafts and my daughters can go to a good school without us leaving the village."</blockquote>
+            <p class="fw-600 text-blue">Priya M.</p>
+            <p class="text-sm text-muted">Maharashtra</p>
         </div>
-        <div style="margin-top: 56px;">
+        <div class="mt-56">
             <a href="donate.html" class="btn btn--primary">Donate Now</a>
-            <a href="partner.html" class="btn btn--secondary" style="margin-left: 16px;">Partner With Us</a>
+            <a href="partner.html" class="btn btn--secondary ml-16">Partner With Us</a>
         </div>
       </div>
     </section>
     
-    <section class="section" style="background-color: var(--white); text-align: center;">
+    <section class="section bg-white text-center">
       <div class="container reveal">
         <h2 class="heading-md">Transparency & Financials</h2>
-        <p style="margin-top: 16px;">We are committed to absolute financial transparency. View our latest annual reports and audited financials.</p>
-        <a href="[CLIENT: LINK TO FINANCIALS]" class="btn btn--outline" style="margin-top: 24px;">Download Financial Report</a>
+        <p class="mt-16">We are committed to absolute financial transparency. View our latest annual reports and audited financials.</p>
+        <a href="[CLIENT: LINK TO FINANCIALS]" class="btn btn--outline mt-24">Download Financial Report</a>
       </div>
     </section>
 """

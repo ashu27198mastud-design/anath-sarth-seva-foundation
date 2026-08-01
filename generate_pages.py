@@ -12,7 +12,7 @@ HEADER_TEMPLATE = """<!DOCTYPE html>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="{root_path}assets/css/design-system.css">
   <link rel="stylesheet" href="{root_path}assets/css/components.css">
@@ -97,11 +97,11 @@ FOOTER_TEMPLATE = """
           <img src="{root_path}assets/images/logo-icon.svg" alt="Ananth Sarth Seva Foundation" width="40" height="40">
           <span class="footer__logo-text">Ananth Sarth Seva Foundation</span>
         </a>
-        <p class="footer__tagline" style="margin-top: 12px; font-weight: 500;">Serving Humanity, Creating Hope.</p>
-        <p class="footer__address" style="margin-top: 16px; font-size: 14px; opacity: 0.8; line-height: 1.6;">
+        <p class="footer__tagline mt-12 fw-500">Serving Humanity, Creating Hope.</p>
+        <p class="footer__address mt-16 text-sm opacity-80 lh-16">
         [CLIENT: REGISTERED OFFICE ADDRESS]<br>
         [CLIENT: PHONE NUMBER]<br>
-        <a href="mailto:contact@anathsarthsevafoundation.org" style="color: inherit; text-decoration: underline;">[CLIENT: OFFICIAL EMAIL]</a></p>
+        <a href="mailto:contact@anathsarthsevafoundation.org" class="link--inherit">[CLIENT: OFFICIAL EMAIL]</a></p>
       </div>
       <div class="footer__col">
         <h4 class="footer__heading">About Us</h4>
@@ -136,8 +136,8 @@ FOOTER_TEMPLATE = """
     </div>
     
     <!-- Transparency Strip -->
-    <div class="footer__transparency" style="background-color: rgba(255,255,255,0.05); padding: 16px 0; margin-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
-      <div class="container" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 13px; opacity: 0.8;">
+    <div class="footer__transparency footer__transparency">
+      <div class="container footer__bottom">
         <span><strong>Reg. No:</strong> [CLIENT: REGISTRATION NUMBER]</span>
         <span><strong>80G No:</strong> [CLIENT: 80G CERTIFICATE NUMBER]</span>
         <span><strong>12A No:</strong> [CLIENT: 12A REGISTRATION NUMBER]</span>
@@ -158,14 +158,14 @@ FOOTER_TEMPLATE = """
 </html>
 """
 
-def build_3d_card(title, desc, icon_svg):
+def build_3d_card(title, desc, icon_svg, idx="01"):
     return f'''
-    <div class="feature-card-3d reveal">
+    <div class="feature-card-3d reveal" data-idx="{idx}">
         <div class="feature-icon-wrapper">
             {icon_svg}
         </div>
-        <h3 class="heading-md">{title}</h3>
-        <p class="text-md" style="margin-top: 12px; color: var(--gray);">{desc}</p>
+        <h3 class="t-h3">{title}</h3>
+        <p class="text-md mt-12 text-muted">{desc}</p>
     </div>
     '''
 
@@ -240,33 +240,33 @@ PAGES = {
         "impact_active": "",
         "contact_active": "",
         "content": """
-    <section class="inner-hero watermark-bg" style="background-color: var(--ivory); padding: 180px 0 80px;">
+    <section class="inner-hero inner-hero">
       <div class="container text-center reveal">
         <h1 class="heading-display">About Us</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Ananth Sarth Seva Foundation was newly initiated in 2026 and our journey began with a conversation among close friends who came together with the intention of giving back to society.</p>
+        <p class="text-lg container-narrow mt-24">Ananth Sarth Seva Foundation was newly initiated in 2026 and our journey began with a conversation among close friends who came together with the intention of giving back to society.</p>
       </div>
     </section>
-    <section id="our-story" class="section watermark-bg">
+    <section id="our-story" class="section">
       <div class="container reveal">
         <h2 class="heading-lg text-center">Our Story</h2>
-        <p class="text-md text-center" style="max-width: 800px; margin: 24px auto;">We felt a shared responsibility to give back to the world. Guided by spiritual values of selfless service and interconnectedness, we realized that creating real change requires a complete plan for human dignity and environmental care. What started as a passionate discussion evolved into a lifelong mission. We saw talented people held back by a lack of opportunities, rich traditions fading due to poverty, and ecosystems threatened by climate change. To break this cycle, we decided to combine ancient wisdom with modern innovation.</p>
+        <p class="text-md text-center container-narrow my-24">We felt a shared responsibility to give back to the world. Guided by spiritual values of selfless service and interconnectedness, we realized that creating real change requires a complete plan for human dignity and environmental care. What started as a passionate discussion evolved into a lifelong mission. We saw talented people held back by a lack of opportunities, rich traditions fading due to poverty, and ecosystems threatened by climate change. To break this cycle, we decided to combine ancient wisdom with modern innovation.</p>
       </div>
     </section>
-    <section id="vision-mission" class="section" style="background-color: var(--white);">
-      <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+    <section id="vision-mission" class="section bg-white">
+      <div class="container grid-2 gap-40">
         <div id="vision" class="feature-card-3d reveal">
           <div class="feature-icon-wrapper">""" + ICONS["binoculars"] + """</div>
           <h2 class="heading-lg">Vision</h2>
-          <p class="text-md" style="margin-top: 16px;">To build a sustainable global future by transforming vulnerable regions into thriving hubs of innovation and conservation.</p>
+          <p class="text-md mt-16">To build a sustainable global future by transforming vulnerable regions into thriving hubs of innovation and conservation.</p>
         </div>
         <div id="mission" class="feature-card-3d reveal">
           <div class="feature-icon-wrapper">""" + ICONS["rocket"] + """</div>
           <h2 class="heading-lg">Mission</h2>
-          <p class="text-md" style="margin-top: 16px;">To empower rural and tribal communities across six core pillars: education, women's equity, self-reliance, holistic healthcare, climate action, and conservation.</p>
+          <p class="text-md mt-16">To empower rural and tribal communities across six core pillars: education, women's equity, self-reliance, holistic healthcare, climate action, and conservation.</p>
         </div>
       </div>
     </section>
-    <section id="objective" class="section watermark-bg">
+    <section id="objective" class="section">
       <div class="container reveal">
         <h2 class="heading-lg text-center">Our Objectives</h2>
         <div class="features-grid">
@@ -279,10 +279,10 @@ PAGES = {
         </div>
       </div>
     </section>
-    <section id="how-we-work" class="section" style="background-color: var(--ivory);">
+    <section id="how-we-work" class="section bg-ivory">
       <div class="container reveal">
         <h2 class="heading-lg text-center">How We Work: The Root-to-Rise Model</h2>
-        <p class="text-md text-center" style="max-width: 800px; margin: 24px auto;">We don't believe in temporary fixes. Real, lasting change happens when you look at an ecosystem as a whole. Our 4-Step Operational Framework:</p>
+        <p class="text-md text-center container-narrow my-24">We don't believe in temporary fixes. Real, lasting change happens when you look at an ecosystem as a whole. Our 4-Step Operational Framework:</p>
         <div class="features-grid">
             """ + build_3d_card("1. Listen & Learn", "We deeply immerse ourselves in rural and tribal communities to map their unique cultural traditions and natural resources.", ICONS["users-round"]) + """
             """ + build_3d_card("2. Bridge & Blend", "We merge ancient traditions and sciences with digital-age skills, modern medical technology, and localized clean energy.", ICONS["handshake"]) + """
@@ -305,30 +305,59 @@ PAGES["programs/holistic-learning.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #E8F4F8; padding: 132px 0 72px;">
+    <section class="inner-hero">
       <div class="container text-center reveal">
-        <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Education</span>
-        <h1 class="heading-display">Holistic Learning</h1>
-        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
+        <nav class="rail" aria-label="Programme pillars">
+          <span class="rail__label">Pillar</span>
+          <span class="rail__ticks">
+            <a href="holistic-learning.html" class="tick is-active" title="Education"></a>
+            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+          </span>
+          <span class="rail__count">01 / 06</span>
+        </nav>
+        
+        <span class="badge badge--blue mb-16">Education</span>
+        <h1 class="t-display">Holistic Learning</h1>
+        <p class="hero__sub">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
+        
+        <div class="hero__actions">
+            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+        </div>
+
+        <div class="hero__proof">
+            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+        </div>
+        
         <div class="hero-image-block">
           <img src="../assets/images/programs/holistic-learning.jpg" alt="Learners in an inclusive classroom setting">
         </div>
         <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg" id="initiatives">
+    
+    <section class="section" id="initiatives">
         <div class="container reveal">
+            <h2 class="t-eyebrow text-center mt-8">What we do</h2>
+            <h3 class="t-h2 text-center mb-s7">Ten ways we open a classroom</h3>
+            <p class="t-micro text-center mb-24">01 — 10</p>
             <div class="features-grid">
-                """ + build_3d_card("Inclusive Classrooms", "Ensuring high-quality access for minorities, tribes, and economically weaker sections.", ICONS["users"]) + """
-                """ + build_3d_card("Targeted Child Welfare", "Establishing safe residential environments and hostels.", ICONS["home"]) + """
-                """ + build_3d_card("Dignity for Differently-Abled", "Building completely accessible learning infrastructure.", ICONS["accessibility"]) + """
-                """ + build_3d_card("Rural & Agrarian Empowerment", "Decentralized learning hubs and reading rooms.", ICONS["sprout"]) + """
-                """ + build_3d_card("Next-Gen Tech Access", "AI, robotics, and digital innovation hubs for underprivileged youth.", ICONS["cpu"]) + """
-                """ + build_3d_card("Phygital Learning Ecosystems", "Merging physical schools with e-learning platforms.", ICONS["monitor"]) + """
-                """ + build_3d_card("Grassroots Incubators", "Incubation and research centres helping youth, women and rural innovators turn hyper-local ideas into sustainable livelihood models.", ICONS["lightbulb"]) + """
-                """ + build_3d_card("Skill-to-Market Pipelines", "Vocational centres connecting students directly to market-ready employment or entrepreneurship.", ICONS["briefcase"]) + """
-                """ + build_3d_card("Lifelong Learning Continuum", "A pathway spanning early-childhood pre-schools through to higher education.", ICONS["graduation"]) + """
-                """ + build_3d_card("Supportive Ecosystems", "Digital libraries, reading rooms, coaching centres and safe student hostels to prevent dropouts.", ICONS["library"]) + """
+                """ + build_3d_card("Inclusive Classrooms", "Ensuring high-quality access for minorities, tribes, and economically weaker sections.", ICONS["users"], idx="01") + """
+                """ + build_3d_card("Targeted Child Welfare", "Establishing safe residential environments and hostels.", ICONS["home"], idx="02") + """
+                """ + build_3d_card("Dignity for Differently-Abled", "Building completely accessible learning infrastructure.", ICONS["accessibility"], idx="03") + """
+                """ + build_3d_card("Rural & Agrarian Empowerment", "Decentralized learning hubs and reading rooms.", ICONS["sprout"], idx="04") + """
+                """ + build_3d_card("Next-Gen Tech Access", "AI, robotics, and digital innovation hubs for underprivileged youth.", ICONS["cpu"], idx="05") + """
+                """ + build_3d_card("Phygital Learning Ecosystems", "Merging physical schools with e-learning platforms.", ICONS["monitor"], idx="06") + """
+                """ + build_3d_card("Grassroots Incubators", "Incubation and research centres helping youth, women and rural innovators turn hyper-local ideas into sustainable livelihood models.", ICONS["lightbulb"], idx="07") + """
+                """ + build_3d_card("Skill-to-Market Pipelines", "Vocational centres connecting students directly to market-ready employment or entrepreneurship.", ICONS["briefcase"], idx="08") + """
+                """ + build_3d_card("Lifelong Learning Continuum", "A pathway spanning early-childhood pre-schools through to higher education.", ICONS["graduation"], idx="09") + """
+                """ + build_3d_card("Supportive Ecosystems", "Digital libraries, reading rooms, coaching centres and safe student hostels to prevent dropouts.", ICONS["library"], idx="10") + """
             </div>
         </div>
     </section>
@@ -344,30 +373,59 @@ PAGES["programs/womens-equity.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #F8E8F4; padding: 132px 0 72px;">
+    <section class="inner-hero">
       <div class="container text-center reveal">
-        <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Women Empowerment</span>
-        <h1 class="heading-display">Women's Equity</h1>
-        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Breaking gender-based economic barriers by providing marginalized women with financial literacy, livelihood tools, and sustainable opportunities.</p>
+        <nav class="rail" aria-label="Programme pillars">
+          <span class="rail__label">Pillar</span>
+          <span class="rail__ticks">
+            <a href="holistic-learning.html" class="tick" title="Education"></a>
+            <a href="womens-equity.html" class="tick is-active" title="Women's Empowerment"></a>
+            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+          </span>
+          <span class="rail__count">02 / 06</span>
+        </nav>
+        
+        <span class="badge badge--blue mb-16">Women's Empowerment</span>
+        <h1 class="t-display">Women's Equity</h1>
+        <p class="hero__sub">Dismantling socio-economic barriers for rural and tribal women through skill-building, self-help groups, and micro-entrepreneurship.</p>
+        
+        <div class="hero__actions">
+            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+        </div>
+
+        <div class="hero__proof">
+            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+        </div>
+        
         <div class="hero-image-block">
-          <img src="../assets/images/programs/womens-equity.jpg" alt="Women running a community enterprise">
+          <img src="../assets/images/programs/womens-equity.jpg" alt="Women entrepreneurs reviewing business plans">
         </div>
         <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg" id="initiatives">
+    
+    <section class="section" id="initiatives">
         <div class="container reveal">
+            <h2 class="t-eyebrow text-center mt-8">What we do</h2>
+            <h3 class="t-h2 text-center mb-s7">Ten routes to independence</h3>
+            <p class="t-micro text-center mb-24">01 — 10</p>
             <div class="features-grid">
-                """ + build_3d_card("Socio-Economic Upliftment", "Providing financial literacy and sustainable income-generating opportunities.", ICONS["gem"]) + """
-                """ + build_3d_card("Health & Hygiene Security", "Comprehensive menstrual hygiene management to eliminate stigma.", ICONS["heart-pulse"]) + """
-                """ + build_3d_card("Safety & Crisis Networks", "Emergency crisis support services to protect women in distress.", ICONS["shield-check"]) + """
-                """ + build_3d_card("Digital Commerce Integration", "Training women in e-commerce to connect rural creators to global marketplaces.", ICONS["shopping-bag"]) + """
-                """ + build_3d_card("Micro-Entrepreneurship", "Transforming home-based skills into scalable, women-led enterprises.", ICONS["rocket"]) + """
-                """ + build_3d_card("Tribal Inclusivity", "Programmes that honour, protect and monetise the traditional knowledge and skills of tribal women.", ICONS["hand-heart"]) + """
-                """ + build_3d_card("Modernized Agro-Processing", "Food processing and value-addition units maximising profit from agricultural produce.", ICONS["factory"]) + """
-                """ + build_3d_card("Tech-Driven Craft Centers", "Tailoring, apparel and handicraft centres blending heritage design with contemporary global fashion.", ICONS["scissors"]) + """
-                """ + build_3d_card("End-to-End Skilling Ecosystems", "Facilities housing physical skill labs and digital tech labs under one roof.", ICONS["layers-3"]) + """
-                """ + build_3d_card("Community Leadership Pipelines", "Mentoring grassroots women leaders to run SHGs, cooperatives and production centres independently.", ICONS["users-round"]) + """
+                """ + build_3d_card("Socio-Economic Upliftment", "Providing financial literacy and sustainable income-generating opportunities.", ICONS["gem"], idx="01") + """
+                """ + build_3d_card("Health & Hygiene Security", "Comprehensive menstrual hygiene management to eliminate stigma.", ICONS["heart-pulse"], idx="02") + """
+                """ + build_3d_card("Safety & Crisis Networks", "Emergency crisis support services to protect women in distress.", ICONS["shield-check"], idx="03") + """
+                """ + build_3d_card("Digital Commerce Integration", "Training women in e-commerce to connect rural creators to global marketplaces.", ICONS["shopping-bag"], idx="04") + """
+                """ + build_3d_card("Micro-Entrepreneurship", "Transforming home-based skills into scalable, women-led enterprises.", ICONS["rocket"], idx="05") + """
+                """ + build_3d_card("Tribal Inclusivity", "Programmes that honour, protect and monetise the traditional knowledge and skills of tribal women.", ICONS["hand-heart"], idx="06") + """
+                """ + build_3d_card("Modernized Agro-Processing", "Food processing and value-addition units maximising profit from agricultural produce.", ICONS["factory"], idx="07") + """
+                """ + build_3d_card("Tech-Driven Craft Centers", "Tailoring, apparel and handicraft centres blending heritage design with contemporary global fashion.", ICONS["scissors"], idx="08") + """
+                """ + build_3d_card("End-to-End Skilling Ecosystems", "Facilities housing physical skill labs and digital tech labs under one roof.", ICONS["layers-3"], idx="09") + """
+                """ + build_3d_card("Community Leadership Pipelines", "Mentoring grassroots women leaders to run SHGs, cooperatives and production centres independently.", ICONS["users-round"], idx="10") + """
             </div>
         </div>
     </section>
@@ -384,30 +442,59 @@ PAGES["programs/resilient-communities.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #FDF4E3; padding: 132px 0 72px;">
+    <section class="inner-hero">
       <div class="container text-center reveal">
-        <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Rural & Urban Development</span>
-        <h1 class="heading-display">Resilient Communities</h1>
-        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
+        <nav class="rail" aria-label="Programme pillars">
+          <span class="rail__label">Pillar</span>
+          <span class="rail__ticks">
+            <a href="holistic-learning.html" class="tick" title="Education"></a>
+            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+            <a href="resilient-communities.html" class="tick is-active" title="Rural &amp; Urban Development"></a>
+            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+          </span>
+          <span class="rail__count">03 / 06</span>
+        </nav>
+        
+        <span class="badge badge--blue mb-16">Rural & Urban Development</span>
+        <h1 class="t-display">Resilient Communities</h1>
+        <p class="hero__sub">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
+        
+        <div class="hero__actions">
+            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+        </div>
+
+        <div class="hero__proof">
+            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+        </div>
+        
         <div class="hero-image-block">
           <img src="../assets/images/programs/resilient-communities.jpg" alt="A connected village community and its households">
         </div>
         <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg" id="initiatives">
+    
+    <section class="section" id="initiatives">
         <div class="container reveal">
+            <h2 class="t-eyebrow text-center mt-8">What we do</h2>
+            <h3 class="t-h2 text-center mb-s7">Ten ways a village stands on its own</h3>
+            <p class="t-micro text-center mb-24">01 — 10</p>
             <div class="features-grid">
-                """ + build_3d_card("Cultural & Heritage Preservation", "Documenting and protecting tribal arts and indigenous heritage.", ICONS["landmark"]) + """
-                """ + build_3d_card("Smart Village Infrastructure", "Transforming traditional villages into tech-enabled hubs.", ICONS["wifi"]) + """
-                """ + build_3d_card("Skill ATMs", "Deploying localized training kiosks for automated, on-demand vocational learning.", ICONS["monitor"]) + """
-                """ + build_3d_card("Forest Economy Value Chains", "Advanced processing hubs for minor forest produce to maximize local revenue.", ICONS["trees"]) + """
-                """ + build_3d_card("Targeted Rural Education", "Tribal hostels and cultural learning spaces preventing dropouts and ensuring safe housing for remote students.", ICONS["school"]) + """
-                """ + build_3d_card("Socio-Economic Development", "Sustainable local livelihood models that stop distress migration to cities.", ICONS["trending-up"]) + """
-                """ + build_3d_card("Ecological Stewardship", "Community-led conservation through eco-tourism and natural resource management.", ICONS["recycle"]) + """
-                """ + build_3d_card("Agro-Innovation Labs", "Smart labs teaching sustainable agriculture, animal husbandry and climate-resilient farming.", ICONS["flask"]) + """
-                """ + build_3d_card("Grassroot Enterprise Hubs", "Rural incubation helping artisans and farmers package, brand and market directly to urban consumers.", ICONS["package"]) + """
-                """ + build_3d_card("Self-Sustaining Ecosystems", "Community-owned eco-tourism sites and digital hubs feeding profits back into village infrastructure.", ICONS["store"]) + """
+                """ + build_3d_card("Cultural & Heritage Preservation", "Documenting and protecting tribal arts and indigenous heritage.", ICONS["landmark"], idx="01") + """
+                """ + build_3d_card("Smart Village Infrastructure", "Transforming traditional villages into tech-enabled hubs.", ICONS["wifi"], idx="02") + """
+                """ + build_3d_card("Skill ATMs", "Deploying localized training kiosks for automated, on-demand vocational learning.", ICONS["monitor"], idx="03") + """
+                """ + build_3d_card("Forest Economy Value Chains", "Advanced processing hubs for minor forest produce to maximize local revenue.", ICONS["trees"], idx="04") + """
+                """ + build_3d_card("Targeted Rural Education", "Tribal hostels and cultural learning spaces preventing dropouts and ensuring safe housing for remote students.", ICONS["school"], idx="05") + """
+                """ + build_3d_card("Socio-Economic Development", "Sustainable local livelihood models that stop distress migration to cities.", ICONS["trending-up"], idx="06") + """
+                """ + build_3d_card("Ecological Stewardship", "Community-led conservation through eco-tourism and natural resource management.", ICONS["recycle"], idx="07") + """
+                """ + build_3d_card("Agro-Innovation Labs", "Smart labs teaching sustainable agriculture, animal husbandry and climate-resilient farming.", ICONS["flask"], idx="08") + """
+                """ + build_3d_card("Grassroot Enterprise Hubs", "Rural incubation helping artisans and farmers package, brand and market directly to urban consumers.", ICONS["package"], idx="09") + """
+                """ + build_3d_card("Self-Sustaining Ecosystems", "Community-owned eco-tourism sites and digital hubs feeding profits back into village infrastructure.", ICONS["store"], idx="10") + """
             </div>
         </div>
     </section>
@@ -423,30 +510,59 @@ PAGES["programs/inclusive-wellness.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #E6F7F1; padding: 132px 0 72px;">
+    <section class="inner-hero">
       <div class="container text-center reveal">
-        <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Healthcare</span>
-        <h1 class="heading-display">Inclusive Wellness</h1>
-        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
+        <nav class="rail" aria-label="Programme pillars">
+          <span class="rail__label">Pillar</span>
+          <span class="rail__ticks">
+            <a href="holistic-learning.html" class="tick" title="Education"></a>
+            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+            <a href="inclusive-wellness.html" class="tick is-active" title="Healthcare"></a>
+            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+          </span>
+          <span class="rail__count">04 / 06</span>
+        </nav>
+        
+        <span class="badge badge--blue mb-16">Healthcare</span>
+        <h1 class="t-display">Inclusive Wellness</h1>
+        <p class="hero__sub">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
+        
+        <div class="hero__actions">
+            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+        </div>
+
+        <div class="hero__proof">
+            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+        </div>
+        
         <div class="hero-image-block">
           <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Healthcare reaching a remote community">
         </div>
         <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg" id="initiatives">
+    
+    <section class="section" id="initiatives">
         <div class="container reveal">
+            <h2 class="t-eyebrow text-center mt-8">What we do</h2>
+            <h3 class="t-h2 text-center mb-s7">Ten ways care reaches further</h3>
+            <p class="t-micro text-center mb-24">01 — 10</p>
             <div class="features-grid">
-                """ + build_3d_card("Last-Mile Healthcare Access", "Mobile medical units for remote communities.", ICONS["ambulance"]) + """
-                """ + build_3d_card("Destigmatising Mental Health", "Accessible counseling and addiction recovery centers.", ICONS["brain"]) + """
-                """ + build_3d_card("Telemedicine & Digital Health", "Connecting world-class doctors to patients in remote areas.", ICONS["video"]) + """
-                """ + build_3d_card("Integrative Medical Clinics", "Synthesizing Ayurveda and Naturopathy with modern evidence-based medicine.", ICONS["leaf"]) + """
-                """ + build_3d_card("Dignified Health & Hygiene", "Menstrual hygiene programmes eliminating taboos and providing safe, affordable solutions.", ICONS["droplet"]) + """
-                """ + build_3d_card("Preventative Nutrition Networks", "Targeted nutritional guidance, dietary planning and community wellness camps.", ICONS["apple"]) + """
-                """ + build_3d_card("Mind-Body Innovation Hubs", "Yoga and meditation centres addressing lifestyle stress, anxiety and psychosomatic disorders.", ICONS["flower"]) + """
-                """ + build_3d_card("Data-Driven Health Camps", "Technology-backed screening mapping regional health trends to prevent outbreaks.", ICONS["clipboard"]) + """
-                """ + build_3d_card("Holistic Recovery Frameworks", "Rehabilitation spaces combining physical healing, psychological recovery and nutritional rebuilding.", ICONS["heart-handshake"]) + """
-                """ + build_3d_card("Community Health Mobilizers", "Trained local ambassadors running hygiene drives, nutrition counselling and emergency coordination.", ICONS["megaphone"]) + """
+                """ + build_3d_card("Last-Mile Healthcare Access", "Mobile medical units for remote communities.", ICONS["ambulance"], idx="01") + """
+                """ + build_3d_card("Destigmatising Mental Health", "Accessible counseling and addiction recovery centers.", ICONS["brain"], idx="02") + """
+                """ + build_3d_card("Telemedicine & Digital Health", "Connecting world-class doctors to patients in remote areas.", ICONS["video"], idx="03") + """
+                """ + build_3d_card("Integrative Medical Clinics", "Synthesizing Ayurveda and Naturopathy with modern evidence-based medicine.", ICONS["leaf"], idx="04") + """
+                """ + build_3d_card("Dignified Health & Hygiene", "Menstrual hygiene programmes eliminating taboos and providing safe, affordable solutions.", ICONS["droplet"], idx="05") + """
+                """ + build_3d_card("Preventative Nutrition Networks", "Targeted nutritional guidance, dietary planning and community wellness camps.", ICONS["apple"], idx="06") + """
+                """ + build_3d_card("Mind-Body Innovation Hubs", "Yoga and meditation centres addressing lifestyle stress, anxiety and psychosomatic disorders.", ICONS["flower"], idx="07") + """
+                """ + build_3d_card("Data-Driven Health Camps", "Technology-backed screening mapping regional health trends to prevent outbreaks.", ICONS["clipboard"], idx="08") + """
+                """ + build_3d_card("Holistic Recovery Frameworks", "Rehabilitation spaces combining physical healing, psychological recovery and nutritional rebuilding.", ICONS["heart-handshake"], idx="09") + """
+                """ + build_3d_card("Community Health Mobilizers", "Trained local ambassadors running hygiene drives, nutrition counselling and emergency coordination.", ICONS["megaphone"], idx="10") + """
             </div>
         </div>
     </section>
@@ -463,30 +579,59 @@ PAGES["programs/climate-resilience.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #E8EDF8; padding: 132px 0 72px;">
+    <section class="inner-hero">
       <div class="container text-center reveal">
-        <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Environmental</span>
-        <h1 class="heading-display">Climate Resilience</h1>
-        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
+        <nav class="rail" aria-label="Programme pillars">
+          <span class="rail__label">Pillar</span>
+          <span class="rail__ticks">
+            <a href="holistic-learning.html" class="tick" title="Education"></a>
+            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+            <a href="climate-resilience.html" class="tick is-active" title="Environmental"></a>
+            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+          </span>
+          <span class="rail__count">05 / 06</span>
+        </nav>
+        
+        <span class="badge badge--blue mb-16">Environmental</span>
+        <h1 class="t-display">Climate Resilience</h1>
+        <p class="hero__sub">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
+        
+        <div class="hero__actions">
+            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+        </div>
+
+        <div class="hero__proof">
+            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+        </div>
+        
         <div class="hero-image-block">
           <img src="../assets/images/programs/climate-resilience.jpg" alt="Community-led clean energy and climate resilience">
         </div>
         <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg" id="initiatives">
+    
+    <section class="section" id="initiatives">
         <div class="container reveal">
+            <h2 class="t-eyebrow text-center mt-8">What we do</h2>
+            <h3 class="t-h2 text-center mb-s7">Ten defences against a changing climate</h3>
+            <p class="t-micro text-center mb-24">01 — 10</p>
             <div class="features-grid">
-                """ + build_3d_card("Disaster-Resilient Communities", "Implementing village-level early warning systems and risk reduction programs.", ICONS["siren"]) + """
-                """ + build_3d_card("Decentralized Clean Energy Grids", "Smart solar, wind, or bio-energy installations for remote community spaces.", ICONS["panel"]) + """
-                """ + build_3d_card("Nature-Based Solution Hubs", "Urban micro-forests, wetland restoration, and soil carbon sinks.", ICONS["trees"]) + """
-                """ + build_3d_card("Hyper-Local Carbon Mapping", "Data-tracking tools to help rural localities reduce carbon footprints.", ICONS["map"]) + """
-                """ + build_3d_card("Grassroots Climate Adaptation", "Building community capacity to anticipate, endure and recover from localised climate shocks.", ICONS["cloud"]) + """
-                """ + build_3d_card("Inclusive Green Development", "Equal, affordable access to clean energy for marginalised groups.", ICONS["zap"]) + """
-                """ + build_3d_card("Ecological Stewardship", "Community-led environmental guardianship.", ICONS["mountain"]) + """
-                """ + build_3d_card("Climate-Smart Infrastructure", "Resilient, disaster-ready village infrastructure.", ICONS["building"]) + """
-                """ + build_3d_card("Eco-Innovation Centers", "Local hubs developing and testing green solutions.", ICONS["lightbulb"]) + """
-                """ + build_3d_card("Climate Response Networks", "Village-level early warning and coordinated response.", ICONS["radio"]) + """
+                """ + build_3d_card("Disaster-Resilient Communities", "Implementing village-level early warning systems and risk reduction programs.", ICONS["siren"], idx="01") + """
+                """ + build_3d_card("Decentralized Clean Energy Grids", "Smart solar, wind, or bio-energy installations for remote community spaces.", ICONS["panel"], idx="02") + """
+                """ + build_3d_card("Nature-Based Solution Hubs", "Urban micro-forests, wetland restoration, and soil carbon sinks.", ICONS["trees"], idx="03") + """
+                """ + build_3d_card("Hyper-Local Carbon Mapping", "Data-tracking tools to help rural localities reduce carbon footprints.", ICONS["map"], idx="04") + """
+                """ + build_3d_card("Grassroots Climate Adaptation", "Building community capacity to anticipate, endure and recover from localised climate shocks.", ICONS["cloud"], idx="05") + """
+                """ + build_3d_card("Inclusive Green Development", "Equal, affordable access to clean energy for marginalised groups.", ICONS["zap"], idx="06") + """
+                """ + build_3d_card("Ecological Stewardship", "Community-led environmental guardianship.", ICONS["mountain"], idx="07") + """
+                """ + build_3d_card("Climate-Smart Infrastructure", "Resilient, disaster-ready village infrastructure.", ICONS["building"], idx="08") + """
+                """ + build_3d_card("Eco-Innovation Centers", "Local hubs developing and testing green solutions.", ICONS["lightbulb"], idx="09") + """
+                """ + build_3d_card("Climate Response Networks", "Village-level early warning and coordinated response.", ICONS["radio"], idx="10") + """
             </div>
         </div>
     </section>
@@ -502,30 +647,59 @@ PAGES["programs/eco-conservation.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #F1F8E8; padding: 132px 0 72px;">
+    <section class="inner-hero">
       <div class="container text-center reveal">
-        <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Ecosystem & Natural Resources</span>
-        <h1 class="heading-display">Eco-Conservation</h1>
-        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
+        <nav class="rail" aria-label="Programme pillars">
+          <span class="rail__label">Pillar</span>
+          <span class="rail__ticks">
+            <a href="holistic-learning.html" class="tick" title="Education"></a>
+            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+            <a href="eco-conservation.html" class="tick is-active" title="Ecosystem &amp; Natural Resources"></a>
+          </span>
+          <span class="rail__count">06 / 06</span>
+        </nav>
+        
+        <span class="badge badge--blue mb-16">Ecosystem & Natural Resources</span>
+        <h1 class="t-display">Eco-Conservation</h1>
+        <p class="hero__sub">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
+        
+        <div class="hero__actions">
+            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+        </div>
+
+        <div class="hero__proof">
+            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+        </div>
+        
         <div class="hero-image-block">
           <img src="../assets/images/programs/eco-conservation.jpg" alt="Community guardians protecting local ecosystems">
         </div>
         <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg" id="initiatives">
+    
+    <section class="section" id="initiatives">
         <div class="container reveal">
+            <h2 class="t-eyebrow text-center mt-8">What we do</h2>
+            <h3 class="t-h2 text-center mb-s7">Ten ways we guard what remains</h3>
+            <p class="t-micro text-center mb-24">01 — 10</p>
             <div class="features-grid">
-                """ + build_3d_card("Community-Led Conservation", "Protecting native forests, trees, and endangered wildlife.", ICONS["trees"]) + """
-                """ + build_3d_card("Revitalising Shared Waters", "Mobilizing citizens for the cleanup and protection of rivers, lakes, and wetlands.", ICONS["waves"]) + """
-                """ + build_3d_card("Tech-Driven Eco-Restoration", "Drone-assisted afforestation and AI-mapped soil health tracking.", ICONS["sprout"]) + """
-                """ + build_3d_card("Blue & Green Carbon Vaults", "Utilizing wetlands, oceans, and forests as natural carbon sinks.", ICONS["wind"]) + """
-                """ + build_3d_card("Intergenerational Equity", "Safeguarding natural resources for future generations.", ICONS["hourglass"]) + """
-                """ + build_3d_card("Public Health Protection", "Linking ecosystem health to community wellbeing.", ICONS["users"]) + """
-                """ + build_3d_card("Smart Wildlife Monitoring", "Technology-enabled biodiversity and wildlife tracking.", ICONS["binoculars"]) + """
-                """ + build_3d_card("Circular Resource Networks", "Closed-loop waste and resource systems at village level.", ICONS["recycle"]) + """
-                """ + build_3d_card("Ecosystem Defense Hubs", "Local centres coordinating habitat and forest protection.", ICONS["shield-plus"]) + """
-                """ + build_3d_card("Grassroots Eco-Alliances", "Community coalitions acting as technology-enabled environmental guardians.", ICONS["handshake"]) + """
+                """ + build_3d_card("Community-Led Conservation", "Protecting native forests, trees, and endangered wildlife.", ICONS["trees"], idx="01") + """
+                """ + build_3d_card("Revitalising Shared Waters", "Mobilizing citizens for the cleanup and protection of rivers, lakes, and wetlands.", ICONS["waves"], idx="02") + """
+                """ + build_3d_card("Tech-Driven Eco-Restoration", "Drone-assisted afforestation and AI-mapped soil health tracking.", ICONS["sprout"], idx="03") + """
+                """ + build_3d_card("Blue & Green Carbon Vaults", "Utilizing wetlands, oceans, and forests as natural carbon sinks.", ICONS["wind"], idx="04") + """
+                """ + build_3d_card("Intergenerational Equity", "Safeguarding natural resources for future generations.", ICONS["hourglass"], idx="05") + """
+                """ + build_3d_card("Public Health Protection", "Linking ecosystem health to community wellbeing.", ICONS["users"], idx="06") + """
+                """ + build_3d_card("Smart Wildlife Monitoring", "Technology-enabled biodiversity and wildlife tracking.", ICONS["binoculars"], idx="07") + """
+                """ + build_3d_card("Circular Resource Networks", "Closed-loop waste and resource systems at village level.", ICONS["recycle"], idx="08") + """
+                """ + build_3d_card("Ecosystem Defense Hubs", "Local centres coordinating habitat and forest protection.", ICONS["shield-plus"], idx="09") + """
+                """ + build_3d_card("Grassroots Eco-Alliances", "Community coalitions acting as technology-enabled environmental guardians.", ICONS["handshake"], idx="10") + """
             </div>
         </div>
     </section>
@@ -542,40 +716,40 @@ PAGES["impact.html"] = {
     "impact_active": "header__nav-link--active",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: var(--royal-blue); color: white; padding: 180px 0 80px;">
+    <section class="inner-hero inner-hero inner-hero--blue">
       <div class="container text-center reveal">
         <h1 class="heading-display text-white">Our Impact</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0; opacity: 0.9;">Measurable, community-led change driven by the Root-to-Rise model.</p>
+        <p class="text-lg container-narrow mt-24 opacity-90">Measurable, community-led change driven by the Root-to-Rise model.</p>
       </div>
     </section>
     
-    <section class="section" style="background-color: #050538; color: white;">
+    <section class="section bg-navy-deep text-white">
       <div class="container reveal">
-        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+        <div class="stats-grid grid-auto-fit gap-40 text-center">
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: NUMBER OF COMMUNITIES REACHED]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: NUMBER OF COMMUNITIES REACHED]</h3>
             <p class="text-md">Communities Reached</p>
           </div>
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: NUMBER OF LEARNERS SUPPORTED]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: NUMBER OF LEARNERS SUPPORTED]</h3>
             <p class="text-md">Learners Supported</p>
           </div>
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: NUMBER OF WOMEN ENTREPRENEURS]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: NUMBER OF WOMEN ENTREPRENEURS]</h3>
             <p class="text-md">Women Entrepreneurs Enabled</p>
           </div>
           <div class="stat-card">
-            <h3 class="heading-display" style="color: var(--gold);">[CLIENT: HECTARES RESTORED]</h3>
+            <h3 class="heading-display text-gold">[CLIENT: HECTARES RESTORED]</h3>
             <p class="text-md">Hectares Restored</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section watermark-bg">
+    <section class="section">
         <div class="container reveal">
             <h2 class="heading-lg text-center">How We Measure</h2>
-            <p class="text-md text-center" style="max-width: 800px; margin: 24px auto 40px;">Our impact tracking is tied directly to our Root-to-Rise model, using data-driven metrics to ensure sustained growth and ultimate community independence.</p>
+            <p class="text-md text-center container-narrow my-24-40">Our impact tracking is tied directly to our Root-to-Rise model, using data-driven metrics to ensure sustained growth and ultimate community independence.</p>
             <div class="features-grid">
                 """ + build_3d_card("Holistic Learning", "Tracking student retention, skill acquisition, and transition to higher education.", ICONS["graduation"]) + """
                 """ + build_3d_card("Women's Equity", "Measuring micro-enterprise revenue, financial independence, and community leadership roles.", ICONS["gem"]) + """
@@ -587,26 +761,26 @@ PAGES["impact.html"] = {
         </div>
     </section>
 
-    <section class="section" style="background-color: var(--ivory);">
-      <div class="container reveal text-center" style="max-width: 800px;">
-        <div class="story-block" style="background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(10,10,112,0.05);">
-            <img src="assets/images/hero/hero-visual.jpg" alt="Beneficiary story" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 24px; border: 2px solid var(--gold);">
-            <blockquote style="font-size: 20px; font-style: italic; color: var(--gray); line-height: 1.6; margin-bottom: 24px;">"Since the incubator opened, our cooperative has doubled its production. We are now exporting our crafts and my daughters can go to a good school without us leaving the village."</blockquote>
-            <p style="font-weight: 600; color: var(--royal-blue);">Priya M.</p>
-            <p style="font-size: 14px; color: var(--gray);">Maharashtra</p>
+    <section class="section bg-ivory">
+      <div class="container reveal text-center max-w-800">
+        <div class="story-block card--white-lg">
+            <img src="assets/images/hero/hero-visual.jpg" alt="Beneficiary story" class="avatar--lg">
+            <blockquote class="quote-text">"Since the incubator opened, our cooperative has doubled its production. We are now exporting our crafts and my daughters can go to a good school without us leaving the village."</blockquote>
+            <p class="fw-600 text-blue">Priya M.</p>
+            <p class="text-sm text-muted">Maharashtra</p>
         </div>
-        <div style="margin-top: 56px;">
+        <div class="mt-56">
             <a href="donate.html" class="btn btn--primary">Donate Now</a>
-            <a href="partner.html" class="btn btn--secondary" style="margin-left: 16px;">Partner With Us</a>
+            <a href="partner.html" class="btn btn--secondary ml-16">Partner With Us</a>
         </div>
       </div>
     </section>
     
-    <section class="section" style="background-color: var(--white); text-align: center;">
+    <section class="section bg-white text-center">
       <div class="container reveal">
         <h2 class="heading-md">Transparency & Financials</h2>
-        <p style="margin-top: 16px;">We are committed to absolute financial transparency. View our latest annual reports and audited financials.</p>
-        <a href="[CLIENT: LINK TO FINANCIALS]" class="btn btn--outline" style="margin-top: 24px;">Download Financial Report</a>
+        <p class="mt-16">We are committed to absolute financial transparency. View our latest annual reports and audited financials.</p>
+        <a href="[CLIENT: LINK TO FINANCIALS]" class="btn btn--outline mt-24">Download Financial Report</a>
       </div>
     </section>
 """
@@ -622,29 +796,29 @@ PAGES["partner.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero watermark-bg" style="background-color: var(--ivory); padding: 180px 0 80px;">
+    <section class="inner-hero inner-hero">
       <div class="container text-center reveal">
         <h1 class="heading-display">Partner With Us</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Collaborate with Ananth Sarth Seva Foundation to create scalable, tech-enabled social change.</p>
+        <p class="text-lg container-narrow mt-24">Collaborate with Ananth Sarth Seva Foundation to create scalable, tech-enabled social change.</p>
       </div>
     </section>
     
-    <section class="section" style="background-color: var(--white);">
+    <section class="section bg-white">
       <div class="container reveal">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <div class="container-narrow text-center">
             <h2 class="heading-md">Why Partner With Us?</h2>
-            <p style="margin-top: 16px;">We believe that solving complex rural challenges requires cross-sector collaboration. We partner with CSR initiatives, tech innovators, academic institutions, and government bodies to bring the Root-to-Rise model to life.</p>
+            <p class="mt-16">We believe that solving complex rural challenges requires cross-sector collaboration. We partner with CSR initiatives, tech innovators, academic institutions, and government bodies to bring the Root-to-Rise model to life.</p>
         </div>
         
-        <div class="features-grid" style="margin-top: 56px;">
+        <div class="features-grid mt-56">
             """ + build_3d_card("Corporate Social Responsibility (CSR)", "Deploy your CSR funds into traceable, high-impact, and sustainable community projects.", ICONS["briefcase"]) + """
             """ + build_3d_card("Technology Providers", "Provide software, hardware, and digital tools to empower rural innovators.", ICONS["cpu"]) + """
             """ + build_3d_card("Academic Institutions", "Collaborate on research, skill-building curriculums, and student exchange programs.", ICONS["library"]) + """
         </div>
         
-        <div style="text-align: center; margin-top: 64px;">
+        <div class="text-center mt-64">
             <p class="text-md">Ready to explore a partnership?</p>
-            <a href="contact.html" class="btn btn--primary" style="margin-top: 24px;">Get in Touch</a>
+            <a href="contact.html" class="btn btn--primary mt-24">Get in Touch</a>
         </div>
       </div>
     </section>
@@ -653,13 +827,13 @@ PAGES["partner.html"] = {
 
 def generate_legal_page(title, content):
     return f"""
-    <section class="inner-hero" style="background-color: var(--royal-blue); color: white; padding: 160px 0 60px;">
+    <section class="inner-hero inner-hero inner-hero--blue">
       <div class="container text-center reveal">
         <h1 class="heading-display text-white">{title}</h1>
       </div>
     </section>
-    <section class="section" style="background-color: var(--white);">
-      <div class="container reveal" style="max-width: 800px; font-size: 16px; line-height: 1.8;">
+    <section class="section bg-white">
+      <div class="container reveal container-narrow text-lead">
         {content}
       </div>
     </section>

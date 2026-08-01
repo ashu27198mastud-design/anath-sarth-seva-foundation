@@ -7,29 +7,29 @@ PAGES["partner.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero watermark-bg" style="background-color: var(--ivory); padding: 180px 0 80px;">
+    <section class="inner-hero inner-hero">
       <div class="container text-center reveal">
         <h1 class="heading-display">Partner With Us</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Collaborate with Ananth Sarth Seva Foundation to create scalable, tech-enabled social change.</p>
+        <p class="text-lg container-narrow mt-24">Collaborate with Ananth Sarth Seva Foundation to create scalable, tech-enabled social change.</p>
       </div>
     </section>
     
-    <section class="section" style="background-color: var(--white);">
+    <section class="section bg-white">
       <div class="container reveal">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <div class="container-narrow text-center">
             <h2 class="heading-md">Why Partner With Us?</h2>
-            <p style="margin-top: 16px;">We believe that solving complex rural challenges requires cross-sector collaboration. We partner with CSR initiatives, tech innovators, academic institutions, and government bodies to bring the Root-to-Rise model to life.</p>
+            <p class="mt-16">We believe that solving complex rural challenges requires cross-sector collaboration. We partner with CSR initiatives, tech innovators, academic institutions, and government bodies to bring the Root-to-Rise model to life.</p>
         </div>
         
-        <div class="features-grid" style="margin-top: 56px;">
+        <div class="features-grid mt-56">
             """ + build_3d_card("Corporate Social Responsibility (CSR)", "Deploy your CSR funds into traceable, high-impact, and sustainable community projects.", ICONS["briefcase"]) + """
             """ + build_3d_card("Technology Providers", "Provide software, hardware, and digital tools to empower rural innovators.", ICONS["cpu"]) + """
             """ + build_3d_card("Academic Institutions", "Collaborate on research, skill-building curriculums, and student exchange programs.", ICONS["library"]) + """
         </div>
         
-        <div style="text-align: center; margin-top: 64px;">
+        <div class="text-center mt-64">
             <p class="text-md">Ready to explore a partnership?</p>
-            <a href="contact.html" class="btn btn--primary" style="margin-top: 24px;">Get in Touch</a>
+            <a href="contact.html" class="btn btn--primary mt-24">Get in Touch</a>
         </div>
       </div>
     </section>
@@ -38,13 +38,13 @@ PAGES["partner.html"] = {
 
 def generate_legal_page(title, content):
     return f"""
-    <section class="inner-hero" style="background-color: var(--royal-blue); color: white; padding: 160px 0 60px;">
+    <section class="inner-hero inner-hero inner-hero--blue">
       <div class="container text-center reveal">
         <h1 class="heading-display text-white">{title}</h1>
       </div>
     </section>
-    <section class="section" style="background-color: var(--white);">
-      <div class="container reveal" style="max-width: 800px; font-size: 16px; line-height: 1.8;">
+    <section class="section bg-white">
+      <div class="container reveal container-narrow text-lead">
         {content}
       </div>
     </section>

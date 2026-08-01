@@ -12,7 +12,7 @@ HEADER_TEMPLATE = """<!DOCTYPE html>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="{root_path}assets/css/design-system.css">
   <link rel="stylesheet" href="{root_path}assets/css/components.css">
@@ -97,11 +97,11 @@ FOOTER_TEMPLATE = """
           <img src="{root_path}assets/images/logo-icon.svg" alt="Ananth Sarth Seva Foundation" width="40" height="40">
           <span class="footer__logo-text">Ananth Sarth Seva Foundation</span>
         </a>
-        <p class="footer__tagline" style="margin-top: 12px; font-weight: 500;">Serving Humanity, Creating Hope.</p>
-        <p class="footer__address" style="margin-top: 16px; font-size: 14px; opacity: 0.8; line-height: 1.6;">
+        <p class="footer__tagline mt-12 fw-500">Serving Humanity, Creating Hope.</p>
+        <p class="footer__address mt-16 text-sm opacity-80 lh-16">
         [CLIENT: REGISTERED OFFICE ADDRESS]<br>
         [CLIENT: PHONE NUMBER]<br>
-        <a href="mailto:contact@anathsarthsevafoundation.org" style="color: inherit; text-decoration: underline;">[CLIENT: OFFICIAL EMAIL]</a></p>
+        <a href="mailto:contact@anathsarthsevafoundation.org" class="link--inherit">[CLIENT: OFFICIAL EMAIL]</a></p>
       </div>
       <div class="footer__col">
         <h4 class="footer__heading">About Us</h4>
@@ -136,8 +136,8 @@ FOOTER_TEMPLATE = """
     </div>
     
     <!-- Transparency Strip -->
-    <div class="footer__transparency" style="background-color: rgba(255,255,255,0.05); padding: 16px 0; margin-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
-      <div class="container" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; font-size: 13px; opacity: 0.8;">
+    <div class="footer__transparency footer__transparency">
+      <div class="container footer__bottom">
         <span><strong>Reg. No:</strong> [CLIENT: REGISTRATION NUMBER]</span>
         <span><strong>80G No:</strong> [CLIENT: 80G CERTIFICATE NUMBER]</span>
         <span><strong>12A No:</strong> [CLIENT: 12A REGISTRATION NUMBER]</span>
@@ -158,14 +158,14 @@ FOOTER_TEMPLATE = """
 </html>
 """
 
-def build_3d_card(title, desc, icon_svg):
+def build_3d_card(title, desc, icon_svg, idx="01"):
     return f'''
-    <div class="feature-card-3d reveal">
+    <div class="feature-card-3d reveal" data-idx="{idx}">
         <div class="feature-icon-wrapper">
             {icon_svg}
         </div>
-        <h3 class="heading-md">{title}</h3>
-        <p class="text-md" style="margin-top: 12px; color: var(--gray);">{desc}</p>
+        <h3 class="t-h3">{title}</h3>
+        <p class="text-md mt-12 text-muted">{desc}</p>
     </div>
     '''
 
