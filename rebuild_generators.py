@@ -59,39 +59,44 @@ PAGE_DATA = {
 
 HERO_TEMPLATE = """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick{active_1}" title="Education"></a>
-            <a href="womens-equity.html" class="tick{active_2}" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick{active_3}" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick{active_4}" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick{active_5}" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick{active_6}" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">{rail_count} / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">{badge_text}</span>
-        <h1 class="t-display">{title}</h1>
-        <p class="hero__sub">{subline}</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick{active_1}" title="Education"></a>
+                <a href="womens-equity.html" class="tick{active_2}" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick{active_3}" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick{active_4}" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick{active_5}" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick{active_6}" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">{rail_count} / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">{badge_text}</span>
+            <h1 class="t-display">{title}</h1>
+            <p class="hero__sub">{subline}</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/{slug}.jpg" alt="{alt}">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/{slug}.jpg" alt="{alt}">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
@@ -133,16 +138,6 @@ def process_file(target_file):
             
             pattern = r'<section class="inner-hero.*?(?:<div class="features-grid">|<div class="features-grid.*?>)'
             block = re.sub(pattern, hero_html.strip(), block, count=1, flags=re.DOTALL)
-            
-            # Reset card count for this specific block
-            card_count = 0
-            def card_replacer(match):
-                nonlocal card_count
-                card_count += 1
-                idx = ((card_count - 1) % 10) + 1
-                return f'build_3d_card({match.group(1)}, idx="{idx:02d}")'
-            
-            block = re.sub(r'build_3d_card\((.*?)\)', card_replacer, block)
             
         new_blocks.append(block)
 

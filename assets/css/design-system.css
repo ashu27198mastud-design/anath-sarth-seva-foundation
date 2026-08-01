@@ -42,6 +42,13 @@
   --display:'Instrument Serif', Georgia, serif;
   --body:'Plus Jakarta Sans', system-ui, sans-serif;
   --mono:'IBM Plex Mono', monospace;
+  
+  /* ---- z-index ---- */
+  --z-below: -1;
+  --z-base: 1;
+  --z-above: 10;
+  --z-nav: 1000;
+  --z-modal: 9999;
 }
 
 /* CSS Reset */

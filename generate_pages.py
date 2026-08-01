@@ -306,39 +306,44 @@ PAGES["programs/holistic-learning.html"] = {
     "contact_active": "",
     "content": """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick is-active" title="Education"></a>
-            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">01 / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">Education</span>
-        <h1 class="t-display">Holistic Learning</h1>
-        <p class="hero__sub">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick is-active" title="Education"></a>
+                <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">01 / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">Education</span>
+            <h1 class="t-display">Holistic Learning</h1>
+            <p class="hero__sub">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/holistic-learning.jpg" alt="Learners in an inclusive classroom setting">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/holistic-learning.jpg" alt="Learners in an inclusive classroom setting">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
@@ -374,39 +379,44 @@ PAGES["programs/womens-equity.html"] = {
     "contact_active": "",
     "content": """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick" title="Education"></a>
-            <a href="womens-equity.html" class="tick is-active" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">02 / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">Women's Empowerment</span>
-        <h1 class="t-display">Women's Equity</h1>
-        <p class="hero__sub">Dismantling socio-economic barriers for rural and tribal women through skill-building, self-help groups, and micro-entrepreneurship.</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick" title="Education"></a>
+                <a href="womens-equity.html" class="tick is-active" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">02 / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">Women's Empowerment</span>
+            <h1 class="t-display">Women's Equity</h1>
+            <p class="hero__sub">Dismantling socio-economic barriers for rural and tribal women through skill-building, self-help groups, and micro-entrepreneurship.</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/womens-equity.jpg" alt="Women entrepreneurs reviewing business plans">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/womens-equity.jpg" alt="Women entrepreneurs reviewing business plans">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
@@ -443,39 +453,44 @@ PAGES["programs/resilient-communities.html"] = {
     "contact_active": "",
     "content": """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick" title="Education"></a>
-            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick is-active" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">03 / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">Rural & Urban Development</span>
-        <h1 class="t-display">Resilient Communities</h1>
-        <p class="hero__sub">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick" title="Education"></a>
+                <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick is-active" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">03 / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">Rural & Urban Development</span>
+            <h1 class="t-display">Resilient Communities</h1>
+            <p class="hero__sub">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/resilient-communities.jpg" alt="A connected village community and its households">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/resilient-communities.jpg" alt="A connected village community and its households">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
@@ -511,39 +526,44 @@ PAGES["programs/inclusive-wellness.html"] = {
     "contact_active": "",
     "content": """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick" title="Education"></a>
-            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick is-active" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">04 / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">Healthcare</span>
-        <h1 class="t-display">Inclusive Wellness</h1>
-        <p class="hero__sub">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick" title="Education"></a>
+                <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick is-active" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">04 / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">Healthcare</span>
+            <h1 class="t-display">Inclusive Wellness</h1>
+            <p class="hero__sub">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Healthcare reaching a remote community">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Healthcare reaching a remote community">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
@@ -580,39 +600,44 @@ PAGES["programs/climate-resilience.html"] = {
     "contact_active": "",
     "content": """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick" title="Education"></a>
-            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick is-active" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">05 / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">Environmental</span>
-        <h1 class="t-display">Climate Resilience</h1>
-        <p class="hero__sub">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick" title="Education"></a>
+                <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick is-active" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">05 / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">Environmental</span>
+            <h1 class="t-display">Climate Resilience</h1>
+            <p class="hero__sub">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/climate-resilience.jpg" alt="Community-led clean energy and climate resilience">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/climate-resilience.jpg" alt="Community-led clean energy and climate resilience">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
@@ -648,39 +673,44 @@ PAGES["programs/eco-conservation.html"] = {
     "contact_active": "",
     "content": """
     <section class="inner-hero">
-      <div class="container text-center reveal">
-        <nav class="rail" aria-label="Programme pillars">
-          <span class="rail__label">Pillar</span>
-          <span class="rail__ticks">
-            <a href="holistic-learning.html" class="tick" title="Education"></a>
-            <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
-            <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
-            <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
-            <a href="climate-resilience.html" class="tick" title="Environmental"></a>
-            <a href="eco-conservation.html" class="tick is-active" title="Ecosystem &amp; Natural Resources"></a>
-          </span>
-          <span class="rail__count">06 / 06</span>
-        </nav>
-        
-        <span class="badge badge--blue mb-16">Ecosystem & Natural Resources</span>
-        <h1 class="t-display">Eco-Conservation</h1>
-        <p class="hero__sub">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
-        
-        <div class="hero__actions">
-            <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
-            <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
-        </div>
+      <div class="container reveal">
+        <div class="hero-grid">
+          <div class="hero-grid__content">
+            <nav class="rail" aria-label="Programme pillars">
+              <span class="rail__label">Pillar</span>
+              <span class="rail__ticks">
+                <a href="holistic-learning.html" class="tick" title="Education"></a>
+                <a href="womens-equity.html" class="tick" title="Women's Empowerment"></a>
+                <a href="resilient-communities.html" class="tick" title="Rural &amp; Urban Development"></a>
+                <a href="inclusive-wellness.html" class="tick" title="Healthcare"></a>
+                <a href="climate-resilience.html" class="tick" title="Environmental"></a>
+                <a href="eco-conservation.html" class="tick is-active" title="Ecosystem &amp; Natural Resources"></a>
+              </span>
+              <span class="rail__count">06 / 06</span>
+            </nav>
+            
+            <span class="badge badge--blue mb-16">Ecosystem & Natural Resources</span>
+            <h1 class="t-display">Eco-Conservation</h1>
+            <p class="hero__sub">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
+            
+            <div class="hero__actions">
+                <a href="../donate.html" class="btn btn--primary">Support this pillar</a>
+                <a href="#initiatives" class="btn btn--ghost">See all 10 initiatives</a>
+            </div>
 
-        <div class="hero__proof">
-            <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
-            <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
-            <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            <div class="hero__proof">
+                <div><span class="hero__proof-n">10</span><span class="hero__proof-l">INITIATIVES</span></div>
+                <div><span class="hero__proof-n">100%</span><span class="hero__proof-l">COMMUNITY-LED</span></div>
+                <div><span class="hero__proof-n">3–5 yrs</span><span class="hero__proof-l">TO SELF-RELIANCE</span></div>
+            </div>
+          </div>
+          
+          <div class="hero-grid__visual">
+            <div class="hero-image-block">
+              <img src="../assets/images/programs/eco-conservation.jpg" alt="Community guardians protecting local ecosystems">
+            </div>
+          </div>
         </div>
-        
-        <div class="hero-image-block">
-          <img src="../assets/images/programs/eco-conservation.jpg" alt="Community guardians protecting local ecosystems">
-        </div>
-        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
     
