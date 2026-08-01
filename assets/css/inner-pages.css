@@ -14,14 +14,21 @@
 
 /* Base styles for inner page sections */
 .inner-page-main .section {
-  padding: 80px 0;
+  padding: 56px 0;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .inner-page-main .section {
+    padding: 96px 0;
+  }
 }
 
 /* Watermark Background */
 .watermark-bg {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .watermark-bg::before {
