@@ -7,17 +7,18 @@ PAGES["programs/holistic-learning.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #E8F4F8; padding: 180px 0 80px;">
+    <section class="inner-hero" style="background-color: #E8F4F8; padding: 132px 0 72px;">
       <div class="container text-center reveal">
         <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Education</span>
         <h1 class="heading-display">Holistic Learning</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
-        <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/holistic-learning.jpg" alt="Children learning in a phygital classroom" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Bridging the educational divide by ensuring high-quality, subsidized, or free institutional access for marginalized communities.</p>
+        <div class="hero-image-block">
+          <img src="../assets/images/programs/holistic-learning.jpg" alt="Learners in an inclusive classroom setting">
         </div>
+        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg">
+    <section class="section watermark-bg" id="initiatives">
         <div class="container reveal">
             <div class="features-grid">
                 """ + build_3d_card("Inclusive Classrooms", "Ensuring high-quality access for minorities, tribes, and economically weaker sections.", ICONS["users"]) + """
@@ -45,17 +46,18 @@ PAGES["programs/womens-equity.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #F8E8F4; padding: 180px 0 80px;">
+    <section class="inner-hero" style="background-color: #F8E8F4; padding: 132px 0 72px;">
       <div class="container text-center reveal">
         <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Women Empowerment</span>
         <h1 class="heading-display">Women's Equity</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Breaking gender-based economic barriers by providing marginalized women with financial literacy, livelihood tools, and sustainable opportunities.</p>
-        <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/womens-equity.jpg" alt="Women artisans working together and building financial independence" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Breaking gender-based economic barriers by providing marginalized women with financial literacy, livelihood tools, and sustainable opportunities.</p>
+        <div class="hero-image-block">
+          <img src="../assets/images/programs/womens-equity.jpg" alt="Women running a community enterprise">
         </div>
+        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg">
+    <section class="section watermark-bg" id="initiatives">
         <div class="container reveal">
             <div class="features-grid">
                 """ + build_3d_card("Socio-Economic Upliftment", "Providing financial literacy and sustainable income-generating opportunities.", ICONS["gem"]) + """

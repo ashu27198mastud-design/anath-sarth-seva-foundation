@@ -7,17 +7,18 @@ PAGES["programs/climate-resilience.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #E8EDF8; padding: 180px 0 80px;">
+    <section class="inner-hero" style="background-color: #E8EDF8; padding: 132px 0 72px;">
       <div class="container text-center reveal">
         <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Environmental</span>
         <h1 class="heading-display">Climate Resilience</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
-        <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/climate-resilience.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Building the capacity of vulnerable communities to anticipate, endure, and recover from localized climate-induced shocks.</p>
+        <div class="hero-image-block">
+          <img src="../assets/images/programs/climate-resilience.jpg" alt="Community-led clean energy and climate resilience">
         </div>
+        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg">
+    <section class="section watermark-bg" id="initiatives">
         <div class="container reveal">
             <div class="features-grid">
                 """ + build_3d_card("Disaster-Resilient Communities", "Implementing village-level early warning systems and risk reduction programs.", ICONS["siren"]) + """
@@ -45,17 +46,18 @@ PAGES["programs/eco-conservation.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #F1F8E8; padding: 180px 0 80px;">
+    <section class="inner-hero" style="background-color: #F1F8E8; padding: 132px 0 72px;">
       <div class="container text-center reveal">
         <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Ecosystem & Natural Resources</span>
         <h1 class="heading-display">Eco-Conservation</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
-        <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/eco-conservation.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Engaging local populations in protecting native forests, trees, and endangered wildlife, fostering a harmonious coexistence.</p>
+        <div class="hero-image-block">
+          <img src="../assets/images/programs/eco-conservation.jpg" alt="Community guardians protecting local ecosystems">
         </div>
+        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg">
+    <section class="section watermark-bg" id="initiatives">
         <div class="container reveal">
             <div class="features-grid">
                 """ + build_3d_card("Community-Led Conservation", "Protecting native forests, trees, and endangered wildlife.", ICONS["trees"]) + """

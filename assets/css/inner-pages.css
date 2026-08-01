@@ -131,3 +131,54 @@ label {
   margin-bottom: 8px;
   color: var(--dark-text);
 }
+
+/* ---- Programme hero image frame ---- */
+.hero-image-block{
+  margin: 44px auto 0;              /* auto margins = the centring fix */
+  max-width: 760px;
+  padding: 18px;
+  background: linear-gradient(150deg, #FFFDF8 0%, #FBF3E2 100%);
+  border: 1px solid rgba(223,174,29,.28);
+  border-radius: 20px;
+  box-shadow: 0 18px 48px rgba(10,10,112,.10),
+              inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.hero-image-block img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;              /* was cover — stops the square crop */
+  border-radius: 12px;
+  background: #FFFDF8;
+}
+
+/* ---- Scroll cue under the image ---- */
+.hero-scroll-cue{
+  display: inline-block;
+  margin-top: 28px;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--royal-blue);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(223,174,29,.55);
+  transition: color .2s ease, border-color .2s ease;
+}
+.hero-scroll-cue:hover{
+  color: #9C7412;
+  border-bottom-color: #DFAE1D;
+}
+
+@media (max-width: 820px){
+  .hero-image-block{
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 32px;
+    border-radius: 16px;
+  }
+  .hero-image-block img{ aspect-ratio: 4 / 3; }
+  .hero-scroll-cue{ margin-top: 22px; }
+}

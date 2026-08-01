@@ -7,17 +7,18 @@ PAGES["programs/resilient-communities.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #FDF4E3; padding: 180px 0 80px;">
+    <section class="inner-hero" style="background-color: #FDF4E3; padding: 132px 0 72px;">
       <div class="container text-center reveal">
         <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Rural & Urban Development</span>
         <h1 class="heading-display">Resilient Communities</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
-        <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/resilient-communities.jpg" alt="Villagers engaging in smart community planning" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Eliminating rural poverty by creating sustainable, local livelihood models that stop forced distress migration to cities.</p>
+        <div class="hero-image-block">
+          <img src="../assets/images/programs/resilient-communities.jpg" alt="A connected village community and its households">
         </div>
+        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg">
+    <section class="section watermark-bg" id="initiatives">
         <div class="container reveal">
             <div class="features-grid">
                 """ + build_3d_card("Cultural & Heritage Preservation", "Documenting and protecting tribal arts and indigenous heritage.", ICONS["landmark"]) + """
@@ -45,17 +46,18 @@ PAGES["programs/inclusive-wellness.html"] = {
     "impact_active": "",
     "contact_active": "",
     "content": """
-    <section class="inner-hero" style="background-color: #E6F7F1; padding: 180px 0 80px;">
+    <section class="inner-hero" style="background-color: #E6F7F1; padding: 132px 0 72px;">
       <div class="container text-center reveal">
         <span class="badge" style="background: var(--royal-blue); color: white; margin-bottom: 16px; display: inline-block;">Healthcare</span>
         <h1 class="heading-display">Inclusive Wellness</h1>
-        <p class="text-lg" style="max-width: 800px; margin: 24px auto 0;">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
-        <div class="hero-image-block" style="margin-top: 40px;">
-          <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Health worker providing care to community members" style="width: 100%; max-width: 800px; max-height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 40px rgba(10,10,112,0.1); border: 1px solid rgba(223,174,29,0.2);">
+        <p class="text-lg" style="max-width: 640px; margin: 20px auto 0;">Bridging the rural-urban medical divide by deploying mobile medical units to provide doorstep diagnostic and healthcare services.</p>
+        <div class="hero-image-block">
+          <img src="../assets/images/programs/inclusive-wellness.jpg" alt="Healthcare reaching a remote community">
         </div>
+        <a href="#initiatives" class="hero-scroll-cue">Explore the initiatives ↓</a>
       </div>
     </section>
-    <section class="section watermark-bg">
+    <section class="section watermark-bg" id="initiatives">
         <div class="container reveal">
             <div class="features-grid">
                 """ + build_3d_card("Last-Mile Healthcare Access", "Mobile medical units for remote communities.", ICONS["ambulance"]) + """
