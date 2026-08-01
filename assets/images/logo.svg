@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <!-- Circle Ring -->
+  <circle cx="240" cy="100" r="62" stroke="#0A0A70" stroke-width="5" fill="none"/>
+  
+  <!-- Upper Hand (golden, reaching down) -->
+  <path d="M200 72 C210 58, 230 50, 250 55 C260 57, 268 63, 272 70 C268 65, 258 60, 248 62 C238 64, 218 72, 200 72Z" fill="#DFAE1D"/>
+  <path d="M272 70 C276 76, 278 82, 275 86 C270 80, 260 72, 248 68 C255 66, 266 66, 272 70Z" fill="#C99A18"/>
+  
+  <!-- Lower Hand (golden, reaching up) -->
+  <path d="M280 128 C270 142, 250 150, 230 145 C220 143, 212 137, 208 130 C212 135, 222 140, 232 138 C242 136, 262 128, 280 128Z" fill="#DFAE1D"/>
+  <path d="M208 130 C204 124, 202 118, 205 114 C210 120, 220 128, 232 132 C225 134, 214 134, 208 130Z" fill="#C99A18"/>
+  
+  <!-- Lotus Petals (green) -->
+  <g transform="translate(240, 105)">
+    <!-- Center petal -->
+    <ellipse cx="0" cy="-12" rx="6" ry="16" fill="#19A768" opacity="0.9"/>
+    <!-- Left petals -->
+    <ellipse cx="-10" cy="-8" rx="5.5" ry="14" fill="#19A768" opacity="0.8" transform="rotate(-20)"/>
+    <ellipse cx="-18" cy="-2" rx="5" ry="12" fill="#22B876" opacity="0.7" transform="rotate(-40)"/>
+    <!-- Right petals -->
+    <ellipse cx="10" cy="-8" rx="5.5" ry="14" fill="#19A768" opacity="0.8" transform="rotate(20)"/>
+    <ellipse cx="18" cy="-2" rx="5" ry="12" fill="#22B876" opacity="0.7" transform="rotate(40)"/>
+    <!-- Lotus base -->
+    <ellipse cx="0" cy="4" rx="10" ry="4" fill="#15905A"/>
+    <!-- Stem -->
+    <line x1="0" y1="8" x2="0" y2="22" stroke="#15905A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Foundation Name -->
+  <text x="240" y="195" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#0A0A70" letter-spacing="3">ANANTH SARTH SEV&#x100;</text>
+  <text x="240" y="225" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="22" font-weight="bold" fill="#0A0A70" letter-spacing="5">FOUNDATION</text>
+  
+  <!-- Golden Arrow Line -->
+  <line x1="95" y1="242" x2="385" y2="242" stroke="#DFAE1D" stroke-width="2"/>
+  <polygon points="385,242 378,238 378,246" fill="#DFAE1D"/>
+  
+  <!-- Tagline -->
+  <text x="240" y="268" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="14" font-style="italic" fill="#0A0A70" letter-spacing="1">Serving Humanity, Creating Hope.</text>
+</svg>

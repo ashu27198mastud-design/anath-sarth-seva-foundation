@@ -1,0 +1,126 @@
+/* ===========================
+   INNER PAGES STYLES
+   =========================== */
+
+/* Inner Hero Section */
+.inner-hero {
+  text-align: center;
+  position: relative;
+}
+
+.inner-page-main {
+  min-height: 50vh;
+}
+
+/* Base styles for inner page sections */
+.inner-page-main .section {
+  padding: 80px 0;
+  position: relative;
+}
+
+/* Watermark Background */
+.watermark-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.watermark-bg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-image: url('../images/logo-original.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.04; /* Premium subtle watermark */
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* 3D Feature Cards */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-card-3d {
+  background: var(--white);
+  padding: 32px 32px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(10, 10, 112, 0.05), inset 0 -4px 0 var(--gold);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card-3d:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(10, 10, 112, 0.12), inset 0 -4px 0 var(--royal-blue);
+}
+
+.feature-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ffffff 0%, var(--ivory) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(10, 10, 112, 0.1);
+  margin-bottom: 20px;
+  color: var(--royal-blue);
+}
+
+/* Grid Layouts for inner pages */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--dark-text);
+  background-color: #fcfcfc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--royal-blue);
+  box-shadow: 0 0 0 3px rgba(10, 10, 112, 0.1);
+}
+
+label {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--dark-text);
+}

@@ -1,0 +1,210 @@
+/* Fonts loaded via <link> in HTML for better performance */
+
+:root {
+  /* Colors */
+  --royal-blue: #0A0A70;
+  --gold: #DFAE1D;
+  --green: #19A768;
+  --ivory: #FAF8F2;
+  --white: #FFFFFF;
+  --grey-soft: #F3F4F6;
+  --dark-text: #17172B;
+  --muted-text: #626277;
+
+  /* Spacing */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-120: 120px;
+
+  /* Border Radius */
+  --br-button: 8px;
+  --br-card-sm: 16px;
+  --br-card-lg: 24px;
+  --br-hero: 40px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(10,10,112,0.06);
+  --shadow-md: 0 4px 24px rgba(10,10,112,0.10);
+  --shadow-lg: 0 8px 40px rgba(10,10,112,0.14);
+  --shadow-gold: 0 4px 24px rgba(223,174,29,0.15);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  /* Z-index */
+  --z-below: -1;
+  --z-base: 1;
+  --z-above: 10;
+  --z-nav: 1000;
+  --z-modal: 9999;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--dark-text);
+  background-color: var(--white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Typography Scale */
+.heading-display {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.heading-xl {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heading-lg {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heading-md {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.heading-sm {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* Color Utilities */
+.text-white { color: var(--white); }
+.text-muted { color: var(--muted-text); }
+.text-gold { color: var(--gold); }
+.text-blue { color: var(--royal-blue); }
+
+.bg-ivory { background-color: var(--ivory); }
+.bg-white { background-color: var(--white); }
+.bg-grey { background-color: var(--grey-soft); }
+.bg-blue { background-color: var(--royal-blue); }
+
+/* Spacing Utilities */
+.mt-8 { margin-top: var(--space-8); }
+.mt-16 { margin-top: var(--space-16); }
+.mt-24 { margin-top: var(--space-24); }
+.mt-32 { margin-top: var(--space-32); }
+.mt-40 { margin-top: var(--space-40); }
+.mt-48 { margin-top: var(--space-48); }
+.mt-64 { margin-top: var(--space-64); }
+.mt-80 { margin-top: var(--space-80); }
+.mt-96 { margin-top: var(--space-96); }
+.mt-120 { margin-top: var(--space-120); }
+
+.mb-8 { margin-bottom: var(--space-8); }
+.mb-16 { margin-bottom: var(--space-16); }
+.mb-24 { margin-bottom: var(--space-24); }
+.mb-32 { margin-bottom: var(--space-32); }
+.mb-40 { margin-bottom: var(--space-40); }
+.mb-48 { margin-bottom: var(--space-48); }
+.mb-64 { margin-bottom: var(--space-64); }
+.mb-80 { margin-bottom: var(--space-80); }
+.mb-96 { margin-bottom: var(--space-96); }
+.mb-120 { margin-bottom: var(--space-120); }
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }

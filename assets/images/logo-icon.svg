@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Circle Ring -->
+  <circle cx="60" cy="60" r="52" stroke="#0A0A70" stroke-width="4.5" fill="white"/>
+  
+  <!-- Upper Hand -->
+  <path d="M32 42 C40 30, 56 24, 72 28 C80 30, 86 36, 89 42 C84 38, 76 34, 68 35 C58 37, 42 44, 32 42Z" fill="#DFAE1D"/>
+  <path d="M89 42 C92 47, 93 52, 91 56 C87 50, 79 43, 68 40 C74 38, 84 38, 89 42Z" fill="#C99A18"/>
+  
+  <!-- Lower Hand -->
+  <path d="M88 78 C80 90, 64 96, 48 92 C40 90, 34 84, 31 78 C36 82, 44 86, 52 85 C62 83, 78 76, 88 78Z" fill="#DFAE1D"/>
+  <path d="M31 78 C28 73, 27 68, 29 64 C33 70, 41 77, 52 80 C46 82, 36 82, 31 78Z" fill="#C99A18"/>
+  
+  <!-- Lotus -->
+  <g transform="translate(60, 64)">
+    <ellipse cx="0" cy="-10" rx="5" ry="14" fill="#19A768" opacity="0.9"/>
+    <ellipse cx="-8" cy="-6" rx="4.5" ry="12" fill="#19A768" opacity="0.8" transform="rotate(-20)"/>
+    <ellipse cx="-15" cy="0" rx="4" ry="10" fill="#22B876" opacity="0.7" transform="rotate(-40)"/>
+    <ellipse cx="8" cy="-6" rx="4.5" ry="12" fill="#19A768" opacity="0.8" transform="rotate(20)"/>
+    <ellipse cx="15" cy="0" rx="4" ry="10" fill="#22B876" opacity="0.7" transform="rotate(40)"/>
+    <ellipse cx="0" cy="4" rx="8" ry="3.5" fill="#15905A"/>
+    <line x1="0" y1="7" x2="0" y2="18" stroke="#15905A" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
