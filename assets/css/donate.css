@@ -1,0 +1,960 @@
+/* =========================================================
+   PREMIUM DONATION EXPERIENCE
+   Ananth Sarth Seva Foundation
+   ========================================================= */
+
+body.donation-page {
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+body.donation-page .header__logo {
+  left: clamp(12px, 2vw, 28px);
+  padding: 10px 14px 12px;
+  border-radius: 0 0 18px 18px;
+  box-shadow:
+    0 18px 38px rgba(5, 5, 56, 0.22),
+    inset 0 -3px 0 var(--gold);
+}
+
+body.donation-page .header__logo-img {
+  width: auto;
+  height: 74px;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  body.donation-page .header__logo-img {
+    height: 96px;
+  }
+
+  body.donation-page .header__nav {
+    margin-left: 190px;
+  }
+}
+
+.donation-main {
+  overflow: hidden;
+}
+
+/* ---------- Hero ---------- */
+.donation-hero {
+  position: relative;
+  isolation: isolate;
+  padding: 164px 0 86px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(223, 174, 29, 0.24), transparent 25%),
+    radial-gradient(circle at 12% 100%, rgba(255, 255, 255, 0.10), transparent 30%),
+    linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 48%, #15158e 100%);
+}
+
+.donation-hero::before,
+.donation-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.donation-hero::before {
+  inset: 0;
+  opacity: 0.2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, #000, transparent 90%);
+}
+
+.donation-hero::after {
+  width: 360px;
+  height: 360px;
+  top: 76px;
+  right: -110px;
+  border: 1px solid rgba(223, 174, 29, 0.35);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 40px rgba(223, 174, 29, 0.06),
+    0 0 0 80px rgba(223, 174, 29, 0.035);
+}
+
+.donation-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 42px;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .donation-hero__grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+    gap: 72px;
+  }
+}
+
+.donation-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  font: 500 11px/1 var(--mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+}
+
+.donation-eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.donation-hero__title {
+  max-width: 780px;
+  font: 400 clamp(46px, 6vw, 82px)/0.96 var(--display);
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.donation-hero__title em {
+  color: var(--gold-soft);
+  font-weight: 400;
+}
+
+.donation-hero__lead {
+  max-width: 650px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(16px, 1.8vw, 19px);
+  line-height: 1.72;
+}
+
+.donation-hero__proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.donation-proof-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 12.5px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.donation-proof-pill svg {
+  flex: 0 0 auto;
+  color: var(--gold-soft);
+}
+
+.donation-hero__seal {
+  position: relative;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transform: perspective(900px) rotateY(-5deg) rotateX(2deg);
+}
+
+.donation-hero__seal::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border: 1px solid rgba(223, 174, 29, 0.28);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.donation-hero__seal-logo {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 24px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+.donation-hero__seal-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.donation-hero__seal-label {
+  font: 500 10px/1 var(--mono);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--gold-soft);
+}
+
+.donation-hero__seal-title {
+  margin-top: 12px;
+  font: 400 31px/1.1 var(--display);
+  text-align: center;
+  color: #fff;
+}
+
+.donation-hero__seal-copy {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 13px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ---------- Checkout ---------- */
+.donation-checkout {
+  position: relative;
+  padding: 88px 0 104px;
+  background:
+    radial-gradient(circle at 0 0, rgba(223, 174, 29, 0.13), transparent 27%),
+    var(--canvas);
+}
+
+.donation-checkout__intro {
+  max-width: 760px;
+  margin-bottom: 44px;
+}
+
+.donation-checkout__intro h2 {
+  font: 400 clamp(34px, 4.2vw, 54px)/1.04 var(--display);
+  color: var(--navy-deep);
+}
+
+.donation-checkout__intro p {
+  max-width: 650px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.donation-checkout__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+@media (min-width: 980px) {
+  .donation-checkout__grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(410px, 1.08fr);
+    gap: 42px;
+  }
+}
+
+.donation-intent,
+.upi-card {
+  border: 1px solid rgba(10, 10, 112, 0.10);
+  border-radius: 28px;
+  background: rgba(255, 253, 248, 0.94);
+  box-shadow:
+    0 30px 70px rgba(5, 5, 56, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.donation-intent {
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.donation-panel__kicker {
+  display: block;
+  margin-bottom: 10px;
+  font: 500 10.5px/1 var(--mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dk);
+}
+
+.donation-panel__title {
+  font: 400 clamp(28px, 3.3vw, 40px)/1.08 var(--display);
+  color: var(--navy-deep);
+}
+
+.donation-fieldset {
+  margin: 30px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.donation-fieldset legend,
+.donation-field__label {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (min-width: 520px) {
+  .amount-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.amount-option {
+  min-height: 54px;
+  padding: 13px 10px;
+  border: 1px solid rgba(10, 10, 112, 0.15);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--navy-deep);
+  font: 700 15px/1 var(--body);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.amount-option:hover {
+  transform: translateY(-2px);
+  border-color: rgba(223, 174, 29, 0.75);
+  box-shadow: 0 10px 22px rgba(5, 5, 56, 0.08);
+}
+
+.amount-option[aria-pressed="true"] {
+  border-color: var(--gold);
+  background: linear-gradient(145deg, #fff8df, #f8e7a7);
+  box-shadow:
+    0 10px 24px rgba(223, 174, 29, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.custom-amount {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  border: 1px solid rgba(10, 10, 112, 0.15);
+  border-radius: 14px;
+  background: #fff;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.custom-amount:focus-within {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 4px rgba(10, 10, 112, 0.08);
+}
+
+.custom-amount__symbol {
+  padding-left: 16px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.custom-amount input {
+  width: 100%;
+  min-height: 54px;
+  padding: 12px 16px 12px 8px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 600 16px/1 var(--body);
+}
+
+.donation-field {
+  margin-top: 24px;
+}
+
+.donation-field select {
+  width: 100%;
+  min-height: 54px;
+  padding: 12px 44px 12px 16px;
+  border: 1px solid rgba(10, 10, 112, 0.15);
+  border-radius: 14px;
+  background-color: #fff;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.donation-use-note {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid rgba(223, 174, 29, 0.28);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(223, 174, 29, 0.10), rgba(255, 255, 255, 0.75));
+}
+
+.donation-use-note__icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--navy);
+  color: var(--gold-soft);
+}
+
+.donation-use-note h3 {
+  font-size: 14px;
+  color: var(--navy-deep);
+}
+
+.donation-use-note p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+.donation-safety {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.donation-safety svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: var(--navy);
+}
+
+/* ---------- UPI card ---------- */
+.upi-card {
+  position: sticky;
+  top: 96px;
+  overflow: hidden;
+}
+
+.upi-card__topline {
+  height: 7px;
+  background: linear-gradient(90deg, var(--gold-dk), var(--gold), #f6df88, var(--gold));
+}
+
+.upi-card__body {
+  padding: clamp(22px, 4vw, 38px);
+}
+
+.upi-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.upi-card__merchant {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.upi-card__merchant-logo {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: var(--e1);
+  border: 1px solid rgba(10, 10, 112, 0.08);
+}
+
+.upi-card__merchant-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.upi-card__bank {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+  font: 500 9.5px/1 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.upi-card__bank::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e66f3d;
+  box-shadow: 0 0 0 4px rgba(230, 111, 61, 0.12);
+}
+
+.upi-card__merchant-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy-deep);
+}
+
+.upi-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: var(--r-pill);
+  background: rgba(23, 139, 86, 0.10);
+  color: #137449;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.upi-card__status svg {
+  width: 14px;
+  height: 14px;
+}
+
+.upi-card__amount {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 30px 0 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line-warm);
+}
+
+.upi-card__amount-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.upi-card__amount-value {
+  font: 400 clamp(34px, 5vw, 52px)/1 var(--display);
+  color: var(--navy-deep);
+}
+
+.upi-card__purpose {
+  max-width: 160px;
+  text-align: right;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.upi-card__qr-block {
+  display: grid;
+  grid-template-columns: minmax(210px, 260px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.upi-card__qr-frame {
+  position: relative;
+  padding: 14px;
+  border: 1px solid rgba(223, 174, 29, 0.45);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow:
+    0 18px 44px rgba(5, 5, 56, 0.12),
+    inset 0 0 0 6px rgba(223, 174, 29, 0.06);
+}
+
+.upi-card__qr-frame::before,
+.upi-card__qr-frame::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
+}
+
+.upi-card__qr-frame::before {
+  top: 7px;
+  left: 7px;
+  border-top: 2px solid var(--gold);
+  border-left: 2px solid var(--gold);
+  border-radius: 9px 0 0 0;
+}
+
+.upi-card__qr-frame::after {
+  right: 7px;
+  bottom: 7px;
+  border-right: 2px solid var(--navy);
+  border-bottom: 2px solid var(--navy);
+  border-radius: 0 0 9px 0;
+}
+
+.upi-card__qr-frame img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.upi-card__qr-copy h3 {
+  font: 400 25px/1.08 var(--display);
+  color: var(--navy-deep);
+}
+
+.upi-card__qr-copy p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.upi-card__scan-amount {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: var(--gold-tint);
+  color: var(--gold-dk);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.upi-pay-button {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 22px;
+  padding: 15px 18px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-deep));
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 16px 32px rgba(5, 5, 56, 0.22);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.upi-pay-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(5, 5, 56, 0.28);
+}
+
+.upi-pay-button svg {
+  flex: 0 0 auto;
+}
+
+.upi-card__mobile-qr {
+  display: none;
+  margin-top: 16px;
+  border-top: 1px solid var(--line-warm);
+  padding-top: 16px;
+}
+
+.upi-card__mobile-qr summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.upi-card__mobile-qr img {
+  width: min(100%, 280px);
+  margin: 18px auto 0;
+  padding: 12px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--gold-line);
+}
+
+.upi-id-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 13px 14px;
+  border: 1px solid rgba(10, 10, 112, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.upi-id-row__content {
+  min-width: 0;
+  flex: 1;
+}
+
+.upi-id-row__label {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.upi-id-row__value {
+  display: block;
+  margin-top: 3px;
+  overflow-wrap: anywhere;
+  color: var(--navy-deep);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.copy-upi-button {
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--gold-tint);
+  color: var(--gold-dk);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.upi-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.upi-step {
+  padding: 14px 12px;
+  border-radius: 14px;
+  background: var(--surface-alt);
+}
+
+.upi-step__number {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  margin-bottom: 9px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold-soft);
+  font: 500 10px/1 var(--mono);
+}
+
+.upi-step strong {
+  display: block;
+  color: var(--navy-deep);
+  font-size: 11px;
+}
+
+.upi-step span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.payment-confirmation {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line-warm);
+}
+
+.payment-confirmation h3 {
+  font-size: 14px;
+  color: var(--navy-deep);
+}
+
+.payment-confirmation p {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.payment-confirmation__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.payment-disclaimer {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.55;
+}
+
+.copy-status {
+  min-height: 18px;
+  margin-top: 8px;
+  color: #137449;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ---------- Mobile sticky action ---------- */
+.mobile-donation-bar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body.donation-page {
+    padding-bottom: 82px;
+  }
+
+  body.donation-page .header__logo-img {
+    height: 66px;
+  }
+
+  .donation-hero {
+    padding: 136px 0 68px;
+  }
+
+  .donation-hero__seal {
+    transform: none;
+  }
+
+  .donation-checkout {
+    padding: 64px 0 82px;
+  }
+
+  .upi-card {
+    position: static;
+  }
+
+  .upi-card__qr-block {
+    display: none;
+  }
+
+  .upi-card__mobile-qr {
+    display: block;
+  }
+
+  .upi-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .upi-card__amount {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .upi-card__purpose {
+    max-width: none;
+    text-align: left;
+  }
+
+  .mobile-donation-bar {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: calc(var(--z-nav) - 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 10px 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    background: rgba(5, 5, 56, 0.96);
+    color: #fff;
+    box-shadow: 0 18px 44px rgba(5, 5, 56, 0.34);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .mobile-donation-bar__amount span {
+    display: block;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+  }
+
+  .mobile-donation-bar__amount strong {
+    display: block;
+    margin-top: 2px;
+    font: 400 22px/1 var(--display);
+    color: var(--gold-soft);
+  }
+
+  .mobile-donation-bar__link {
+    min-height: 48px;
+    padding: 13px 17px;
+    border-radius: 13px;
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .donation-hero__title {
+    font-size: 43px;
+  }
+
+  .donation-proof-pill {
+    width: 100%;
+  }
+
+  .upi-card__header {
+    flex-direction: column;
+  }
+
+  .upi-card__status {
+    align-self: flex-start;
+  }
+}
+
+/* ---------- Accessibility ---------- */
+.amount-option:focus-visible,
+.custom-amount input:focus-visible,
+.donation-field select:focus-visible,
+.copy-upi-button:focus-visible,
+.upi-pay-button:focus-visible,
+.mobile-donation-bar__link:focus-visible,
+.payment-confirmation__link:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .donation-hero__seal,
+  .amount-option,
+  .upi-pay-button {
+    transform: none !important;
+    transition: none !important;
+  }
+}
