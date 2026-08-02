@@ -4,41 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate | Ananth Sarth Seva Foundation</title>
-  <meta name="description" content="Ananth Sarth Seva Foundation empowers rural and tribal communities.">
-  
+  <meta name="description" content="Support Ananth Sarth Seva Foundation through a simple Bank of Baroda merchant UPI donation experience.">
+
   <link rel="icon" href="assets/images/logo-icon.svg" type="image/svg+xml">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="assets/css/design-system.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/inner-pages.css">
+  <link rel="stylesheet" href="assets/css/donate.css">
 </head>
-<body>
-  <!-- HEADER -->
+<body class="donation-page">
   <header class="header" id="header">
     <div class="header__inner container">
-      <a href="index.html" class="header__logo">
+      <a href="index.html" class="header__logo" aria-label="Ananth Sarth Seva Foundation home">
         <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="header__logo-img">
       </a>
       <nav class="header__nav" aria-label="Main navigation">
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
           <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="about.html" class="header__nav-link ">About Us</a>
+            <a href="about.html" class="header__nav-link">About Us</a>
             <ul class="header__dropdown">
               <li><a href="about.html#our-story" class="header__dropdown-link">Our Story</a></li>
-              <li><a href="about.html#objective" class="header__dropdown-link">Objective</a></li>
               <li><a href="about.html#vision" class="header__dropdown-link">Vision</a></li>
               <li><a href="about.html#mission" class="header__dropdown-link">Mission</a></li>
               <li><a href="about.html#how-we-work" class="header__dropdown-link">How We Work</a></li>
-              <li><a href="about.html#why-trust-us" class="header__dropdown-link">Why Trust Us</a></li>
             </ul>
           </li>
           <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="#pillars" class="header__nav-link ">Our Programs</a>
+            <a href="index.html#pillars" class="header__nav-link">Our Programs</a>
             <ul class="header__dropdown">
               <li><a href="programs/holistic-learning.html" class="header__dropdown-link">Holistic Learning</a></li>
               <li><a href="programs/womens-equity.html" class="header__dropdown-link">Women's Equity</a></li>
@@ -49,57 +46,231 @@
             </ul>
           </li>
           <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="#get-involved" class="header__nav-link header__nav-link--active">Get Involved</a>
+            <a href="donate.html" class="header__nav-link header__nav-link--active">Get Involved</a>
             <ul class="header__dropdown">
               <li><a href="donate.html" class="header__dropdown-link">Donate</a></li>
               <li><a href="volunteer.html" class="header__dropdown-link">Volunteer</a></li>
+              <li><a href="partner.html" class="header__dropdown-link">Partner With Us</a></li>
               <li><a href="careers.html" class="header__dropdown-link">Work With Us</a></li>
             </ul>
           </li>
           <li class="header__nav-item"><a href="impact.html" class="header__nav-link">Impact</a></li>
-          <li class="header__nav-item"><a href="contact.html" class="header__nav-link ">Contact Us</a></li>
+          <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></li>
         </ul>
       </nav>
-      <a href="donate.html" class="header__cta btn btn--primary">Donate Now</a>
+      <a href="#donate-securely" class="header__cta btn btn--primary">Donate Now</a>
       <button class="header__mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </header>
-  
+
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <button class="mobile-menu__close" aria-label="Close menu" id="mobile-menu-close">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
     <nav aria-label="Mobile navigation">
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Home</a></li>
-            <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">About Us</a></li>
-            <li class="mobile-menu__item"><a href="donate.html" class="mobile-menu__link">Donate</a></li>
-            <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Contact Us</a></li>
-        </ul>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Home</a></li>
+        <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">About Us</a></li>
+        <li class="mobile-menu__item"><a href="index.html#pillars" class="mobile-menu__link">Our Programs</a></li>
+        <li class="mobile-menu__item"><a href="donate.html" class="mobile-menu__link mobile-menu__link--active">Donate</a></li>
+        <li class="mobile-menu__item"><a href="volunteer.html" class="mobile-menu__link">Volunteer</a></li>
+        <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Contact Us</a></li>
+      </ul>
     </nav>
+    <a href="#donate-securely" class="btn btn--primary mobile-menu__donate">Donate Now</a>
   </div>
 
-  <main class="inner-page-main">
+  <main class="inner-page-main donation-main">
+    <section class="donation-hero">
+      <div class="container donation-hero__grid">
+        <div>
+          <span class="donation-eyebrow">Direct UPI Contribution</span>
+          <h1 class="donation-hero__title">A simple act can become someone’s <em>turning point.</em></h1>
+          <p class="donation-hero__lead">Support education, women’s equity, healthcare, resilient communities and environmental action through a direct merchant UPI payment.</p>
+          <div class="donation-hero__proof" aria-label="Payment assurances">
+            <span class="donation-proof-pill">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              Bank-issued merchant QR
+            </span>
+            <span class="donation-proof-pill">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+              Pay through your UPI app
+            </span>
+            <span class="donation-proof-pill">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg>
+              Takes less than a minute
+            </span>
+          </div>
+        </div>
 
-    <section class="inner-hero inner-hero inner-hero--blue">
-      <div class="container text-center">
-        <h1 class="heading-display text-white">Build Futures with Ananth Sarth Seva Foundation</h1>
-        <p class="text-lg text-white container-narrow mt-24">Empower Children, Youth, and Women. Your support can transform lives and build sustainable communities.</p>
+        <aside class="donation-hero__seal" aria-label="Foundation donation promise">
+          <div class="donation-hero__seal-logo">
+            <img src="assets/images/logo-icon.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="donation-hero__seal-label">Serving Humanity, Creating Hope</div>
+          <h2 class="donation-hero__seal-title">Give with clarity. Pay with confidence.</h2>
+          <p class="donation-hero__seal-copy">Your UPI PIN remains inside your payment app. This website never asks for or stores it.</p>
+        </aside>
       </div>
     </section>
-    
-    <section class="section">
-        <div class="container text-center">
-            <h2 class="heading-lg">Your support can change lives</h2>
-            <p class="text-md container-narrow my-24-48">Together, we can transform lives by empowering millions of children and laying the foundation for lifelong learning. By helping girls and women complete school, we break barriers and open doors to education and employment opportunities. And by equipping youth with skills and providing access to jobs and entrepreneurship, we create pathways to brighter futures.</p>
-            <a href="#" class="btn btn--primary btn--lg">Donate Now Securely</a>
-        </div>
-    </section>
 
+    <section class="donation-checkout" id="donate-securely">
+      <div class="container">
+        <div class="donation-checkout__intro">
+          <h2>Choose your contribution</h2>
+          <p>Select an amount and purpose. Mobile visitors can open an installed UPI app directly; desktop visitors can scan the merchant QR.</p>
+        </div>
+
+        <div class="donation-checkout__grid">
+          <section class="donation-intent" aria-labelledby="donation-intent-title">
+            <span class="donation-panel__kicker">Step 01</span>
+            <h2 class="donation-panel__title" id="donation-intent-title">Set your donation</h2>
+
+            <fieldset class="donation-fieldset">
+              <legend>Choose an amount</legend>
+              <div class="amount-grid">
+                <button class="amount-option" type="button" data-donation-amount="500" aria-pressed="false">₹500</button>
+                <button class="amount-option" type="button" data-donation-amount="1000" aria-pressed="true">₹1,000</button>
+                <button class="amount-option" type="button" data-donation-amount="2500" aria-pressed="false">₹2,500</button>
+                <button class="amount-option" type="button" data-donation-amount="5000" aria-pressed="false">₹5,000</button>
+              </div>
+              <label class="sr-only" for="custom-amount">Enter a custom donation amount</label>
+              <div class="custom-amount">
+                <span class="custom-amount__symbol" aria-hidden="true">₹</span>
+                <input id="custom-amount" type="number" min="1" step="1" inputmode="numeric" placeholder="Enter a custom amount" autocomplete="off">
+              </div>
+            </fieldset>
+
+            <div class="donation-field">
+              <label class="donation-field__label" for="donation-purpose">Where would you like to help?</label>
+              <select id="donation-purpose">
+                <option value="general">General Support</option>
+                <option value="education">Holistic Learning</option>
+                <option value="women">Women’s Equity</option>
+                <option value="community">Resilient Communities</option>
+                <option value="health">Inclusive Wellness</option>
+                <option value="climate">Climate Resilience</option>
+                <option value="conservation">Eco-Conservation</option>
+              </select>
+            </div>
+
+            <div class="donation-use-note">
+              <div class="donation-use-note__icon">
+                <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+              </div>
+              <div>
+                <h3>Purpose-led contribution</h3>
+                <p>Your selected purpose is included in the mobile UPI payment note. Where programme-specific allocation is not practicable, funds may be applied to the area of greatest need.</p>
+              </div>
+            </div>
+
+            <div class="donation-safety">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>Never share your UPI PIN, OTP or banking password with anyone. Confirm the merchant name in your UPI app before authorising payment.</span>
+            </div>
+          </section>
+
+          <section class="upi-card" aria-labelledby="upi-card-title">
+            <div class="upi-card__topline"></div>
+            <div class="upi-card__body">
+              <div class="upi-card__header">
+                <div class="upi-card__merchant">
+                  <div class="upi-card__merchant-logo">
+                    <img src="assets/images/logo-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <div>
+                    <span class="upi-card__bank">Bank of Baroda merchant UPI</span>
+                    <h2 class="upi-card__merchant-name" id="upi-card-title">ANANTH SARTH SEVA FOUNDATION</h2>
+                  </div>
+                </div>
+                <span class="upi-card__status">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  Merchant QR
+                </span>
+              </div>
+
+              <div class="upi-card__amount">
+                <div>
+                  <span class="upi-card__amount-label">Selected contribution</span>
+                  <strong class="upi-card__amount-value" data-selected-amount>₹1,000</strong>
+                </div>
+                <p class="upi-card__purpose">For <strong data-selected-purpose>General Support</strong></p>
+              </div>
+
+              <div class="upi-card__qr-block">
+                <div class="upi-card__qr-frame">
+                  <img src="assets/images/payment/upi-donation-qr.svg" alt="UPI QR code for Ananth Sarth Seva Foundation" width="552" height="552" loading="eager">
+                </div>
+                <div class="upi-card__qr-copy">
+                  <h3>Scan and pay</h3>
+                  <p id="scan-instruction">Scan the QR and enter ₹1,000 in your UPI app.</p>
+                  <span class="upi-card__scan-amount">Use any UPI-enabled app</span>
+                </div>
+              </div>
+
+              <a class="upi-pay-button" data-upi-link data-dynamic-pay-label href="upi://pay?pa=anan7977386%40barodampay&amp;pn=ANANTH%20SARTH%20SEVA%20FOUNDATION&amp;tn=Donation%20-%20General%20Support&amp;am=1000&amp;cu=INR">
+                Pay ₹1,000 with UPI
+              </a>
+
+              <details class="upi-card__mobile-qr">
+                <summary>Show QR for payment from another device</summary>
+                <img src="assets/images/payment/upi-donation-qr.svg" alt="UPI QR code for Ananth Sarth Seva Foundation" width="552" height="552" loading="lazy">
+              </details>
+
+              <div class="upi-id-row">
+                <div class="upi-id-row__content">
+                  <span class="upi-id-row__label">UPI ID</span>
+                  <span class="upi-id-row__value">anan7977386@barodampay</span>
+                </div>
+                <button class="copy-upi-button" type="button" id="copy-upi">Copy</button>
+              </div>
+              <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+
+              <div class="upi-steps" aria-label="UPI donation steps">
+                <div class="upi-step">
+                  <span class="upi-step__number">01</span>
+                  <strong>Open or scan</strong>
+                  <span>Use the UPI button or scan the merchant QR.</span>
+                </div>
+                <div class="upi-step">
+                  <span class="upi-step__number">02</span>
+                  <strong>Verify merchant</strong>
+                  <span>Confirm the foundation name before payment.</span>
+                </div>
+                <div class="upi-step">
+                  <span class="upi-step__number">03</span>
+                  <strong>Authorise safely</strong>
+                  <span>Enter your UPI PIN only inside your UPI app.</span>
+                </div>
+              </div>
+
+              <div class="payment-confirmation">
+                <h3>Completed the payment?</h3>
+                <p>Share the transaction or UTR number with the Foundation for acknowledgement and reconciliation.</p>
+                <a class="payment-confirmation__link" id="payment-confirmation-link" href="mailto:contact@anathsarthsevafoundation.org">
+                  Share payment confirmation
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <p class="payment-disclaimer">Tax benefits, acknowledgements and receipts are subject to applicable law and the Foundation’s valid statutory approvals. UPI payment limits and processing are controlled by your bank and UPI app.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
   </main>
-  
+
+  <div class="mobile-donation-bar" aria-label="Mobile donation action">
+    <div class="mobile-donation-bar__amount">
+      <span>Selected donation</span>
+      <strong data-selected-amount>₹1,000</strong>
+    </div>
+    <a class="mobile-donation-bar__link" data-upi-link href="upi://pay?pa=anan7977386%40barodampay&amp;pn=ANANTH%20SARTH%20SEVA%20FOUNDATION&amp;tn=Donation%20-%20General%20Support&amp;am=1000&amp;cu=INR">Pay with UPI</a>
+  </div>
+
   <footer class="footer">
     <div class="footer__inner container">
       <div class="footer__col">
@@ -112,14 +283,25 @@
       <div class="footer__col">
         <h4 class="footer__heading">About Us</h4>
         <ul class="footer__list">
-          <li><a href="about.html" class="footer__link">Our Story</a></li>
+          <li><a href="about.html#our-story" class="footer__link">Our Story</a></li>
+          <li><a href="about.html#vision" class="footer__link">Vision</a></li>
+          <li><a href="about.html#mission" class="footer__link">Mission</a></li>
         </ul>
       </div>
       <div class="footer__col">
         <h4 class="footer__heading">Programs</h4>
         <ul class="footer__list">
           <li><a href="programs/holistic-learning.html" class="footer__link">Holistic Learning</a></li>
-          <li><a href="programs/womens-equity.html" class="footer__link">Women's Equity</a></li>
+          <li><a href="programs/womens-equity.html" class="footer__link">Women’s Equity</a></li>
+          <li><a href="programs/inclusive-wellness.html" class="footer__link">Inclusive Wellness</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Get Involved</h4>
+        <ul class="footer__list">
+          <li><a href="donate.html" class="footer__link">Donate</a></li>
+          <li><a href="volunteer.html" class="footer__link">Volunteer</a></li>
+          <li><a href="partner.html" class="footer__link">Partner</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -132,10 +314,16 @@
     <div class="footer__bottom">
       <div class="footer__bottom-inner container">
         <span class="footer__copyright">&copy; 2026 Ananth Sarth Seva Foundation. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="donation-policy.html">Donation Policy</a>
+          <a href="refund-policy.html">Refund Policy</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/donate.js"></script>
 </body>
 </html>
