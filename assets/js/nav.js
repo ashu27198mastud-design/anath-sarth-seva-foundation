@@ -5,6 +5,26 @@
 (function () {
   'use strict';
 
+  // Load the responsive override from the same asset root as this script.
+  // This works for both root pages and nested /programs pages.
+  (function loadResponsiveStyles () {
+    if (document.querySelector('link[data-responsive-layout]')) return;
+
+    const currentScript = document.currentScript || Array.from(document.scripts).find(function (script) {
+      return /assets\/js\/nav\.js(?:\?.*)?$/.test(script.src || '');
+    });
+
+    const href = currentScript && currentScript.src
+      ? new URL('../css/responsive.css', currentScript.src).href
+      : 'assets/css/responsive.css';
+
+    const stylesheet = document.createElement('link');
+    stylesheet.rel = 'stylesheet';
+    stylesheet.href = href;
+    stylesheet.dataset.responsiveLayout = 'true';
+    document.head.appendChild(stylesheet);
+  })();
+
   const header     = document.getElementById('header');
   const menuBtn    = document.getElementById('menu-btn');
   const mobileNav  = document.getElementById('mobile-nav');
@@ -32,6 +52,7 @@
     if (!mobileNav) return;
     mobileNav.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'true');
     if (closeBtn) closeBtn.focus();
   }
 
@@ -39,6 +60,7 @@
     if (!mobileNav) return;
     mobileNav.classList.remove('is-open');
     document.body.style.overflow = '';
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
     if (menuBtn) menuBtn.focus();
   }
 
