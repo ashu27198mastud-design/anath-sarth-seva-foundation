@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/about.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/root-to-rise.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/index.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/holistic-learning.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/womens-equity.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/resilient-communities.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/inclusive-wellness.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/climate-resilience.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/programs/eco-conservation.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/impact.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/donate.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/volunteer.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/partner.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/careers.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/transparency.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/contact.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/privacy.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/terms.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+</urlset>

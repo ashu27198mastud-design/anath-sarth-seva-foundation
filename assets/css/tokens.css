@@ -1,0 +1,96 @@
+/* ============================================================
+   ANANTH SARTH SEVA FOUNDATION — DESIGN TOKENS
+   Single source of truth for every colour, size, shadow, radius
+   ============================================================ */
+
+:root {
+
+  /* ── Brand Colours ── */
+  --royal-blue:    #073B66;
+  --heritage-blue: #14689E;
+  --gold:          #C99A3D;
+  --gold-light:    #E0BB6E;
+  --gold-pale:     #F7EDCF;
+  --gold-tint:     rgba(201,154,61,.12);
+  --gold-line:     rgba(201,154,61,.30);
+  --ivory:         #F8F5EE;
+  --ivory-dark:    #EDE9E0;
+  --white:         #FFFFFF;
+  --charcoal:      #17212B;
+  --border:        #E6E8EA;
+  --muted:         #5A6775;
+  --muted-light:   #8E9BAA;
+
+  /* ── Pillar Accents ── */
+  --pillar-learning:     #1A5C9A;
+  --pillar-women:        #B56B52;
+  --pillar-communities:  #8B6914;
+  --pillar-wellness:     #1A7A72;
+  --pillar-climate:      #1A7A4E;
+  --pillar-eco:          #1B5E20;
+
+  /* ── Backgrounds ── */
+  --bg-page:    var(--ivory);
+  --bg-dark:    var(--royal-blue);
+  --bg-card:    var(--white);
+  --bg-section: #F2EFE8;
+
+  /* ── Typography ── */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'Manrope', system-ui, sans-serif;
+
+  /* ── Fluid Type Scale ── */
+  --text-xs:   clamp(0.75rem,  1vw,    0.875rem);
+  --text-sm:   clamp(0.875rem, 1.1vw,  1rem);
+  --text-base: clamp(1.0625rem,1.3vw,  1.125rem);
+  --text-lg:   clamp(1.125rem, 1.5vw,  1.25rem);
+  --text-xl:   clamp(1.25rem,  1.8vw,  1.5rem);
+  --text-2xl:  clamp(1.5rem,   2.2vw,  1.875rem);
+  --text-3xl:  clamp(1.875rem, 3vw,    2.5rem);
+  --text-4xl:  clamp(2.5rem,   4vw,    3.25rem);
+  --text-hero: clamp(2.375rem, 5.5vw,  4.75rem);
+  --text-stat: clamp(2.375rem, 5vw,    4.25rem);
+
+  /* ── Spacing (8px base) ── */
+  --s1:  8px;
+  --s2:  16px;
+  --s3:  24px;
+  --s4:  32px;
+  --s5:  40px;
+  --s6:  48px;
+  --s7:  64px;
+  --s8:  80px;
+  --s9:  96px;
+  --s10: 112px;
+  --s11: 128px;
+
+  /* ── Grid ── */
+  --container-max: 1320px;
+  --container-pad: clamp(20px, 4vw, 48px);
+  --section-py:    clamp(56px, 8vw, 112px);
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 4px rgba(7,59,102,.06);
+  --shadow-sm: 0 2px 10px rgba(7,59,102,.08);
+  --shadow-md: 0 6px 24px rgba(7,59,102,.10);
+  --shadow-lg: 0 16px 48px rgba(7,59,102,.12);
+
+  /* ── Border Radius ── */
+  --r-xs:   4px;
+  --r-sm:   8px;
+  --r-md:   16px;
+  --r-lg:   24px;
+  --r-xl:   32px;
+  --r-pill: 999px;
+
+  /* ── Transitions ── */
+  --t-fast:   150ms ease;
+  --t-base:   250ms ease;
+  --t-slow:   400ms ease;
+
+  /* ── Z-index ── */
+  --z-base:   1;
+  --z-above:  10;
+  --z-nav:    1000;
+  --z-modal:  9999;
+}

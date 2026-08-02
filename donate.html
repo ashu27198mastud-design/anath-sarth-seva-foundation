@@ -3,139 +3,254 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate | Ananth Sarth Seva Foundation</title>
-  <meta name="description" content="Ananth Sarth Seva Foundation empowers rural and tribal communities.">
-  
+  <title>Donate — Support the Mission | Ananth Sarth Seva Foundation</title>
+  <meta name="description" content="Support Ananth Sarth Seva Foundation's programs across education, women's equity, healthcare, community resilience, climate action and conservation.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ananth Sarth Seva Foundation">
+  <meta property="og:title" content="Donate — Support the Mission | Ananth Sarth Seva Foundation">
+  <meta property="og:description" content="Support Ananth Sarth Seva Foundation's programs across education, women's equity, healthcare, community resilience, climate action and conservation.">
+  <meta property="og:image" content="https://[CLIENT: PRODUCTION DOMAIN]/assets/images/hero/hero-visual.jpg">
+  <meta property="og:url" content="https://[CLIENT: PRODUCTION DOMAIN]/donate.html">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/images/logo-icon.svg" type="image/svg+xml">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="assets/css/design-system.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/inner-pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="header" id="header">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header header--solid" id="header" role="banner">
     <div class="header__inner container">
-      <a href="index.html" class="header__logo">
-        <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="header__logo-img">
+      <a href="index.html" class="header__logo" aria-label="Ananth Sarth Seva Foundation — Home">
+        <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="header__logo-img" width="160" height="48" loading="eager">
       </a>
       <nav class="header__nav" aria-label="Main navigation">
-        <ul class="header__nav-list">
+        <ul class="header__nav-list" role="list">
           <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="header__nav-item"><a href="about.html" class="header__nav-link">About Us</a></li>
+          <li class="header__nav-item"><a href="root-to-rise.html" class="header__nav-link">Root-to-Rise</a></li>
           <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="about.html" class="header__nav-link ">About Us</a>
-            <ul class="header__dropdown">
-              <li><a href="about.html#our-story" class="header__dropdown-link">Our Story</a></li>
-              <li><a href="about.html#objective" class="header__dropdown-link">Objective</a></li>
-              <li><a href="about.html#vision" class="header__dropdown-link">Vision</a></li>
-              <li><a href="about.html#mission" class="header__dropdown-link">Mission</a></li>
-              <li><a href="about.html#how-we-work" class="header__dropdown-link">How We Work</a></li>
-              <li><a href="about.html#why-trust-us" class="header__dropdown-link">Why Trust Us</a></li>
-            </ul>
-          </li>
-          <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="#pillars" class="header__nav-link ">Our Programs</a>
-            <ul class="header__dropdown">
-              <li><a href="programs/holistic-learning.html" class="header__dropdown-link">Holistic Learning</a></li>
-              <li><a href="programs/womens-equity.html" class="header__dropdown-link">Women's Equity</a></li>
-              <li><a href="programs/resilient-communities.html" class="header__dropdown-link">Resilient Communities</a></li>
-              <li><a href="programs/inclusive-wellness.html" class="header__dropdown-link">Inclusive Wellness</a></li>
-              <li><a href="programs/climate-resilience.html" class="header__dropdown-link">Climate Resilience</a></li>
-              <li><a href="programs/eco-conservation.html" class="header__dropdown-link">Eco-Conservation</a></li>
-            </ul>
-          </li>
-          <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="#get-involved" class="header__nav-link header__nav-link--active">Get Involved</a>
-            <ul class="header__dropdown">
-              <li><a href="donate.html" class="header__dropdown-link">Donate</a></li>
-              <li><a href="volunteer.html" class="header__dropdown-link">Volunteer</a></li>
-              <li><a href="careers.html" class="header__dropdown-link">Work With Us</a></li>
-            </ul>
-          </li>
-          <li class="header__nav-item"><a href="impact.html" class="header__nav-link">Impact</a></li>
-          <li class="header__nav-item"><a href="contact.html" class="header__nav-link ">Contact Us</a></li>
+            <a href="programs/index.html" class="header__nav-link">
+              Our Programs
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="header__dropdown" role="menu">
+              <a href="programs/holistic-learning.html" class="header__dropdown-item" role="menuitem"><span class="header__dropdown-icon" style="background:rgba(26,92,154,.12);">📚</span><span class="header__dropdown-text"><span class="header__dropdown-name">Holistic Learning</span><span class="header__dropdown-desc">Education, digital skills &amp; lifelong learning</span></span></a>
+              <a href="programs/womens-equity.html" class="header__dropdown-item" role="menuitem"><span class="header__dropdown-icon" style="background:rgba(181,107,82,.12);">🌸</span><span class="header__dropdown-text"><span class="header__dropdown-name">Women's Equity</span><span class="header__dropdown-desc">Livelihoods, safety &amp; community leadership</span></span></a>
+              <a href="programs/resilient-communities.html" class="header__dropdown-item" role="menuitem"><span class="header__dropdown-icon" style="background:rgba(139,105,20,.12);">🏡</span><span class="header__dropdown-text"><span class="header__dropdown-name">Resilient Communities</span><span class="header__dropdown-desc">Rural enterprise &amp; cultural heritage</span></span></a>
+              <a href="programs/inclusive-wellness.html" class="header__dropdown-item" role="menuitem"><span class="header__dropdown-icon" style="background:rgba(26,122,114,.12);">🏥</span><span class="header__dropdown-text"><span class="header__dropdown-name">Inclusive Wellness</span><span class="header__dropdown-desc">Healthcare access &amp; integrative wellbeing</span></span></a>
+              <a href="programs/climate-resilience.html" class="header__dropdown-item" role="menuitem"><span class="header__dropdown-icon" style="background:rgba(26,122,78,.12);">☀️</span><span class="header__dropdown-text"><span class="header__dropdown-name">Climate Resilience</span><span class="header__dropdown-desc">Clean energy &amp; climate adaptation</span></span></a>
+              <a href="programs/eco-conservation.html" class="header__dropdown-item" role="menuitem"><span class="header__dropdown-icon" style="background:rgba(27,94,32,.12);">🌿</span><span class="header__dropdown-text"><span class="header__dropdown-name">Eco-Conservation</span><span class="header__dropdown-desc">Forests, water &amp; biodiversity</span></span></a>
+              <div class="header__dropdown-footer"><a href="programs/index.html" class="header__dropdown-all">View all programs →</a></div>
+            </div>
+          </li><li class="header__nav-item"><a href="impact.html" class="header__nav-link">Impact</a></li>
+          <li class="header__nav-item"><a href="transparency.html" class="header__nav-link">Transparency</a></li>
+          <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+          
         </ul>
       </nav>
-      <a href="donate.html" class="header__cta btn btn--primary">Donate Now</a>
-      <button class="header__mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <div class="header__actions">
+        <a href="volunteer.html" class="header__btn header__btn--outline btn">Volunteer</a>
+        <a href="donate.html" class="header__btn header__btn--donate btn">Donate Now</a>
+      </div>
+      <button class="header__menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
       </button>
     </div>
   </header>
-  
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <button class="mobile-menu__close" aria-label="Close menu" id="mobile-menu-close">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <nav aria-label="Mobile navigation">
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Home</a></li>
-            <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">About Us</a></li>
-            <li class="mobile-menu__item"><a href="donate.html" class="mobile-menu__link">Donate</a></li>
-            <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Contact Us</a></li>
-        </ul>
-    </nav>
-  </div>
-
-  <main class="inner-page-main">
-
-    <section class="inner-hero inner-hero inner-hero--blue">
-      <div class="container text-center">
-        <h1 class="heading-display text-white">Build Futures with Ananth Sarth Seva Foundation</h1>
-        <p class="text-lg text-white container-narrow mt-24">Empower Children, Youth, and Women. Your support can transform lives and build sustainable communities.</p>
+  <div class="mobile-nav" id="mobile-nav" aria-modal="true" role="dialog" aria-label="Navigation">
+    <div class="mobile-nav__overlay" aria-hidden="true"></div>
+    <div class="mobile-nav__panel">
+      <div class="mobile-nav__head">
+        <a href="index.html" aria-label="Home"><img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="mobile-nav__logo-img" width="140" height="42" loading="lazy"></a>
+        <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
       </div>
-    </section>
-    
-    <section class="section">
-        <div class="container text-center">
-            <h2 class="heading-lg">Your support can change lives</h2>
-            <p class="text-md container-narrow my-24-48">Together, we can transform lives by empowering millions of children and laying the foundation for lifelong learning. By helping girls and women complete school, we break barriers and open doors to education and employment opportunities. And by equipping youth with skills and providing access to jobs and entrepreneurship, we create pathways to brighter futures.</p>
-            <a href="#" class="btn btn--primary btn--lg">Donate Now Securely</a>
+      <nav class="mobile-nav__body" aria-label="Mobile navigation">
+        <a href="index.html" class="mobile-nav__link">Home</a>
+        <a href="about.html" class="mobile-nav__link">About Us</a>
+        <a href="root-to-rise.html" class="mobile-nav__link">Root-to-Rise</a>
+        <button class="mobile-nav__accordion-toggle" aria-expanded="false" aria-controls="mob-programs">Our Programs <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mobile-nav__accordion-body" id="mob-programs">
+          <a href="programs/holistic-learning.html" class="mobile-nav__sub-link">📚 Holistic Learning</a>
+          <a href="programs/womens-equity.html" class="mobile-nav__sub-link">🌸 Women's Equity</a>
+          <a href="programs/resilient-communities.html" class="mobile-nav__sub-link">🏡 Resilient Communities</a>
+          <a href="programs/inclusive-wellness.html" class="mobile-nav__sub-link">🏥 Inclusive Wellness</a>
+          <a href="programs/climate-resilience.html" class="mobile-nav__sub-link">☀️ Climate Resilience</a>
+          <a href="programs/eco-conservation.html" class="mobile-nav__sub-link">🌿 Eco-Conservation</a>
+          <a href="programs/index.html" class="mobile-nav__sub-link">→ View All Programs</a>
         </div>
+        <a href="impact.html" class="mobile-nav__link">Impact</a>
+        <a href="transparency.html" class="mobile-nav__link">Transparency</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+      </nav>
+      <div class="mobile-nav__foot">
+        <a href="volunteer.html" class="btn btn--ghost">Volunteer</a>
+        <a href="donate.html" class="btn btn--primary">Donate Now</a>
+      </div>
+    </div>
+  </div>
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span aria-current="page">Donate</span>
+        </nav>
+        <div class="page-hero__inner">
+          <div class="page-hero__content">
+            <span class="eyebrow" aria-hidden="true">Contribute</span>
+            <h1 class="page-hero__heading" id="page-hero-heading">Support the Mission</h1>
+            <p class="page-hero__desc">Every contribution helps build programs that create lasting change — not temporary relief.</p>
+          </div>
+          <div class="page-hero__image" aria-hidden="true">
+            <img src="assets/images/hero/hero-visual.jpg" alt="Community impact" width="560" height="380" loading="eager" decoding="async">
+          </div>
+        </div>
+      </div>
     </section>
-
+    <section class="section" aria-labelledby="donate-form-heading">
+      <div class="container">
+        <div class="donate-grid">
+          <div>
+            <span class="eyebrow" aria-hidden="true">Make a Contribution</span>
+            <h2 class="h3 reveal" id="donate-form-heading" style="margin-bottom:var(--s4);">Choose how you would like to contribute.</h2>
+            <form action="#" method="post" aria-label="Donation form" class="reveal">
+              <div class="form-group">
+                <label>Select an amount</label>
+                <div class="amount-selector" role="group" aria-label="Preset amounts">
+                  <button type="button" class="amount-btn is-active" data-amount="500">₹500</button>
+                  <button type="button" class="amount-btn" data-amount="1000">₹1,000</button>
+                  <button type="button" class="amount-btn" data-amount="2500">₹2,500</button>
+                  <button type="button" class="amount-btn" data-amount="5000">₹5,000</button>
+                </div>
+                <label for="custom-amount" style="margin-top:var(--s2); display:block; font-weight:400; color:var(--muted);">Or enter a custom amount</label>
+                <input type="number" id="custom-amount" name="custom_amount" class="form-control" placeholder="Enter amount in ₹" min="1" style="max-width:280px;">
+              </div>
+              <div class="form-group">
+                <label>Select a program (optional)</label>
+                <div class="pillar-selector" role="group" aria-label="Program selection">
+                  <button type="button" class="pillar-btn is-active" data-pillar="where-needed">💛 Where Most Needed</button>
+                  <button type="button" class="pillar-btn" data-pillar="learning">📚 Holistic Learning</button>
+                  <button type="button" class="pillar-btn" data-pillar="women">🌸 Women's Equity</button>
+                  <button type="button" class="pillar-btn" data-pillar="communities">🏡 Resilient Communities</button>
+                  <button type="button" class="pillar-btn" data-pillar="wellness">🏥 Inclusive Wellness</button>
+                  <button type="button" class="pillar-btn" data-pillar="climate">☀️ Climate Resilience</button>
+                  <button type="button" class="pillar-btn" data-pillar="eco">🌿 Eco-Conservation</button>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="donor-name">Full Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="donor-name" name="name" class="form-control" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="donor-email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="donor-email" name="email" class="form-control" required autocomplete="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label style="display:flex; gap:10px; align-items:flex-start; cursor:pointer; font-weight:400;">
+                  <input type="checkbox" name="consent" required style="margin-top:3px; flex-shrink:0; accent-color:var(--heritage-blue);">
+                  <span style="font:400 var(--text-sm)/1.5 var(--font-body); color:var(--muted);">I consent to Ananth Sarth Seva Foundation processing my donation and contacting me with a receipt and updates. See our <a href="privacy.html">Privacy Policy</a>.</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn--primary" style="min-width:200px;">Proceed to Payment</button>
+            </form>
+          </div>
+          <div class="donate-sidebar reveal">
+            <h3>Your contribution matters.</h3>
+            <p style="font:400 var(--text-sm)/1.6 var(--font-body); color:rgba(255,255,255,.7); margin-bottom:var(--s4);">Your contribution will be allocated according to the selected program and the foundation's approved governance process.</p>
+            <div class="donate-assurance"><span class="donate-assurance__icon" aria-hidden="true">🔒</span><p class="donate-assurance__text">Secure payment processing. Your financial information is never stored on our servers.</p></div>
+            <div class="donate-assurance"><span class="donate-assurance__icon" aria-hidden="true">📊</span><p class="donate-assurance__text">Impact reports will be published on our Transparency page as programs become operational.</p></div>
+            <div class="donate-assurance"><span class="donate-assurance__icon" aria-hidden="true">📧</span><p class="donate-assurance__text">You will receive a confirmation email and receipt following your contribution.</p></div>
+            <hr style="border:none; border-top:1px solid rgba(255,255,255,.15); margin-block:var(--s4);">
+            <p style="font:400 var(--text-xs)/1.5 var(--font-body); color:rgba(255,255,255,.45); font-style:italic;">Tax benefit eligibility will be communicated once the foundation's legal and regulatory status is fully established. Please do not assume deductibility at this stage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  
-  <footer class="footer">
-    <div class="footer__inner container">
-      <div class="footer__col">
-        <a href="index.html" class="footer__logo">
-          <img src="assets/images/logo-icon.svg" alt="Ananth Sarth Seva Foundation" width="40" height="40">
-          <span class="footer__logo-text">Ananth Sarth Seva Foundation</span>
-        </a>
-        <p class="footer__tagline">Serving Humanity, Creating Hope.</p>
+  <footer class="footer" role="contentinfo">
+    <div class="footer__newsletter">
+      <div class="container">
+        <div class="footer__newsletter-inner">
+          <div class="footer__newsletter-text">
+            <h3>Stay connected to the movement.</h3>
+            <p>Updates on programs, impact and opportunities — directly to your inbox.</p>
+          </div>
+          <form class="footer__newsletter-form" aria-label="Newsletter subscription">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email" class="footer__newsletter-input" placeholder="Your email address" autocomplete="email" required>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
       </div>
-      <div class="footer__col">
-        <h4 class="footer__heading">About Us</h4>
-        <ul class="footer__list">
-          <li><a href="about.html" class="footer__link">Our Story</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__heading">Programs</h4>
-        <ul class="footer__list">
-          <li><a href="programs/holistic-learning.html" class="footer__link">Holistic Learning</a></li>
-          <li><a href="programs/womens-equity.html" class="footer__link">Women's Equity</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 class="footer__heading">Connect</h4>
-        <div class="footer__contact">
-          <a href="mailto:contact@anathsarthsevafoundation.org" class="footer__link">contact@anathsarthsevafoundation.org</a>
+    </div>
+    <div class="footer__body">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="footer__brand-logo" width="160" height="48" loading="lazy">
+            <p class="footer__brand-tagline">Ancient wisdom. Modern innovation. Community ownership. Building self-reliant communities from strong roots.</p>
+            <div class="footer__social" role="list" aria-label="Social media links">
+              <a href="#" class="footer__social-link" aria-label="LinkedIn" role="listitem"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-5a2 2 0 110 4 2 2 0 010-4z"/></svg></a>
+              <a href="#" class="footer__social-link" aria-label="Instagram" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div>
+            <div class="footer__col-title">Foundation</div>
+            <ul class="footer__col-links" role="list">
+              <li><a href="about.html" class="footer__col-link">About Us</a></li>
+              <li><a href="root-to-rise.html" class="footer__col-link">Root-to-Rise Model</a></li>
+              <li><a href="about.html#team" class="footer__col-link">Leadership</a></li>
+              <li><a href="transparency.html" class="footer__col-link">Governance</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer__col-title">Programs</div>
+            <ul class="footer__col-links" role="list">
+              <li><a href="programs/holistic-learning.html" class="footer__col-link">Holistic Learning</a></li>
+              <li><a href="programs/womens-equity.html" class="footer__col-link">Women's Equity</a></li>
+              <li><a href="programs/resilient-communities.html" class="footer__col-link">Resilient Communities</a></li>
+              <li><a href="programs/inclusive-wellness.html" class="footer__col-link">Inclusive Wellness</a></li>
+              <li><a href="programs/climate-resilience.html" class="footer__col-link">Climate Resilience</a></li>
+              <li><a href="programs/eco-conservation.html" class="footer__col-link">Eco-Conservation</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer__col-title">Get Involved</div>
+            <ul class="footer__col-links" role="list">
+              <li><a href="donate.html" class="footer__col-link">Donate</a></li>
+              <li><a href="volunteer.html" class="footer__col-link">Volunteer</a></li>
+              <li><a href="partner.html" class="footer__col-link">Partner With Us</a></li>
+              <li><a href="careers.html" class="footer__col-link">Work With Us</a></li>
+              <li><a href="contact.html" class="footer__col-link">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="footer__bottom-inner container">
-        <span class="footer__copyright">&copy; 2026 Ananth Sarth Seva Foundation. All rights reserved.</span>
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy">© 2026 Ananth Sarth Seva Foundation. All rights reserved.</p>
+          <nav class="footer__bottom-links" aria-label="Legal links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="transparency.html">Transparency</a>
+          </nav>
+        </div>
       </div>
     </div>
   </footer>
-
-  <script src="assets/js/main.js"></script>
+    <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/utils.js" defer></script>
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
 </body>
 </html>

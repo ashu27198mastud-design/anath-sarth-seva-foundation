@@ -3,724 +3,864 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ananth Sarth Seva Foundation | Serving Humanity, Creating Hope</title>
-  <meta name="description" content="Ananth Sarth Seva Foundation empowers rural and tribal communities through education, women's equity, healthcare, self-reliance, climate action and conservation. Join our mission.">
-  
+  <title>Ananth Sarth Seva Foundation | Growing Self-Reliant Communities</title>
+  <meta name="description" content="Ananth Sarth Seva Foundation works with rural and tribal communities across education, women's equity, healthcare, climate action and conservation. Ancient wisdom. Modern innovation. Community ownership.">
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Ananth Sarth Seva Foundation | Serving Humanity, Creating Hope">
-  <meta property="og:description" content="Ananth Sarth Seva Foundation empowers rural and tribal communities through education, women's equity, healthcare, self-reliance, climate action and conservation. Join our mission.">
-  <meta property="og:image" content="assets/images/hero/hero-visual.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.anathsarthsevafoundation.org/">
-  
+  <meta property="og:site_name" content="Ananth Sarth Seva Foundation">
+  <meta property="og:title" content="Ananth Sarth Seva Foundation | Growing Self-Reliant Communities">
+  <meta property="og:description" content="Combining cultural wisdom, modern technology and local leadership to build resilient communities.">
+  <meta property="og:image" content="https://[CLIENT: PRODUCTION DOMAIN]/assets/images/hero/hero-visual.jpg">
+  <meta property="og:url" content="https://[CLIENT: PRODUCTION DOMAIN]/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <!-- Favicon -->
   <link rel="icon" href="assets/images/logo-icon.svg" type="image/svg+xml">
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/design-system.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Structured Data -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "NGO",
     "name": "Ananth Sarth Seva Foundation",
-    "url": "https://www.anathsarthsevafoundation.org",
-    "logo": "https://www.anathsarthsevafoundation.org/assets/images/logo.svg",
-    "description": "Ananth Sarth Seva Foundation empowers rural and tribal communities through education, women's equity, healthcare, self-reliance, climate action and conservation.",
+    "url": "https://[CLIENT: PRODUCTION DOMAIN]",
+    "logo": "https://[CLIENT: PRODUCTION DOMAIN]/assets/images/logo-original.jpg",
+    "description": "Ananth Sarth Seva Foundation works with rural and tribal communities across education, women's equity, healthcare, self-reliance, climate action and conservation.",
+    "foundingDate": "2026",
     "sameAs": [
       "https://www.linkedin.com/company/ananth-sarth-seva-foundation",
-      "https://www.instagram.com/ananthsarthsevafoundation",
-      "https://twitter.com/ananthsarthseva"
+      "https://www.instagram.com/ananthsarthsevafoundation"
     ]
   }
   </script>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header" id="header">
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ════════════════════════════════ HEADER ════════════════════════════════ -->
+  <header class="header header--transparent" id="header" role="banner">
     <div class="header__inner container">
-      <a href="/" class="header__logo">
-        <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="header__logo-img">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="Ananth Sarth Seva Foundation — Home">
+        <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="header__logo-img" width="160" height="48" loading="eager">
       </a>
+
+      <!-- Desktop Nav -->
       <nav class="header__nav" aria-label="Main navigation">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="/" class="header__nav-link header__nav-link--active">Home</a></li>
-          <li class="header__nav-item header__nav-item--has-dropdown">
+        <ul class="header__nav-list" role="list">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link header__nav-link--active" aria-current="page">Home</a>
+          </li>
+          <li class="header__nav-item">
             <a href="about.html" class="header__nav-link">About Us</a>
-            <ul class="header__dropdown">
-              <li><a href="about.html#our-story" class="header__dropdown-link">Our Story</a></li>
-              <li><a href="about.html#objective" class="header__dropdown-link">Objective</a></li>
-              <li><a href="about.html#vision" class="header__dropdown-link">Vision</a></li>
-              <li><a href="about.html#mission" class="header__dropdown-link">Mission</a></li>
-              <li><a href="about.html#how-we-work" class="header__dropdown-link">How We Work</a></li>
-              <li><a href="about.html#why-trust-us" class="header__dropdown-link">Why Trust Us</a></li>
-            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="root-to-rise.html" class="header__nav-link">Root-to-Rise</a>
           </li>
           <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="#pillars" class="header__nav-link">Our Programs</a>
-            <ul class="header__dropdown">
-              <li><a href="programs/holistic-learning.html" class="header__dropdown-link">Holistic Learning</a></li>
-              <li><a href="programs/womens-equity.html" class="header__dropdown-link">Women's Equity</a></li>
-              <li><a href="programs/resilient-communities.html" class="header__dropdown-link">Resilient Communities</a></li>
-              <li><a href="programs/inclusive-wellness.html" class="header__dropdown-link">Inclusive Wellness</a></li>
-              <li><a href="programs/climate-resilience.html" class="header__dropdown-link">Climate Resilience</a></li>
-              <li><a href="programs/eco-conservation.html" class="header__dropdown-link">Eco-Conservation</a></li>
-            </ul>
+            <a href="programs/index.html" class="header__nav-link" aria-haspopup="true" aria-expanded="false">
+              Our Programs
+              <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="header__dropdown" role="menu">
+              <a href="programs/holistic-learning.html" class="header__dropdown-item" role="menuitem">
+                <span class="header__dropdown-icon" style="background:rgba(26,92,154,.12);">📚</span>
+                <span class="header__dropdown-text">
+                  <span class="header__dropdown-name">Holistic Learning</span>
+                  <span class="header__dropdown-desc">Education, digital skills &amp; lifelong learning</span>
+                </span>
+              </a>
+              <a href="programs/womens-equity.html" class="header__dropdown-item" role="menuitem">
+                <span class="header__dropdown-icon" style="background:rgba(181,107,82,.12);">🌸</span>
+                <span class="header__dropdown-text">
+                  <span class="header__dropdown-name">Women's Equity</span>
+                  <span class="header__dropdown-desc">Livelihoods, safety &amp; community leadership</span>
+                </span>
+              </a>
+              <a href="programs/resilient-communities.html" class="header__dropdown-item" role="menuitem">
+                <span class="header__dropdown-icon" style="background:rgba(139,105,20,.12);">🏡</span>
+                <span class="header__dropdown-text">
+                  <span class="header__dropdown-name">Resilient Communities</span>
+                  <span class="header__dropdown-desc">Rural enterprise &amp; cultural heritage</span>
+                </span>
+              </a>
+              <a href="programs/inclusive-wellness.html" class="header__dropdown-item" role="menuitem">
+                <span class="header__dropdown-icon" style="background:rgba(26,122,114,.12);">🏥</span>
+                <span class="header__dropdown-text">
+                  <span class="header__dropdown-name">Inclusive Wellness</span>
+                  <span class="header__dropdown-desc">Healthcare access &amp; integrative wellbeing</span>
+                </span>
+              </a>
+              <a href="programs/climate-resilience.html" class="header__dropdown-item" role="menuitem">
+                <span class="header__dropdown-icon" style="background:rgba(26,122,78,.12);">☀️</span>
+                <span class="header__dropdown-text">
+                  <span class="header__dropdown-name">Climate Resilience</span>
+                  <span class="header__dropdown-desc">Clean energy &amp; climate adaptation</span>
+                </span>
+              </a>
+              <a href="programs/eco-conservation.html" class="header__dropdown-item" role="menuitem">
+                <span class="header__dropdown-icon" style="background:rgba(27,94,32,.12);">🌿</span>
+                <span class="header__dropdown-text">
+                  <span class="header__dropdown-name">Eco-Conservation</span>
+                  <span class="header__dropdown-desc">Forests, water &amp; biodiversity</span>
+                </span>
+              </a>
+              <div class="header__dropdown-footer">
+                <a href="programs/index.html" class="header__dropdown-all">View all programs →</a>
+              </div>
+            </div>
           </li>
-          <li class="header__nav-item header__nav-item--has-dropdown">
-            <a href="#get-involved" class="header__nav-link">Get Involved</a>
-            <ul class="header__dropdown">
-              <li><a href="donate.html" class="header__dropdown-link">Donate</a></li>
-              <li><a href="volunteer.html" class="header__dropdown-link">Volunteer</a></li>
-              <li><a href="partner.html" class="header__dropdown-link">Partner With Us</a></li>
-              <li><a href="careers.html" class="header__dropdown-link">Work With Us</a></li>
-            </ul>
+          <li class="header__nav-item">
+            <a href="impact.html" class="header__nav-link">Impact</a>
           </li>
-          <li class="header__nav-item"><a href="impact.html" class="header__nav-link">Impact</a></li>
-          <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></li>
+          <li class="header__nav-item">
+            <a href="transparency.html" class="header__nav-link">Transparency</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="contact.html" class="header__nav-link">Contact</a>
+          </li>
         </ul>
       </nav>
-      <a href="donate.html" class="header__cta btn btn--primary">Donate Now</a>
-      <button class="header__mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <a href="volunteer.html" class="header__btn header__btn--outline btn">Volunteer</a>
+        <a href="donate.html" class="header__btn header__btn--donate btn">Donate Now</a>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button class="header__menu-btn" id="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
       </button>
     </div>
   </header>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <button class="mobile-menu__close" aria-label="Close menu" id="mobile-menu-close">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <nav aria-label="Mobile navigation">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item"><a href="/" class="mobile-menu__link mobile-menu__link--active">Home</a></li>
-        <li class="mobile-menu__item mobile-menu__item--has-children">
-          <div class="mobile-menu__item-header">
-            <a href="about.html" class="mobile-menu__link">About Us</a>
-            <button class="mobile-menu__accordion-toggle" aria-label="Toggle About Us menu">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-          </div>
-          <ul class="mobile-menu__sub-list">
-            <li><a href="about.html#our-story" class="mobile-menu__sub-link">Our Story</a></li>
-            <li><a href="about.html#objective" class="mobile-menu__sub-link">Objective</a></li>
-            <li><a href="about.html#vision" class="mobile-menu__sub-link">Vision</a></li>
-            <li><a href="about.html#mission" class="mobile-menu__sub-link">Mission</a></li>
-            <li><a href="about.html#how-we-work" class="mobile-menu__sub-link">How We Work</a></li>
-            <li><a href="about.html#why-trust-us" class="mobile-menu__sub-link">Why Trust Us</a></li>
-          </ul>
-        </li>
-        <li class="mobile-menu__item mobile-menu__item--has-children">
-          <div class="mobile-menu__item-header">
-            <a href="#pillars" class="mobile-menu__link">Our Programs</a>
-            <button class="mobile-menu__accordion-toggle" aria-label="Toggle Programs menu">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-          </div>
-          <ul class="mobile-menu__sub-list">
-            <li><a href="programs/holistic-learning.html" class="mobile-menu__sub-link">Holistic Learning</a></li>
-            <li><a href="programs/womens-equity.html" class="mobile-menu__sub-link">Women's Equity</a></li>
-            <li><a href="programs/resilient-communities.html" class="mobile-menu__sub-link">Resilient Communities</a></li>
-            <li><a href="programs/inclusive-wellness.html" class="mobile-menu__sub-link">Inclusive Wellness</a></li>
-            <li><a href="programs/climate-resilience.html" class="mobile-menu__sub-link">Climate Resilience</a></li>
-            <li><a href="programs/eco-conservation.html" class="mobile-menu__sub-link">Eco-Conservation</a></li>
-          </ul>
-        </li>
-        <li class="mobile-menu__item mobile-menu__item--has-children">
-          <div class="mobile-menu__item-header">
-            <a href="#get-involved" class="mobile-menu__link">Get Involved</a>
-            <button class="mobile-menu__accordion-toggle" aria-label="Toggle Get Involved menu">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-          </div>
-          <ul class="mobile-menu__sub-list">
-            <li><a href="donate.html" class="mobile-menu__sub-link">Donate</a></li>
-            <li><a href="volunteer.html" class="mobile-menu__sub-link">Volunteer</a></li>
-            <li><a href="partner.html" class="mobile-menu__sub-link">Partner With Us</a></li>
-            <li><a href="careers.html" class="mobile-menu__sub-link">Work With Us</a></li>
-          </ul>
-        </li>
-        <li class="mobile-menu__item"><a href="impact.html" class="mobile-menu__link">Impact</a></li>
-        <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Contact Us</a></li>
-      </ul>
-    </nav>
-    <a href="donate.html" class="btn btn--primary mobile-menu__donate">Donate Now</a>
+  <!-- ════════════════ MOBILE NAV PANEL ════════════════ -->
+  <div class="mobile-nav" id="mobile-nav" aria-modal="true" role="dialog" aria-label="Navigation">
+    <div class="mobile-nav__overlay" aria-hidden="true"></div>
+    <div class="mobile-nav__panel">
+      <div class="mobile-nav__head">
+        <a href="index.html" aria-label="Home">
+          <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="mobile-nav__logo-img" width="140" height="42" loading="lazy">
+        </a>
+        <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-nav__body" aria-label="Mobile navigation">
+        <a href="index.html" class="mobile-nav__link">Home</a>
+        <a href="about.html" class="mobile-nav__link">About Us</a>
+        <a href="root-to-rise.html" class="mobile-nav__link">Root-to-Rise</a>
+        <button class="mobile-nav__accordion-toggle" aria-expanded="false" aria-controls="mob-programs">
+          Our Programs
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-nav__accordion-body" id="mob-programs">
+          <a href="programs/holistic-learning.html" class="mobile-nav__sub-link">📚 Holistic Learning</a>
+          <a href="programs/womens-equity.html" class="mobile-nav__sub-link">🌸 Women's Equity</a>
+          <a href="programs/resilient-communities.html" class="mobile-nav__sub-link">🏡 Resilient Communities</a>
+          <a href="programs/inclusive-wellness.html" class="mobile-nav__sub-link">🏥 Inclusive Wellness</a>
+          <a href="programs/climate-resilience.html" class="mobile-nav__sub-link">☀️ Climate Resilience</a>
+          <a href="programs/eco-conservation.html" class="mobile-nav__sub-link">🌿 Eco-Conservation</a>
+          <a href="programs/index.html" class="mobile-nav__sub-link">→ View All Programs</a>
+        </div>
+        <a href="impact.html" class="mobile-nav__link">Impact</a>
+        <a href="transparency.html" class="mobile-nav__link">Transparency</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+      </nav>
+      <div class="mobile-nav__foot">
+        <a href="volunteer.html" class="btn btn--ghost">Volunteer</a>
+        <a href="donate.html" class="btn btn--primary">Donate Now</a>
+      </div>
+    </div>
   </div>
 
-  <main>
-    <!-- SECTION 1 — HERO -->
-    <section class="hero section" id="hero">
-      <div class="hero__inner container">
-        <div class="hero__content">
-          <span class="badge hero__badge">Serving Humanity Since Inception</span>
-          <h1 class="hero__headline heading-display">
-            Serving Humanity.<br>
-            <span class="text-gold">Creating Hope.</span><br>
-            Building Self-Reliant Communities.
-          </h1>
-          <p class="hero__subheadline">Where Selfless Service Meets Sustainable Innovation.</p>
-          <p class="hero__text">
-            Ananth Sarth Seva Foundation empowers rural and tribal communities through education, women's equity, healthcare, self-reliance, climate action and conservation.
-          </p>
-          <div class="hero__ctas">
-            <a href="about.html" class="btn btn--primary btn--lg">Explore Our Mission</a>
-            <a href="donate.html" class="btn btn--secondary btn--lg">Donate Now</a>
-            <a href="volunteer.html" class="btn btn--outline">Join as a Volunteer</a>
-          </div>
-        </div>
-        <div class="hero__visual reveal">
-          <img src="assets/images/hero/hero-visual.jpg" alt="Symbolic illustration of protective hands cradling a lotus, representing education, healthcare, women empowerment, and conservation" class="hero__image" loading="eager">
-        </div>
-      </div>
-    </section>
+  <!-- ════════════════════════════════ MAIN ════════════════════════════════ -->
+  <main id="main">
 
-    <!-- SECTION 2 — PURPOSE STATEMENT -->
-    <section class="purpose section" id="purpose">
-      <div class="purpose__inner container text-center container-narrow">
-        <div class="purpose__content reveal">
-          <span class="badge purpose__tagline mx-auto mb-16">Our Purpose</span>
-          <h2 class="purpose__heading heading-lg">From Purpose to Lasting Change</h2>
-          <p class="purpose__text text-md mt-24">
-            What began as a conversation among close friends has evolved into a lifelong mission to give back to society. At Ananth Sarth Seva Foundation, we believe that selfless service is the highest calling. Our approach is rooted in human dignity, environmental care, and community partnership.
-          </p>
-          <p class="purpose__text text-md mt-16">
-            By combining modern innovation with deep respect for local wisdom, we help rural and tribal communities build the foundation for long-term self-reliance. We do not just provide aid; we partner with people to create sustainable futures.
-          </p>
-          <div class="mt-32">
-            <a href="about.html" class="btn btn--primary purpose__cta">Discover Our Story</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3 — SIX CORE PILLARS -->
-    <section class="pillars section" id="pillars">
-      <div class="pillars__inner container">
-        <div class="section-header text-center reveal">
-          <span class="badge pillars__tagline">Our Pillars</span>
-          <h2 class="pillars__heading heading-lg">One Mission. Six Interconnected Pillars.</h2>
-          <p class="pillars__subtitle">Each program pillar is designed to work with the others — creating an integrated approach to sustainable community development.</p>
-        </div>
-        <div class="pillars__grid">
-          <!-- Pillar 1 -->
-          <article class="card card--program pillar-card reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                <circle cx="12" cy="7" r="2"></circle>
-                <path d="M12 9v1"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Holistic Learning</h3>
-            <p class="card__text">Transforming education through innovative methods that nurture curiosity, critical thinking and real-world skills.</p>
-            <a href="programs/holistic-learning.html" class="card__link">Explore Program &rarr;</a>
-          </article>
-          
-          <!-- Pillar 2 -->
-          <article class="card card--program pillar-card reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="7" r="4"></circle>
-                <path d="M5.5 21v-2a4 4 0 0 1 4-4h5a4 4 0 0 1 4 4v2"></path>
-                <path d="M12 11v8"></path>
-                <path d="M9 16l3-3 3 3"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Women's Equity</h3>
-            <p class="card__text">Creating pathways for women to achieve financial independence, leadership and dignity through skill development.</p>
-            <a href="programs/womens-equity.html" class="card__link">Explore Program &rarr;</a>
-          </article>
-
-          <!-- Pillar 3 -->
-          <article class="card card--program pillar-card reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Resilient Communities</h3>
-            <p class="card__text">Building self-reliant rural and tribal communities through infrastructure, digital access and sustainable livelihoods.</p>
-            <a href="programs/resilient-communities.html" class="card__link">Explore Program &rarr;</a>
-          </article>
-
-          <!-- Pillar 4 -->
-          <article class="card card--program pillar-card reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                <path d="M9 12h3v3"></path>
-                <path d="M15 12h-3v-3"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Inclusive Wellness</h3>
-            <p class="card__text">Expanding access to healthcare, nutrition, mental health and preventive services in underserved regions.</p>
-            <a href="programs/inclusive-wellness.html" class="card__link">Explore Program &rarr;</a>
-          </article>
-
-          <!-- Pillar 5 -->
-          <article class="card card--program pillar-card reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path d="M12 2v2"></path>
-                <path d="M12 20v2"></path>
-                <path d="M5 5l1.5 1.5"></path>
-                <path d="M17.5 17.5L19 19"></path>
-                <path d="M2 12h2"></path>
-                <path d="M20 12h2"></path>
-                <path d="M5 19l1.5-1.5"></path>
-                <path d="M17.5 6.5L19 5"></path>
-                <path d="M12 12v6a4 4 0 0 0 4-4"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Climate Resilience</h3>
-            <p class="card__text">Equipping communities with renewable energy, water management and climate-adaptive agricultural practices.</p>
-            <a href="programs/climate-resilience.html" class="card__link">Explore Program &rarr;</a>
-          </article>
-
-          <!-- Pillar 6 -->
-          <article class="card card--program pillar-card reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22v-8"></path>
-                <path d="M12 14A4 4 0 0 0 8 10V5a5 5 0 0 1 10 0v5a4 4 0 0 0-4 4z"></path>
-                <path d="M8 10C5 10 2 13 2 16v6h20v-6c0-3-3-6-6-6"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Eco-Conservation</h3>
-            <p class="card__text">Protecting biodiversity, restoring ecosystems and promoting sustainable resource management.</p>
-            <a href="programs/eco-conservation.html" class="card__link">Explore Program &rarr;</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4 — ROOT-TO-RISE MODEL -->
-    <section class="root-to-rise section" id="model">
-      <div class="root-to-rise__inner container">
-        <div class="root-to-rise__header text-center reveal">
-          <h2 class="heading-lg">How Sustainable Change Takes Root</h2>
-          <p>We do not believe in temporary fixes. We work with communities to build systems they can eventually lead independently.</p>
-        </div>
-        <div class="root-to-rise__steps">
-          <div class="root-to-rise__step reveal">
-            <div class="root-to-rise__step-number">01</div>
-            <h3 class="root-to-rise__step-title">Listen & Learn</h3>
-            <p class="root-to-rise__step-text">Understand local culture, strengths, traditions and natural resources.</p>
-          </div>
-          <div class="root-to-rise__step reveal">
-            <div class="root-to-rise__step-number">02</div>
-            <h3 class="root-to-rise__step-title">Bridge & Blend</h3>
-            <p class="root-to-rise__step-text">Combine indigenous wisdom with modern technology, health systems, education and clean energy.</p>
-          </div>
-          <div class="root-to-rise__step reveal">
-            <div class="root-to-rise__step-number">03</div>
-            <h3 class="root-to-rise__step-title">Digitalize & Scale</h3>
-            <p class="root-to-rise__step-text">Use digital commerce, smart technology and data-driven systems to expand impact.</p>
-          </div>
-          <div class="root-to-rise__step reveal">
-            <div class="root-to-rise__step-number">04</div>
-            <h3 class="root-to-rise__step-title">Transfer Ownership</h3>
-            <p class="root-to-rise__step-text">Develop community leadership until programs can operate independently.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5 — FEATURED PROGRAM STORY -->
-    <section class="featured-story section" id="stories">
-      <div class="featured-story__inner container">
-        <div class="section-header text-center reveal">
-          <h2 class="heading-lg">Stories of Impact</h2>
-          <div class="featured-story__filters">
-            <button class="featured-story__filter-btn featured-story__filter-btn--active">Education</button>
-            <button class="featured-story__filter-btn">Women</button>
-            <button class="featured-story__filter-btn">Community</button>
-            <button class="featured-story__filter-btn">Health</button>
-            <button class="featured-story__filter-btn">Climate</button>
-            <button class="featured-story__filter-btn">Conservation</button>
-          </div>
-        </div>
-        <div class="featured-story__card reveal">
-          <div class="featured-story__visual">
-            <div class="featured-story__image-placeholder">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-              </svg>
-            </div>
-          </div>
-          <div class="featured-story__content">
-            <span class="badge">Education</span>
-            <h3 class="featured-story__title heading-md">Reimagining Learning in Rural Communities</h3>
-            <p class="featured-story__text">
-              Access to quality education remains one of the greatest challenges in rural India. Our Holistic Learning program is designed to bridge this gap by combining traditional teaching with modern digital tools, creating learning environments where children can thrive.
+    <!-- ── Section 1: Hero ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content reveal">
+            <span class="hero__eyebrow">
+              <span class="hero__eyebrow-line" aria-hidden="true"></span>
+              Rooted in Seva. Designed for lasting change.
+            </span>
+            <h1 class="hero__heading" id="hero-heading">
+              Growing <em>self-reliant</em><br>communities from<br>strong roots.
+            </h1>
+            <p class="hero__desc">
+              Ananth Sarth Seva Foundation works with rural and tribal communities across education, women's equity, healthcare, self-reliance, climate action and conservation.
             </p>
-            <a href="programs/holistic-learning.html" class="featured-story__cta btn btn--outline">Read More &rarr;</a>
+            <div class="hero__actions">
+              <a href="root-to-rise.html" class="btn btn--primary">Explore Our Mission</a>
+              <a href="volunteer.html" class="btn btn--ghost">Join the Movement</a>
+            </div>
+            <div class="hero__trust" role="list">
+              <span class="hero__trust-item" role="listitem">Community-led</span>
+              <span class="hero__trust-item" role="listitem">Technology-enabled</span>
+              <span class="hero__trust-item" role="listitem">Designed for local ownership</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 6 — WHY TRUST US -->
-    <section class="trust section" id="trust">
-      <div class="trust__inner container">
-        <div class="section-header text-center reveal">
-          <h2 class="heading-lg">Spiritual Purpose. Professional Discipline.</h2>
-          <p class="trust__subtitle">We treat communities as partners, not passive recipients.</p>
-        </div>
-        <div class="trust__grid">
-          <div class="card card--trust reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Community-Led</h3>
-            <p class="card__text">Every initiative begins with listening to the community. Their needs, wisdom and aspirations guide our programs.</p>
-          </div>
-          <div class="card card--trust reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <h3 class="card__title">Technology-Enabled</h3>
-            <p class="card__text">We use responsible technology to amplify impact, improve efficiency and create transparent systems.</p>
-          </div>
-          <div class="card card--trust reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <path d="M9 12l2 2 4-4"></path>
-              </svg>
-            </div>
-            <h3 class="card__title">Transparent & Accountable</h3>
-            <p class="card__text">Every rupee, every action, every outcome is documented and available for stakeholder review.</p>
-          </div>
-          <div class="card card--trust reveal">
-            <div class="card__icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <h3 class="card__title">Built for Self-Reliance</h3>
-            <p class="card__text">Our goal is to make ourselves unnecessary. Success means communities thrive independently.</p>
-          </div>
-        </div>
-        
-        <div class="trust__panel reveal">
-          <h3 class="heading-md">Verification & Governance</h3>
-          <div class="trust__panel-items">
-            <div class="trust__panel-item empty-state">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>Registration Certificate (Coming Soon)</span>
-            </div>
-            <div class="trust__panel-item empty-state">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>80G Certificate (Coming Soon)</span>
-            </div>
-            <div class="trust__panel-item empty-state">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>Annual Reports (Coming Soon)</span>
-            </div>
-            <div class="trust__panel-item empty-state">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>Financial Disclosures (Coming Soon)</span>
-            </div>
-            <div class="trust__panel-item empty-state">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>Impact Reports (Coming Soon)</span>
-            </div>
-            <div class="trust__panel-item empty-state">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>Governance Policies (Coming Soon)</span>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__image-frame">
+              <img src="assets/images/hero/hero-visual.jpg" alt="Community members collaborating in a rural setting" width="600" height="520" loading="eager" decoding="async">
+              <div class="hero__badge">
+                <span class="hero__badge-icon">🌱</span>
+                <span class="hero__badge-text">
+                  <strong>Root-to-Rise Model</strong>
+                  <span>Ancient wisdom. Modern innovation.</span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 7 — IMPACT PHILOSOPHY -->
-    <section class="impact-philosophy section reveal" id="impact">
-      <div class="impact-philosophy__inner container text-center">
-        <h2 class="heading-lg text-white">Success Means Communities No Longer Need Our Daily Support.</h2>
-        <p class="impact-philosophy__text text-white">
-          Our vision for impact goes beyond numbers. We measure success by the strength, resilience and independence of the communities we serve. Every program is designed with a three-to-five-year self-reliance objective.
-        </p>
-        <div class="impact-philosophy__stages">
-          <div class="impact-philosophy__stage">
-            <div class="impact-philosophy__stage-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+    <!-- ── Section 2: Origin Story ── -->
+    <section class="origin section" aria-labelledby="origin-heading">
+      <div class="container">
+        <div class="origin__inner">
+          <div class="origin__image-wrap reveal">
+            <div class="origin__image">
+              <img src="assets/images/hero/hero-visual.jpg" alt="Founders in conversation about community impact" width="560" height="480" loading="lazy">
             </div>
-            <h3 class="impact-philosophy__stage-title text-gold">Empower</h3>
-            <p class="impact-philosophy__stage-text text-white">Local leadership development</p>
-          </div>
-          <div class="impact-philosophy__stage">
-            <div class="impact-philosophy__stage-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 12v4"></path><path d="M8 12v4"></path><path d="M12 8v8"></path></svg>
+            <div class="origin__timeline">
+              <div class="origin__timeline-year">2026</div>
+              <div class="origin__timeline-label">Foundation established</div>
             </div>
-            <h3 class="impact-philosophy__stage-title text-gold">Sustain</h3>
-            <p class="impact-philosophy__stage-text text-white">Financial and environmental sustainability</p>
           </div>
-          <div class="impact-philosophy__stage">
-            <div class="impact-philosophy__stage-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            </div>
-            <h3 class="impact-philosophy__stage-title text-gold">Transfer</h3>
-            <p class="impact-philosophy__stage-text text-white">Women-led community ownership</p>
-          </div>
-          <div class="impact-philosophy__stage">
-            <div class="impact-philosophy__stage-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
-            </div>
-            <h3 class="impact-philosophy__stage-title text-gold">Thrive</h3>
-            <p class="impact-philosophy__stage-text text-white">Independent, measurable development</p>
-          </div>
-        </div>
-        <div class="impact-philosophy__note">
-          <p>Programs Under Development &middot; Partner Conversations Initiated &middot; Impact Framework Established</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 8 — GET INVOLVED -->
-    <section class="get-involved section" id="get-involved">
-      <div class="get-involved__inner container">
-        <div class="section-header text-center reveal">
-          <h2 class="heading-lg">Be Part of Something Greater</h2>
-          <p class="subtitle">Choose How You Want to Help</p>
-        </div>
-        <div class="get-involved__grid">
-          <!-- Card 1 -->
-          <div class="get-involved__card card reveal border-top-gold">
-            <div class="card__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-              </svg>
+          <div class="origin__content reveal">
+            <span class="eyebrow" aria-hidden="true">Our Origin</span>
+            <h2 class="h2" id="origin-heading">It began with a conversation among friends.</h2>
+            <div class="divider" aria-hidden="true"></div>
+            <p class="lead">
+              Close friends united by a shared responsibility to give back to society. A desire to practice Seva — selfless service — that goes beyond transactional charity.
+            </p>
+            <blockquote class="origin__pull">
+              "What began as a conversation became a shared commitment to people and the planet."
+            </blockquote>
+            <p style="font: 400 var(--text-base)/1.7 var(--font-body); color: var(--muted); margin-bottom: var(--s3);">
+              The foundation combines ancient and indigenous wisdom with modern technology, community participation, environmental responsibility and professional governance — all aimed at long-term self-reliance.
+            </p>
+            <div class="origin__values" role="list">
+              <span class="origin__value-tag" role="listitem">Seva</span>
+              <span class="origin__value-tag" role="listitem">Dignity</span>
+              <span class="origin__value-tag" role="listitem">Interconnectedness</span>
+              <span class="origin__value-tag" role="listitem">Sustainability</span>
+              <span class="origin__value-tag" role="listitem">Community Ownership</span>
             </div>
-            <h3 class="card__title">Donate</h3>
-            <p class="card__text">Support education, dignity, health and sustainable livelihoods.</p>
-            <a href="donate.html" class="btn btn--primary">Make a Donation</a>
-          </div>
-          <!-- Card 2 -->
-          <div class="get-involved__card card reveal border-top-green">
-            <div class="card__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-green)" stroke-width="2">
-                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line>
-              </svg>
+            <div style="margin-top: var(--s4);">
+              <a href="about.html" class="btn btn--secondary">Read Our Story</a>
             </div>
-            <h3 class="card__title">Volunteer</h3>
-            <p class="card__text">Contribute your time, skills and spirit of Seva.</p>
-            <a href="volunteer.html" class="btn btn--outline">Join the Seva Network</a>
-          </div>
-          <!-- Card 3 -->
-          <div class="get-involved__card card reveal border-top-royal">
-            <div class="card__icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-royal-blue)" stroke-width="2">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline>
-              </svg>
-            </div>
-            <h3 class="card__title">Partner</h3>
-            <p class="card__text">Collaborate through technology, expertise, funding or institutional support.</p>
-            <a href="partner.html" class="btn btn--outline">Start a Conversation</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 9 — VOLUNTEER PREVIEW -->
-    <section class="volunteer-preview section" id="volunteer">
-      <div class="volunteer-preview__inner container">
-        <div class="section-header text-center reveal">
-          <h2 class="heading-lg">Turn Your Skills Into Seva</h2>
-        </div>
-        <div class="volunteer-preview__benefits reveal">
-          <div class="volunteer-preview__benefit">
-            <h4>Spiritual Fulfilment</h4>
-            <p>Experience the joy of selfless service</p>
-          </div>
-          <div class="volunteer-preview__benefit">
-            <h4>Real-World Experience</h4>
-            <p>Work directly with communities</p>
-          </div>
-          <div class="volunteer-preview__benefit">
-            <h4>Skill Development</h4>
-            <p>Grow through meaningful projects</p>
-          </div>
-          <div class="volunteer-preview__benefit">
-            <h4>Multi-disciplinary Network</h4>
-            <p>Connect with diverse professionals</p>
-          </div>
-          <div class="volunteer-preview__benefit">
-            <h4>Recognition</h4>
-            <p>Certificates and acknowledgements</p>
-          </div>
-          <div class="volunteer-preview__benefit">
-            <h4>Direct Impact</h4>
-            <p>See the difference you make</p>
-          </div>
-        </div>
-        <div class="text-center reveal mt-32">
-          <a href="volunteer.html" class="btn btn--primary">Apply to Volunteer</a>
+    <!-- ── Section 3: Six Pillars ── -->
+    <section class="pillars section" aria-labelledby="pillars-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="eyebrow" aria-hidden="true">Six Pillars</span>
+          <h2 class="h2" id="pillars-heading">Six pillars. One connected ecosystem.</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="lead">Improving one part of a community strengthens every other part.</p>
+        </header>
+
+        <div class="pillars__grid" data-stagger>
+          <a href="programs/holistic-learning.html" class="pillar-card pillar-card--learning reveal" aria-label="Holistic Learning program">
+            <div class="pillar-card__icon" aria-hidden="true">📚</div>
+            <h3 class="pillar-card__name">Holistic Learning</h3>
+            <p class="pillar-card__desc">Making quality education, digital skills, AI, robotics, vocational training and lifelong learning accessible to underserved communities.</p>
+            <span class="pillar-card__link" aria-hidden="true">Explore Program →</span>
+          </a>
+
+          <a href="programs/womens-equity.html" class="pillar-card pillar-card--women reveal" aria-label="Women's Equity program">
+            <div class="pillar-card__icon" aria-hidden="true">🌸</div>
+            <h3 class="pillar-card__name">Women's Equity</h3>
+            <p class="pillar-card__desc">Supporting women through healthcare, safety, financial literacy, livelihood opportunities, digital commerce and community leadership.</p>
+            <span class="pillar-card__link" aria-hidden="true">Explore Program →</span>
+          </a>
+
+          <a href="programs/resilient-communities.html" class="pillar-card pillar-card--communities reveal" aria-label="Resilient Communities program">
+            <div class="pillar-card__icon" aria-hidden="true">🏡</div>
+            <h3 class="pillar-card__name">Resilient Communities</h3>
+            <p class="pillar-card__desc">Combining cultural preservation, smart-village infrastructure, rural innovation, local enterprise and sustainable livelihoods.</p>
+            <span class="pillar-card__link" aria-hidden="true">Explore Program →</span>
+          </a>
+
+          <a href="programs/inclusive-wellness.html" class="pillar-card pillar-card--wellness reveal" aria-label="Inclusive Wellness program">
+            <div class="pillar-card__icon" aria-hidden="true">🏥</div>
+            <h3 class="pillar-card__name">Inclusive Wellness</h3>
+            <p class="pillar-card__desc">Bringing mobile healthcare, telemedicine, nutrition, mental health support and integrative wellness to underserved regions.</p>
+            <span class="pillar-card__link" aria-hidden="true">Explore Program →</span>
+          </a>
+
+          <a href="programs/climate-resilience.html" class="pillar-card pillar-card--climate reveal" aria-label="Climate Resilience program">
+            <div class="pillar-card__icon" aria-hidden="true">☀️</div>
+            <h3 class="pillar-card__name">Climate Resilience</h3>
+            <p class="pillar-card__desc">Helping communities prepare for climate risks through clean energy, early warning systems, resilient infrastructure and local climate action.</p>
+            <span class="pillar-card__link" aria-hidden="true">Explore Program →</span>
+          </a>
+
+          <a href="programs/eco-conservation.html" class="pillar-card pillar-card--eco reveal" aria-label="Eco-Conservation program">
+            <div class="pillar-card__icon" aria-hidden="true">🌿</div>
+            <h3 class="pillar-card__name">Eco-Conservation</h3>
+            <p class="pillar-card__desc">Empowering communities to protect forests, water, biodiversity, wildlife and natural ecosystems through local participation and technology.</p>
+            <span class="pillar-card__link" aria-hidden="true">Explore Program →</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 10 — DONATION PREVIEW -->
-    <section class="donation-preview section" id="donate">
-      <div class="donation-preview__inner container text-center">
-        <div class="section-header reveal">
-          <h2 class="heading-lg">Your Support Can Become Someone's Opportunity.</h2>
+    <!-- ── Section 4: Root-to-Rise Model ── -->
+    <section class="root-to-rise section" aria-labelledby="rtr-heading">
+      <div class="container">
+        <header class="root-to-rise__header reveal">
+          <span class="eyebrow" aria-hidden="true">The Model</span>
+          <h2 class="h2" id="rtr-heading" style="color:var(--white);">From local roots to lasting ownership.</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="lead">We do not believe in temporary fixes. We help communities grow from strong roots into self-reliant ecosystems.</p>
+        </header>
+
+        <div class="rtr-timeline" role="list">
+          <article class="rtr-step reveal" role="listitem">
+            <div class="rtr-step__num" aria-hidden="true">01</div>
+            <div class="rtr-step__label">Step 01</div>
+            <h3 class="rtr-step__title">Listen &amp; Learn</h3>
+            <p class="rtr-step__desc">Immerse in communities to understand traditions, local strengths, natural resources, challenges and existing indigenous knowledge.</p>
+            <div class="rtr-step__core">"Begin with the community, not with an external assumption."</div>
+          </article>
+
+          <article class="rtr-step reveal" role="listitem">
+            <div class="rtr-step__num" aria-hidden="true">02</div>
+            <div class="rtr-step__label">Step 02</div>
+            <h3 class="rtr-step__title">Bridge &amp; Blend</h3>
+            <p class="rtr-step__desc">Combine ancient knowledge, traditional practices, digital skills, modern healthcare, clean energy and contemporary market access.</p>
+            <div class="rtr-step__core">"Preserve identity while creating future-ready opportunity."</div>
+          </article>
+
+          <article class="rtr-step reveal" role="listitem">
+            <div class="rtr-step__num" aria-hidden="true">03</div>
+            <div class="rtr-step__label">Step 03</div>
+            <h3 class="rtr-step__title">Digitalise &amp; Scale</h3>
+            <p class="rtr-step__desc">Use digital marketplaces, cloud platforms, telemedicine, data tracking, smart technology and real-time impact measurement.</p>
+            <div class="rtr-step__core">"Connect local innovation with wider opportunity."</div>
+          </article>
+
+          <article class="rtr-step reveal" role="listitem">
+            <div class="rtr-step__num" aria-hidden="true">04</div>
+            <div class="rtr-step__label">Step 04</div>
+            <h3 class="rtr-step__title">Transfer Ownership</h3>
+            <p class="rtr-step__desc">Build local leadership councils, women-led committees, community governance, operational capability and financial sustainability.</p>
+            <div class="rtr-step__core">"Success means the community no longer depends on daily external support."</div>
+          </article>
         </div>
-        <div class="donation-preview__purposes reveal">
-          <div class="donation-preview__purpose-card">📚 Education Access</div>
-          <div class="donation-preview__purpose-card">👩 Women's Livelihoods</div>
-          <div class="donation-preview__purpose-card">🏥 Rural Healthcare</div>
-          <div class="donation-preview__purpose-card">🌡️ Climate Resilience</div>
-          <div class="donation-preview__purpose-card">🌿 Conservation</div>
-          <div class="donation-preview__purpose-card">💛 General Support</div>
+
+        <div style="text-align:center; margin-top: var(--s7);">
+          <a href="root-to-rise.html" class="btn btn--outline-gold">Explore the Full Model</a>
         </div>
-        <p class="donation-preview__note reveal my-32 text-sm text-muted">Tax benefits, where applicable, will be subject to the Foundation's valid statutory approvals.</p>
-        <a href="donate.html" class="btn btn--secondary btn--lg reveal">Donate Now</a>
       </div>
     </section>
 
-    <!-- SECTION 11 — PARTNERSHIP CTA -->
-    <section class="partnership-cta section" id="partner">
-      <div class="partnership-cta__inner container text-center">
-        <h2 class="heading-lg reveal">Partner With an Engine of Change</h2>
-        <div class="partnership-cta__audiences reveal">
-          <span class="badge">Corporate CSR</span>
-          <span class="badge">Technology Companies</span>
-          <span class="badge">Healthcare Organisations</span>
-          <span class="badge">Educational Institutions</span>
-          <span class="badge">Environmental Organisations</span>
-          <span class="badge">Researchers</span>
-          <span class="badge">Philanthropic Foundations</span>
-          <span class="badge">Government Bodies</span>
-        </div>
-        <div class="mt-32 reveal">
-          <a href="partner.html" class="btn btn--primary">Start a Partnership Conversation</a>
+    <!-- ── Section 5: Why It Works ── -->
+    <section class="why-works section" aria-labelledby="why-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="eyebrow" aria-hidden="true">Our Approach</span>
+          <h2 class="h2" id="why-heading">Designed to create independence — not dependency.</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+        <div class="why-works__grid" data-stagger>
+          <div class="proof-card reveal">
+            <div class="proof-card__num" aria-hidden="true">01</div>
+            <h3 class="proof-card__title">Community-Led</h3>
+            <p class="proof-card__desc">Ground-level initiatives are implemented with local participation and leadership. Communities shape the programs — not the other way around.</p>
+          </div>
+          <div class="proof-card reveal">
+            <div class="proof-card__num" aria-hidden="true">02</div>
+            <h3 class="proof-card__title">Technology-Enabled</h3>
+            <p class="proof-card__desc">Digital marketplaces, cloud platforms, telemedicine and data systems help extend quality services to remote regions at meaningful scale.</p>
+          </div>
+          <div class="proof-card reveal">
+            <div class="proof-card__num" aria-hidden="true">03</div>
+            <h3 class="proof-card__title">Built for Sustainability</h3>
+            <p class="proof-card__desc">Programs are designed to develop financial, operational and environmental self-reliance. The goal is communities that lead themselves.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 12 — FINAL CTA -->
-    <section class="final-cta section bg-gradient-blue text-white">
-      <div class="final-cta__inner container text-center reveal">
-        <h2 class="heading-display">A Better World Is Not Built by One Organisation. It Is Built Together.</h2>
-        <div class="final-cta__buttons flex-center gap-16 mt-48">
-          <a href="donate.html" class="btn btn--primary">Donate Now</a>
-          <a href="volunteer.html" class="btn btn--outline btn--outline-gold">Volunteer</a>
-          <a href="partner.html" class="btn btn--outline btn--outline-gold">Partner With Us</a>
+    <!-- ── Section 6: Featured Programs ── -->
+    <section class="programs-section section" aria-labelledby="programs-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="eyebrow" aria-hidden="true">Our Programs</span>
+          <h2 class="h2" id="programs-heading">Where purpose becomes action.</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="lead">Six interlocking programs addressing education, equity, health, community, climate and conservation.</p>
+        </header>
+
+        <div class="program-cards" data-stagger>
+          <a href="programs/holistic-learning.html" class="program-card reveal">
+            <div class="program-card__image">
+              <img src="assets/images/programs/holistic-learning.jpg" alt="Children engaged in learning in an inclusive classroom" width="560" height="350" loading="lazy">
+              <span class="program-card__tag">Holistic Learning</span>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__name">Education for Every Learner</h3>
+              <p class="program-card__challenge">Millions of rural and tribal children lack access to quality education, digital skills and vocational pathways that can open lasting opportunity.</p>
+              <span class="program-card__cta" aria-hidden="true">Explore Program →</span>
+            </div>
+          </a>
+
+          <a href="programs/womens-equity.html" class="program-card reveal">
+            <div class="program-card__image">
+              <img src="assets/images/programs/womens-equity.jpg" alt="Women entrepreneurs reviewing business plans together" width="560" height="350" loading="lazy">
+              <span class="program-card__tag">Women's Equity</span>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__name">Women as Leaders and Changemakers</h3>
+              <p class="program-card__challenge">Women in underserved communities face compounded barriers to health, safety, financial independence and leadership opportunity.</p>
+              <span class="program-card__cta" aria-hidden="true">Explore Program →</span>
+            </div>
+          </a>
+
+          <a href="programs/resilient-communities.html" class="program-card reveal">
+            <div class="program-card__image">
+              <img src="assets/images/programs/resilient-communities.jpg" alt="A connected village community" width="560" height="350" loading="lazy">
+              <span class="program-card__tag">Resilient Communities</span>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__name">Reviving Rural Economies</h3>
+              <p class="program-card__challenge">Cultural erosion, distress migration and lack of sustainable livelihood options continue to weaken rural communities.</p>
+              <span class="program-card__cta" aria-hidden="true">Explore Program →</span>
+            </div>
+          </a>
+
+          <a href="programs/inclusive-wellness.html" class="program-card reveal">
+            <div class="program-card__image">
+              <img src="assets/images/programs/inclusive-wellness.jpg" alt="Healthcare reaching a remote community" width="560" height="350" loading="lazy">
+              <span class="program-card__tag">Inclusive Wellness</span>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__name">Healthcare at the Last Mile</h3>
+              <p class="program-card__challenge">Geographical remoteness and healthcare infrastructure gaps leave millions without access to basic medical, mental health and nutrition services.</p>
+              <span class="program-card__cta" aria-hidden="true">Explore Program →</span>
+            </div>
+          </a>
+
+          <a href="programs/climate-resilience.html" class="program-card reveal">
+            <div class="program-card__image">
+              <img src="assets/images/programs/climate-resilience.jpg" alt="Community-led clean energy initiative" width="560" height="350" loading="lazy">
+              <span class="program-card__tag">Climate Resilience</span>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__name">Preparing Communities for Climate Risk</h3>
+              <p class="program-card__challenge">Rural and tribal communities are disproportionately affected by climate change while lacking resources to adapt or access clean energy.</p>
+              <span class="program-card__cta" aria-hidden="true">Explore Program →</span>
+            </div>
+          </a>
+
+          <a href="programs/eco-conservation.html" class="program-card reveal">
+            <div class="program-card__image">
+              <img src="assets/images/programs/eco-conservation.jpg" alt="Community guardians protecting local ecosystems" width="560" height="350" loading="lazy">
+              <span class="program-card__tag">Eco-Conservation</span>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__name">Protecting Nature Through Community Action</h3>
+              <p class="program-card__challenge">Forests, rivers, wildlife and ecosystems face mounting pressure without local conservation networks to protect and restore them.</p>
+              <span class="program-card__cta" aria-hidden="true">Explore Program →</span>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align:center; margin-top: var(--s6);">
+          <a href="programs/index.html" class="btn btn--secondary">View All Programs</a>
         </div>
       </div>
     </section>
+
+    <!-- ── Section 7: Trust & Governance ── -->
+    <section class="trust-section section" aria-labelledby="trust-heading">
+      <div class="container">
+        <header class="section-header reveal" style="margin-bottom: var(--s7);">
+          <span class="eyebrow" aria-hidden="true">Why Ananth Sarth</span>
+          <h2 class="h2" id="trust-heading" style="color:var(--white);">Spiritual purpose. Professional discipline.</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="trust-section__inner">
+          <div class="trust-col reveal">
+            <div class="trust-divider" aria-hidden="true"></div>
+            <h3 class="trust-col__title">Grounded in Seva</h3>
+            <p class="trust-col__desc">Seva is selfless service — a deeply held principle that guides every decision. We operate from a foundation of respect for interconnected life, dignity over transactional charity, and responsibility toward both people and nature.</p>
+            <p class="trust-col__desc">The foundation does not position communities as recipients. It positions them as participants, collaborators and ultimately owners of their own progress.</p>
+            <div class="trust-col__links">
+              <a href="about.html#values" class="trust-col__link">Our values and philosophy →</a>
+              <a href="root-to-rise.html" class="trust-col__link">The Root-to-Rise model →</a>
+            </div>
+          </div>
+
+          <div class="trust-col reveal">
+            <div class="trust-divider" aria-hidden="true"></div>
+            <h3 class="trust-col__title">Professionally Governed</h3>
+            <div class="governance-list" role="list">
+              <div class="governance-item" role="listitem">
+                <div class="governance-item__icon" aria-hidden="true">✓</div>
+                <p class="governance-item__text">Defined program models with measurable intended outcomes</p>
+              </div>
+              <div class="governance-item" role="listitem">
+                <div class="governance-item__icon" aria-hidden="true">✓</div>
+                <p class="governance-item__text">Digital tracking and transparent reporting practices</p>
+              </div>
+              <div class="governance-item" role="listitem">
+                <div class="governance-item__icon" aria-hidden="true">✓</div>
+                <p class="governance-item__text">Responsible fund use and community accountability</p>
+              </div>
+              <div class="governance-item" role="listitem">
+                <div class="governance-item__icon" aria-hidden="true">✓</div>
+                <p class="governance-item__text">Multidisciplinary team spanning technology, health, education and environment</p>
+              </div>
+              <div class="governance-item" role="listitem">
+                <div class="governance-item__icon" aria-hidden="true">✓</div>
+                <p class="governance-item__text">Community ownership built into every program design</p>
+              </div>
+            </div>
+            <div class="trust-col__links" style="margin-top: var(--s3);">
+              <a href="transparency.html" class="trust-col__link">View governance documents →</a>
+              <a href="about.html#team" class="trust-col__link">Meet the team →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 8: Team ── -->
+    <section class="team-section section" aria-labelledby="team-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="eyebrow" aria-hidden="true">The Team</span>
+          <h2 class="h2" id="team-heading">Different expertise. One shared purpose.</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="lead">A multidisciplinary founding team united by the values of Seva, dignity and lasting community impact.</p>
+        </header>
+
+        <div class="team-grid" data-stagger>
+          <div class="team-card reveal">
+            <div class="team-card__photo" aria-hidden="true">👤</div>
+            <div class="team-card__body">
+              <div class="team-card__name">[Founder Name]</div>
+              <div class="team-card__role">Founder &amp; Director</div>
+              <span class="team-card__expertise">Technology &amp; Innovation</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-card__photo" aria-hidden="true">👤</div>
+            <div class="team-card__body">
+              <div class="team-card__name">[Co-founder Name]</div>
+              <div class="team-card__role">Co-founder</div>
+              <span class="team-card__expertise">Social &amp; Cultural Research</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-card__photo" aria-hidden="true">👤</div>
+            <div class="team-card__body">
+              <div class="team-card__name">[Team Member]</div>
+              <div class="team-card__role">Program Lead</div>
+              <span class="team-card__expertise">Environmental Science</span>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-card__photo" aria-hidden="true">👤</div>
+            <div class="team-card__body">
+              <div class="team-card__name">[Team Member]</div>
+              <div class="team-card__role">Operations</div>
+              <span class="team-card__expertise">Healthcare &amp; Wellness</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top: var(--s5);">
+          <a href="about.html#team" class="btn btn--secondary">Meet the Full Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 9: Impact Framework ── -->
+    <section class="impact-section section" aria-labelledby="impact-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="eyebrow" aria-hidden="true">Impact Framework</span>
+          <h2 class="h2" id="impact-heading">Building impact that can be demonstrated.</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="lead">Because the foundation is newly initiated, we are establishing what we will measure — not fabricating what we have achieved.</p>
+        </header>
+
+        <div class="impact-metrics" data-stagger>
+          <div class="metric-card reveal">
+            <span class="metric-card__status metric-card__status--planned">Planned</span>
+            <div class="metric-card__name">Learners enrolled in digital &amp; vocational programs</div>
+            <div class="metric-card__category">Holistic Learning</div>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-card__status metric-card__status--planned">Planned</span>
+            <div class="metric-card__name">Women trained in livelihood &amp; leadership programs</div>
+            <div class="metric-card__category">Women's Equity</div>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-card__status metric-card__status--planned">Planned</span>
+            <div class="metric-card__name">Livelihoods created through rural enterprise</div>
+            <div class="metric-card__category">Resilient Communities</div>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-card__status metric-card__status--planned">Planned</span>
+            <div class="metric-card__name">Health consultations completed via mobile &amp; telemedicine</div>
+            <div class="metric-card__category">Inclusive Wellness</div>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-card__status metric-card__status--planned">Planned</span>
+            <div class="metric-card__name">Clean-energy capacity deployed in communities</div>
+            <div class="metric-card__category">Climate Resilience</div>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-card__status metric-card__status--planned">Planned</span>
+            <div class="metric-card__name">Hectares of forest &amp; water bodies under community protection</div>
+            <div class="metric-card__category">Eco-Conservation</div>
+          </div>
+        </div>
+
+        <div class="impact-note reveal">
+          <span class="impact-note__icon" aria-hidden="true">📊</span>
+          <p class="impact-note__text">Verified impact figures will be published as programs become operational and independently documented. All metrics above represent planned measurement categories.</p>
+        </div>
+
+        <div style="text-align:center; margin-top: var(--s5);">
+          <a href="impact.html" class="btn btn--secondary">View Full Impact Framework</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 10: Story of Change ── -->
+    <section class="story-section section" aria-labelledby="story-heading">
+      <div class="container">
+        <header class="section-header reveal" style="margin-bottom: var(--s6);">
+          <span class="eyebrow" aria-hidden="true">Stories</span>
+          <h2 class="h2" id="story-heading">Every community carries its own strength.</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="story-card reveal">
+          <div class="story-card__image">
+            <img src="assets/images/programs/resilient-communities.jpg" alt="Community members coming together to build local leadership" width="640" height="480" loading="lazy">
+          </div>
+          <div class="story-card__content">
+            <div class="story-card__category">
+              <span aria-hidden="true">🌱</span> Foundation Vision
+            </div>
+            <div class="story-card__location">
+              <span aria-hidden="true">📍</span> Rural &amp; Tribal Communities, India
+            </div>
+            <blockquote class="story-card__quote">"We do not arrive with answers. We arrive with the intention to listen."</blockquote>
+            <p class="story-card__body">
+              The Ananth Sarth Seva Foundation was formed on the belief that lasting change emerges from communities themselves — not from organisations that arrive with predefined solutions. The foundation is at the beginning of its journey, building relationships, understanding local realities and designing programs that communities will eventually lead on their own.
+            </p>
+            <a href="about.html" class="btn btn--secondary">Read Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 11: Get Involved ── -->
+    <section class="involved-section section" aria-labelledby="involved-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <span class="eyebrow" aria-hidden="true">Get Involved</span>
+          <h2 class="h2" id="involved-heading">Choose how you want to create change.</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="involved-grid" data-stagger>
+          <div class="involved-card reveal">
+            <div class="involved-card__icon" aria-hidden="true">💛</div>
+            <h3 class="involved-card__title">Donate</h3>
+            <p class="involved-card__desc">Support the development of sustainable programs across the six pillars. Every contribution is directed with accountability and transparency.</p>
+            <a href="donate.html" class="btn btn--primary">Support the Mission</a>
+          </div>
+
+          <div class="involved-card reveal">
+            <div class="involved-card__icon" aria-hidden="true">🤝</div>
+            <h3 class="involved-card__title">Volunteer</h3>
+            <p class="involved-card__desc">Join the Seva Network and contribute your time, energy or professional expertise across education, health, technology, environment and more.</p>
+            <a href="volunteer.html" class="btn btn--secondary">Become a Volunteer</a>
+          </div>
+
+          <div class="involved-card reveal">
+            <div class="involved-card__icon" aria-hidden="true">🏢</div>
+            <h3 class="involved-card__title">Partner</h3>
+            <p class="involved-card__desc">Collaborate through CSR, technology, research, institutional or implementation partnerships. Align your organisation with meaningful, measurable impact.</p>
+            <a href="partner.html" class="btn btn--secondary">Explore Partnership</a>
+          </div>
+
+          <div class="involved-card reveal">
+            <div class="involved-card__icon" aria-hidden="true">🚀</div>
+            <h3 class="involved-card__title">Work With Us</h3>
+            <p class="involved-card__desc">Build a career combining professional growth with measurable social and environmental impact in a young, multidisciplinary organisation.</p>
+            <a href="careers.html" class="btn btn--secondary">View Opportunities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 12: Final CTA ── -->
+    <section class="final-cta section" aria-labelledby="cta-heading">
+      <div class="final-cta__bg" aria-hidden="true">
+        <img src="assets/images/hero/hero-visual.jpg" alt="" width="1400" height="480" loading="lazy">
+      </div>
+      <div class="final-cta__overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="final-cta__content reveal">
+          <span class="eyebrow" aria-hidden="true">Join Us</span>
+          <h2 class="final-cta__heading" id="cta-heading">Partner with an engine of lasting change.</h2>
+          <p class="final-cta__desc">Join us in building communities that are educated, healthy, self-reliant, climate-ready and empowered to lead their own future.</p>
+          <div class="btn-group">
+            <a href="partner.html" class="btn btn--primary">Partner With Us</a>
+            <a href="volunteer.html" class="btn btn--ghost">Join the Seva Network</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__inner container">
-      <div class="footer__col">
-        <a href="/" class="footer__logo">
-          <img src="assets/images/logo-icon.svg" alt="Ananth Sarth Seva Foundation" width="40" height="40">
-          <span class="footer__logo-text">Ananth Sarth Seva Foundation</span>
-        </a>
-        <p class="footer__tagline">Serving Humanity, Creating Hope.</p>
-      </div>
+  <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
 
-      <div class="footer__col">
-        <h4 class="footer__heading">About Us</h4>
-        <ul class="footer__list">
-          <li><a href="about.html#our-story" class="footer__link">Our Story</a></li>
-          <li><a href="about.html#vision" class="footer__link">Vision</a></li>
-          <li><a href="about.html#mission" class="footer__link">Mission</a></li>
-          <li><a href="about.html#how-we-work" class="footer__link">How We Work</a></li>
-          <li><a href="about.html#why-trust-us" class="footer__link">Why Trust Us</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4 class="footer__heading">Programs</h4>
-        <ul class="footer__list">
-          <li><a href="programs/holistic-learning.html" class="footer__link">Holistic Learning</a></li>
-          <li><a href="programs/womens-equity.html" class="footer__link">Women's Equity</a></li>
-          <li><a href="programs/resilient-communities.html" class="footer__link">Resilient Communities</a></li>
-          <li><a href="programs/inclusive-wellness.html" class="footer__link">Inclusive Wellness</a></li>
-          <li><a href="programs/climate-resilience.html" class="footer__link">Climate Resilience</a></li>
-          <li><a href="programs/eco-conservation.html" class="footer__link">Eco-Conservation</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4 class="footer__heading">Get Involved</h4>
-        <ul class="footer__list">
-          <li><a href="donate.html" class="footer__link">Donate</a></li>
-          <li><a href="volunteer.html" class="footer__link">Volunteer</a></li>
-          <li><a href="partner.html" class="footer__link">Partner</a></li>
-          <li><a href="careers.html" class="footer__link">Work With Us</a></li>
-          <li><a href="contact.html" class="footer__link">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4 class="footer__heading">Connect</h4>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          </a>
-          <a href="#" class="footer__social-link" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-          <a href="#" class="footer__social-link" aria-label="YouTube">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-          </a>
-          <a href="#" class="footer__social-link" aria-label="X/Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-          </a>
-        </div>
-        <div class="footer__contact">
-          <a href="mailto:contact@anathsarthsevafoundation.org" class="footer__link">contact@anathsarthsevafoundation.org</a>
-          <a href="tel:+91XXXXXXXXXX" class="footer__link">+91 XX XXXX XXXX</a>
+    <!-- Newsletter -->
+    <div class="footer__newsletter">
+      <div class="container">
+        <div class="footer__newsletter-inner">
+          <div class="footer__newsletter-text">
+            <h3>Stay connected to the movement.</h3>
+            <p>Updates on programs, impact and opportunities — directly to your inbox.</p>
+          </div>
+          <form class="footer__newsletter-form" aria-label="Newsletter subscription">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email" class="footer__newsletter-input" placeholder="Your email address" autocomplete="email" required>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>
 
+    <!-- Main Footer -->
+    <div class="footer__body">
+      <div class="container">
+        <div class="footer__grid">
+
+          <!-- Brand -->
+          <div class="footer__brand">
+            <img src="assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="footer__brand-logo" width="160" height="48" loading="lazy">
+            <p class="footer__brand-tagline">Ancient wisdom. Modern innovation. Community ownership. Building self-reliant communities from strong roots.</p>
+            <div class="footer__social" role="list" aria-label="Social media links">
+              <a href="#" class="footer__social-link" aria-label="LinkedIn" role="listitem">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-5a2 2 0 110 4 2 2 0 010-4z"/></svg>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Instagram" role="listitem">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Twitter/X" role="listitem">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Foundation -->
+          <div>
+            <div class="footer__col-title">Foundation</div>
+            <ul class="footer__col-links" role="list">
+              <li><a href="about.html" class="footer__col-link">About Us</a></li>
+              <li><a href="about.html#mission" class="footer__col-link">Vision &amp; Mission</a></li>
+              <li><a href="root-to-rise.html" class="footer__col-link">Root-to-Rise Model</a></li>
+              <li><a href="about.html#team" class="footer__col-link">Leadership</a></li>
+              <li><a href="transparency.html" class="footer__col-link">Governance</a></li>
+            </ul>
+          </div>
+
+          <!-- Programs -->
+          <div>
+            <div class="footer__col-title">Programs</div>
+            <ul class="footer__col-links" role="list">
+              <li><a href="programs/holistic-learning.html" class="footer__col-link">Holistic Learning</a></li>
+              <li><a href="programs/womens-equity.html" class="footer__col-link">Women's Equity</a></li>
+              <li><a href="programs/resilient-communities.html" class="footer__col-link">Resilient Communities</a></li>
+              <li><a href="programs/inclusive-wellness.html" class="footer__col-link">Inclusive Wellness</a></li>
+              <li><a href="programs/climate-resilience.html" class="footer__col-link">Climate Resilience</a></li>
+              <li><a href="programs/eco-conservation.html" class="footer__col-link">Eco-Conservation</a></li>
+            </ul>
+          </div>
+
+          <!-- Get Involved -->
+          <div>
+            <div class="footer__col-title">Get Involved</div>
+            <ul class="footer__col-links" role="list">
+              <li><a href="donate.html" class="footer__col-link">Donate</a></li>
+              <li><a href="volunteer.html" class="footer__col-link">Volunteer</a></li>
+              <li><a href="partner.html" class="footer__col-link">Partner With Us</a></li>
+              <li><a href="careers.html" class="footer__col-link">Work With Us</a></li>
+              <li><a href="contact.html" class="footer__col-link">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
     <div class="footer__bottom">
-      <div class="footer__bottom-inner container">
-        <span class="footer__copyright">&copy; 2025 Ananth Sarth Seva Foundation. All rights reserved.</span>
-        <div class="footer__legal">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Use</a>
-          <a href="donation-policy.html">Donation Policy</a>
-          <a href="refund-policy.html">Refund Policy</a>
-          <a href="accessibility.html">Accessibility</a>
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copy">© 2026 Ananth Sarth Seva Foundation. All rights reserved.</p>
+          <nav class="footer__bottom-links" aria-label="Legal links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="transparency.html">Transparency</a>
+          </nav>
         </div>
       </div>
     </div>
+
   </footer>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/animations.js"></script>
+  <!-- Scripts -->
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/utils.js" defer></script>
+
+  <!-- Screen reader only utility -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+
 </body>
 </html>
