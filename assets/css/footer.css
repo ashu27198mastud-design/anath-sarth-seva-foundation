@@ -59,10 +59,12 @@
 
 /* Brand column */
 .footer__brand-logo {
-  height: 48px;
+  height: 64px;
   width: auto;
-  border-radius: var(--r-xs);
+  max-width: 220px;
+  border-radius: var(--r-sm);
   margin-bottom: var(--s3);
+  object-fit: contain;
 }
 .footer__brand-tagline {
   font: 400 var(--text-sm)/1.7 var(--font-body);

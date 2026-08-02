@@ -10,7 +10,7 @@
   right: 0;
   z-index: var(--z-nav);
   transition: background var(--t-base), box-shadow var(--t-base), padding var(--t-base);
-  padding-block: 20px;
+  padding-block: 16px;
 }
 
 /* Transparent over hero */
@@ -22,7 +22,12 @@
 .header--scrolled {
   background: var(--royal-blue);
   box-shadow: 0 2px 20px rgba(7,59,102,.18);
-  padding-block: 12px;
+  padding-block: 10px;
+}
+
+/* Shrink logo slightly when scrolled */
+.header--scrolled .header__logo-img {
+  height: 52px;
 }
 
 /* On non-hero pages, always solid */
@@ -45,10 +50,12 @@
   flex-shrink: 0;
 }
 .header__logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
-  border-radius: var(--r-xs);
+  max-width: 220px;
+  border-radius: var(--r-sm);
   object-fit: contain;
+  transition: height var(--t-base);
 }
 
 /* ── Desktop Nav ── */
@@ -275,9 +282,10 @@
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .mobile-nav__logo-img {
-  height: 42px;
+  height: 54px;
   width: auto;
-  border-radius: var(--r-xs);
+  max-width: 180px;
+  border-radius: var(--r-sm);
   object-fit: contain;
 }
 .mobile-nav__close {
