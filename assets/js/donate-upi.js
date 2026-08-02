@@ -45,8 +45,9 @@
           <label for="custom-amount" class="sr-only">Enter a custom donation amount</label>
           <div class="custom-amount-wrap">
             <span class="custom-amount-wrap__symbol" aria-hidden="true">₹</span>
-            <input type="number" id="custom-amount" class="form-control" min="1" step="1" inputmode="numeric" placeholder="Enter a custom amount" autocomplete="off">
+            <input type="number" id="custom-amount" class="form-control" min="1" step="1" inputmode="numeric" placeholder="Enter a whole-rupee amount" autocomplete="off" aria-describedby="custom-amount-help">
           </div>
+          <p id="custom-amount-help" class="upi-copy-status" aria-live="polite"></p>
         </div>
 
         <div class="form-group">
@@ -145,6 +146,7 @@
   const amountButtons = Array.from(document.querySelectorAll('[data-amount]'));
   const pillarButtons = Array.from(document.querySelectorAll('[data-pillar]'));
   const customAmount = document.getElementById('custom-amount');
+  const amountHelp = document.getElementById('custom-amount-help');
   const amountDisplays = document.querySelectorAll('[data-selected-amount]');
   const purposeDisplays = document.querySelectorAll('[data-selected-purpose]');
   const scanInstruction = document.getElementById('scan-instruction');
@@ -154,43 +156,98 @@
   const copyStatus = document.getElementById('copy-status');
   const confirmationLink = document.getElementById('payment-confirmation-link');
 
-  const merchant = { pa: 'anan7977386@barodampay', pn: 'ANANTH SARTH SEVA FOUNDATION', cu: 'INR' };
+  const merchant = {
+    pa: 'anan7977386@barodampay',
+    pn: 'ANANTH SARTH SEVA FOUNDATION',
+    cu: 'INR'
+  };
+
   const purposeLabels = {
-    'where-needed': 'Where Most Needed', learning: 'Holistic Learning', women: "Women's Equity",
-    communities: 'Resilient Communities', wellness: 'Inclusive Wellness', climate: 'Climate Resilience', eco: 'Eco-Conservation'
+    'where-needed': 'Where Most Needed',
+    learning: 'Holistic Learning',
+    women: "Women's Equity",
+    communities: 'Resilient Communities',
+    wellness: 'Inclusive Wellness',
+    climate: 'Climate Resilience',
+    eco: 'Eco-Conservation'
   };
 
   let selectedAmount = 500;
   let selectedPurpose = 'where-needed';
 
+  const isValidAmount = (amount) => Number.isInteger(amount) && amount >= 1;
+
   const formatAmount = (amount) => {
-    const value = Number(amount);
-    if (!Number.isFinite(value) || value <= 0) return 'Choose amount';
-    return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(value);
+    if (!isValidAmount(amount)) return 'Choose amount';
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0
+    }).format(amount);
   };
 
   const buildUpiLink = () => {
-    const params = new URLSearchParams({ pa: merchant.pa, pn: merchant.pn, tn: `Donation - ${purposeLabels[selectedPurpose]}`, cu: merchant.cu });
-    if (selectedAmount > 0) params.set('am', String(selectedAmount));
+    const params = new URLSearchParams({
+      pa: merchant.pa,
+      pn: merchant.pn,
+      tn: `Donation - ${purposeLabels[selectedPurpose]}`,
+      cu: merchant.cu
+    });
+    if (isValidAmount(selectedAmount)) params.set('am', String(selectedAmount));
     return `upi://pay?${params.toString()}`;
   };
 
   const updateConfirmationLink = () => {
-    const amountText = selectedAmount > 0 ? formatAmount(selectedAmount) : 'Custom amount';
+    if (!confirmationLink) return;
+    const amountText = isValidAmount(selectedAmount) ? formatAmount(selectedAmount) : 'Amount not selected';
     const subject = `Donation confirmation - ${merchant.pn}`;
-    const body = ['Hello Ananth Sarth Seva Foundation,', '', 'I have completed a UPI donation.', `Amount: ${amountText}`, `Purpose: ${purposeLabels[selectedPurpose]}`, `UPI ID: ${merchant.pa}`, '', 'Transaction / UTR number: ', 'Payment date: ', '', 'Please confirm receipt when convenient.'].join('\n');
+    const body = [
+      'Hello Ananth Sarth Seva Foundation,',
+      '',
+      'I have completed a UPI donation.',
+      `Amount: ${amountText}`,
+      `Purpose: ${purposeLabels[selectedPurpose]}`,
+      `UPI ID: ${merchant.pa}`,
+      '',
+      'Transaction / UTR number: ',
+      'Payment date: ',
+      '',
+      'Please confirm receipt when convenient.'
+    ].join('\n');
     confirmationLink.href = `mailto:contact@anathsarthsevafoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
+  const setPaymentAvailability = (enabled, upiLink) => {
+    upiLinks.forEach((link) => {
+      link.classList.toggle('is-disabled', !enabled);
+      link.setAttribute('aria-disabled', String(!enabled));
+      link.style.pointerEvents = enabled ? '' : 'none';
+      link.style.opacity = enabled ? '' : '0.55';
+      if (enabled) link.href = upiLink;
+      else link.removeAttribute('href');
+    });
+  };
+
   const updateUI = () => {
+    const enabled = isValidAmount(selectedAmount);
     const amountText = formatAmount(selectedAmount);
     const purposeText = purposeLabels[selectedPurpose];
     const upiLink = buildUpiLink();
+
     amountDisplays.forEach((node) => { node.textContent = amountText; });
     purposeDisplays.forEach((node) => { node.textContent = purposeText; });
-    upiLinks.forEach((link) => { link.href = upiLink; });
-    dynamicPayLabel.textContent = selectedAmount > 0 ? `Pay ${amountText} with UPI` : 'Open your UPI app';
-    scanInstruction.textContent = selectedAmount > 0 ? `Scan the merchant QR and enter ${amountText} in your UPI app.` : 'Scan the merchant QR and enter your preferred amount in your UPI app.';
+    setPaymentAvailability(enabled, upiLink);
+
+    if (dynamicPayLabel) {
+      dynamicPayLabel.textContent = enabled ? `Pay ${amountText} with UPI` : 'Enter a whole-rupee amount';
+    }
+
+    if (scanInstruction) {
+      scanInstruction.textContent = enabled
+        ? `Scan the merchant QR and enter ${amountText} in your UPI app.`
+        : 'Enter a valid whole-rupee amount before proceeding.';
+    }
+
     updateConfirmationLink();
   };
 
@@ -199,15 +256,31 @@
       selectedAmount = Number(button.dataset.amount);
       amountButtons.forEach((item) => item.classList.toggle('is-active', item === button));
       customAmount.value = '';
+      customAmount.setCustomValidity('');
+      if (amountHelp) amountHelp.textContent = '';
       updateUI();
     });
   });
 
   customAmount.addEventListener('input', () => {
-    const value = Number(customAmount.value);
-    selectedAmount = Number.isFinite(value) && value > 0 ? Math.round(value) : 0;
+    const rawValue = customAmount.value.trim();
+    const value = Number(rawValue);
+    const valid = rawValue !== '' && Number.isInteger(value) && value >= 1;
+
+    selectedAmount = valid ? value : 0;
     amountButtons.forEach((item) => item.classList.remove('is-active'));
+
+    const validationMessage = rawValue === '' || valid
+      ? ''
+      : 'Enter a whole-rupee amount of ₹1 or more.';
+
+    customAmount.setCustomValidity(validationMessage);
+    if (amountHelp) amountHelp.textContent = validationMessage;
     updateUI();
+  });
+
+  customAmount.addEventListener('blur', () => {
+    if (customAmount.value && !customAmount.checkValidity()) customAmount.reportValidity();
   });
 
   pillarButtons.forEach((button) => {
@@ -218,24 +291,36 @@
     });
   });
 
-  copyButton.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(merchant.pa);
-    } catch (error) {
-      const fallback = document.createElement('input');
-      fallback.value = merchant.pa;
-      fallback.setAttribute('readonly', '');
-      fallback.style.position = 'fixed';
-      fallback.style.opacity = '0';
-      document.body.appendChild(fallback);
-      fallback.select();
-      document.execCommand('copy');
-      fallback.remove();
-    }
-    copyButton.textContent = 'Copied';
-    copyStatus.textContent = 'UPI ID copied to clipboard.';
-    window.setTimeout(() => { copyButton.textContent = 'Copy'; copyStatus.textContent = ''; }, 2200);
+  upiLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (!isValidAmount(selectedAmount)) event.preventDefault();
+    });
   });
+
+  if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(merchant.pa);
+      } catch (error) {
+        const fallback = document.createElement('input');
+        fallback.value = merchant.pa;
+        fallback.setAttribute('readonly', '');
+        fallback.style.position = 'fixed';
+        fallback.style.opacity = '0';
+        document.body.appendChild(fallback);
+        fallback.select();
+        document.execCommand('copy');
+        fallback.remove();
+      }
+
+      copyButton.textContent = 'Copied';
+      if (copyStatus) copyStatus.textContent = 'UPI ID copied to clipboard.';
+      window.setTimeout(() => {
+        copyButton.textContent = 'Copy';
+        if (copyStatus) copyStatus.textContent = '';
+      }, 2200);
+    });
+  }
 
   updateUI();
 })();
