@@ -94,12 +94,25 @@
       });
     }
 
-    if (!document.querySelector('script[data-upi-donation-module]')) {
+    const loadEmbeddedPaymentStyles = function () {
+      if (document.querySelector('link[data-upi-embedded-styles]')) return;
+      const embeddedStyles = document.createElement('link');
+      embeddedStyles.rel = 'stylesheet';
+      embeddedStyles.href = 'assets/css/donate-upi-embedded.css?v=20260802-1';
+      embeddedStyles.dataset.upiEmbeddedStyles = 'true';
+      document.head.appendChild(embeddedStyles);
+    };
+
+    const existingDonationScript = document.querySelector('script[data-upi-donation-module]');
+    if (!existingDonationScript) {
       const donationScript = document.createElement('script');
       donationScript.src = 'assets/js/donate-upi.js';
       donationScript.async = false;
       donationScript.dataset.upiDonationModule = 'true';
+      donationScript.addEventListener('load', loadEmbeddedPaymentStyles, { once: true });
       document.body.appendChild(donationScript);
+    } else {
+      loadEmbeddedPaymentStyles();
     }
   }
 
