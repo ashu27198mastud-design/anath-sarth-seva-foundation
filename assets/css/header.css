@@ -10,7 +10,7 @@
   right: 0;
   z-index: var(--z-nav);
   transition: background var(--t-base), box-shadow var(--t-base), padding var(--t-base);
-  padding-block: 16px;
+  padding-block: 14px;
 }
 
 /* Transparent over hero */
@@ -22,12 +22,12 @@
 .header--scrolled {
   background: var(--royal-blue);
   box-shadow: 0 2px 20px rgba(7,59,102,.18);
-  padding-block: 10px;
+  padding-block: 8px;
 }
 
 /* Shrink logo slightly when scrolled */
 .header--scrolled .header__logo-img {
-  height: 52px;
+  height: 56px;
 }
 
 /* On non-hero pages, always solid */
@@ -48,14 +48,28 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  /* Pill background so logo is readable over any hero colour */
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 6px 12px 6px 8px;
+  border: 1px solid rgba(255,255,255,0.22);
+  transition: background var(--t-base), border-color var(--t-base);
+}
+.header--solid .header__logo,
+.header--scrolled .header__logo {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.15);
 }
 .header__logo-img {
-  height: 64px;
+  height: 72px;
   width: auto;
-  max-width: 220px;
-  border-radius: var(--r-sm);
+  max-width: 200px;
+  border-radius: 8px;
   object-fit: contain;
   transition: height var(--t-base);
+  display: block;
 }
 
 /* ── Desktop Nav ── */
