@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
-<title id="title">Bank of Baroda merchant UPI donation QR</title>
-<desc id="desc">Scan to pay Ananth Sarth Seva Foundation using UPI ID anan7977386@barodampay.</desc>
-<rect width="1000" height="1000" rx="36" fill="#FFF7EA"/>
-<rect x="22" y="22" width="956" height="956" rx="34" fill="#E8733F"/>
-<rect x="58" y="175" width="884" height="760" rx="30" fill="#FFF2DC"/>
-<text x="88" y="105" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#FFF">bob World Merchant</text>
-<text x="912" y="105" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" fill="#FFF">Bank of Baroda</text>
-<text x="500" y="235" text-anchor="middle" font-family="Georgia,serif" font-size="31" font-weight="700" fill="#1E1E1E">ANANTH SARTH SEVA FOUNDATION</text>
-<text x="500" y="278" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" fill="#1E1E1E">Scan &amp; Pay</text>
-<rect x="206" y="282" width="588" height="588" rx="18" fill="#FFF"/>
-<image x="224" y="300" width="552" height="552" image-rendering="pixelated" preserveAspectRatio="none" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABFAQAAAAA09haEAAACi0lEQVR42o3S60tTYRzA8d/z7OzSvES5TU1L8lImWi4VnVKGKbJEtKzIjEoJiqjeVGvdcFlCdplIhGJFXrAlmiahaGB5TUlJDW+Ucw4zZ4md3dhz3HZOL6J3vejz6vsHfBEHfzAY/vpXUeatt+x0xa6VBCzs7e9V+FYFAXbf/N5plGgtgAHnRDTO1wGA7ZhjFaHQMTXmXUsKvNyw5A2IDtsDAPAzAThu96SKJYUE2SffKVLeinQeWDyVlD9gtgUA5Y6eY6+bacEQxjp1B99rXzgg+zxb3JRhkMgprk5ifOmbOSpHlmVTwGl9HH6KLILWieHQey1DeI1/aLW4tioKkMs5ElMoWadnsf1kjuIFQj6AhblNCT9EKw8B86f1bSXpY50AzrrAtvyKX/WE4ow9lywKVfMIcBdou1VlFBNk+zSjLDuFvLzBnOhIOTPdkUjAlj4s9tg5eo4AE7XcE/lg7SQBt7C6h1pq56l5V5iMN3EQjYowOzuk0mtAD1gQ3BK1WRgdBOBE2r3ooFRIgI2XYtN4loVgTlpWiqyOR8C7KPJv4OM+z37k3NC5sGqw9zUj99W5OV1jqqWDp57J67XeNX8RITdtqiSb6tOKEacdX9hxxLNEhldf34+p/GxIAwrzazNc5SeWgeIWIwe7Gd/uGmTWrdfeCLP2L2KPrHBWxoWcBcQemoqIVbau3KHYLJ+NNSHb3gPGzLNsv8U4f8A27fnZdj/eNwCXZHvXgFw1Tij70VxTV4gBA9BdSgM/+4CAII4UCGUFlgYe0DLDh8NbXPsJJRx47AhypcoBbMeTn/A1qaAGW96E16vB4UyCgSmdHmMqyjXgmL393B3/UUcwEytN/hpcRGvQf574G8H7Hyc62FhSAAAAAElFTkSuQmCC"/>
-<text x="500" y="895" text-anchor="middle" font-family="Georgia,serif" font-size="31" font-weight="700" fill="#1E1E1E">UPI ID: anan7977386@barodampay</text>
-<text x="500" y="930" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="600" fill="#775A34">Pay using any UPI-enabled app</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 93" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+  <title id="title">Ananth Sarth Seva Foundation merchant UPI QR</title>
+  <desc id="desc">Scan to pay the Bank of Baroda merchant UPI ID anan7977386@barodampay.</desc>
+  <rect width="93" height="93" fill="#ffffff"/>
+  <image x="12" y="12" width="69" height="69" preserveAspectRatio="none" image-rendering="pixelated" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABFAQAAAAA09haEAAACi0lEQVR42o3S60tTYRzA8d/z7OzSvES5TU1L8lImWi4VnVKGKbJEtKzIjEoJiqjeVGvdcFlCdplIhGJFXrAlmiahaGB5TUlJDW+Ucw4zZ4md3dhz3HZOL6J3vejz6vsHfBEHfzAY/vpXUeatt+x0xa6VBCzs7e9V+FYFAXbf/N5plGgtgAHnRDTO1wGA7ZhjFaHQMTXmXUsKvNyw5A2IDtsDAPAzAThu96SKJYUE2SffKVLeinQeWDyVlD9gtgUA5Y6eY6+bacEQxjp1B99rXzgg+zxb3JRhkMgprk5ifOmbOSpHlmVTwGl9HH6KLILWieHQey1DeI1/aLW4tioKkMs5ElMoWadnsf1kjuIFQj6AhblNCT9EKw8B86f1bSXpY50AzrrAtvyKX/WE4ow9lywKVfMIcBdou1VlFBNk+zSjLDuFvLzBnOhIOTPdkUjAlj4s9tg5eo4AE7XcE/lg7SQBt7C6h1pq56l5V5iMN3EQjYowOzuk0mtAD1gQ3BK1WRgdBOBE2r3ooFRIgI2XYtN4loVgTlpWiqyOR8C7KPJv4OM+z37k3NC5sGqw9zUj99W5OV1jqqWDp57J67XeNX8RITdtqiSb6tOKEacdX9hxxLNEhldf34+p/GxIAwrzazNc5SeWgeIWIwe7Gd/uGmTWrdfeCLP2L2KPrHBWxoWcBcQemoqIVbau3KHYLJ+NNSHb3gPGzLNsv8U4f8A27fnZdj/eNwCXZHvXgFw1Tij70VxTV4gBA9BdSgM/+4CAII4UCGUFlgYe0DLDh8NbXPsJJRx47AhypcoBbMeTn/A1qaAGW96E16vB4UyCgSmdHmMqyjXgmL393B3/UUcwEytN/hpcRGvQf574G8H7Hyc62FhSAAAAAElFTkSuQmCC"/>
 </svg>
