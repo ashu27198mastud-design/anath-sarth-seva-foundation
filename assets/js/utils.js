@@ -85,4 +85,13 @@
     });
   });
 
+  // ── Premium UPI donation module ───────────────────────────
+  if (document.querySelector('.donate-grid') && !document.querySelector('script[data-upi-donation-module]')) {
+    const donationScript = document.createElement('script');
+    donationScript.src = 'assets/js/donate-upi.js';
+    donationScript.async = false;
+    donationScript.dataset.upiDonationModule = 'true';
+    document.body.appendChild(donationScript);
+  }
+
 })();
