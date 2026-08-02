@@ -20,7 +20,6 @@
 
     revealEls.forEach(function (el) { revealObserver.observe(el); });
   } else {
-    // Fallback: show everything immediately
     revealEls.forEach(function (el) { el.classList.add('visible'); });
   }
 
@@ -37,9 +36,7 @@
   if (rtrSteps.length && 'IntersectionObserver' in window) {
     const stepObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-active');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('is-active');
       });
     }, { threshold: 0.4 });
     rtrSteps.forEach(function (step) { stepObserver.observe(step); });
@@ -86,12 +83,24 @@
   });
 
   // ── Premium UPI donation module ───────────────────────────
-  if (document.querySelector('.donate-grid') && !document.querySelector('script[data-upi-donation-module]')) {
-    const donationScript = document.createElement('script');
-    donationScript.src = 'assets/js/donate-upi.js';
-    donationScript.async = false;
-    donationScript.dataset.upiDonationModule = 'true';
-    document.body.appendChild(donationScript);
+  const donationGrid = document.querySelector('.donate-grid');
+  if (donationGrid) {
+    // The hosted site is static. Never allow the legacy form to POST to Nginx,
+    // which would otherwise return HTTP 405 while the enhanced UI is loading.
+    const legacyDonationForm = donationGrid.querySelector('form');
+    if (legacyDonationForm) {
+      legacyDonationForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+      });
+    }
+
+    if (!document.querySelector('script[data-upi-donation-module]')) {
+      const donationScript = document.createElement('script');
+      donationScript.src = 'assets/js/donate-upi.js';
+      donationScript.async = false;
+      donationScript.dataset.upiDonationModule = 'true';
+      document.body.appendChild(donationScript);
+    }
   }
 
 })();
