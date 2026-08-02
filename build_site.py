@@ -56,7 +56,7 @@ def header(root='', active=''):
     return f'''<header class="header header--solid" id="header" role="banner">
     <div class="header__inner container">
       <a href="{root}index.html" class="header__logo" aria-label="Ananth Sarth Seva Foundation — Home">
-        <img src="{root}assets/images/logo-full.png" alt="Ananth Sarth Seva Foundation" class="header__logo-img" width="210" height="64" loading="eager">
+        <img src="{root}assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="header__logo-img" width="210" height="64" loading="eager">
       </a>
       <nav class="header__nav" aria-label="Main navigation">
         <ul class="header__nav-list" role="list">
@@ -76,7 +76,7 @@ def header(root='', active=''):
     <div class="mobile-nav__overlay" aria-hidden="true"></div>
     <div class="mobile-nav__panel">
       <div class="mobile-nav__head">
-        <a href="{root}index.html" aria-label="Home"><img src="{root}assets/images/logo-full.png" alt="Ananth Sarth Seva Foundation" class="mobile-nav__logo-img" width="178" height="54" loading="lazy"></a>
+        <a href="{root}index.html" aria-label="Home"><img src="{root}assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="mobile-nav__logo-img" width="178" height="54" loading="lazy"></a>
         <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
       </div>
       <nav class="mobile-nav__body" aria-label="Mobile navigation">
@@ -125,7 +125,7 @@ def footer(root=''):
       <div class="container">
         <div class="footer__grid">
           <div class="footer__brand">
-            <img src="{root}assets/images/logo-full.png" alt="Ananth Sarth Seva Foundation" class="footer__brand-logo" width="210" height="64" loading="lazy">
+            <img src="{root}assets/images/logo-original.jpg" alt="Ananth Sarth Seva Foundation" class="footer__brand-logo" width="210" height="64" loading="lazy">
             <p class="footer__brand-tagline">Ancient wisdom. Modern innovation. Community ownership. Building self-reliant communities from strong roots.</p>
             <div class="footer__social" role="list" aria-label="Social media links">
               <a href="#" class="footer__social-link" aria-label="LinkedIn" role="listitem"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-5a2 2 0 110 4 2 2 0 010-4z"/></svg></a>

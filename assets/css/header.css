@@ -39,37 +39,42 @@
 .header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--s3);
+  justify-content: flex-end; /* Push items right since logo is absolute */
+  gap: var(--s4);
 }
 
-/* ── Logo ── */
+/* ── Logo (Hanging Style) ── */
 .header__logo {
+  position: absolute;
+  top: 0;
+  left: max(24px, calc((100vw - var(--max-w)) / 2 + 24px));
+  background-color: #fff;
+  padding: 16px 24px 20px;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 16px 40px rgba(10, 10, 112, 0.15), inset 0 -4px 0 var(--gold);
   display: flex;
   align-items: center;
-  flex-shrink: 0;
-  /* Pill background so logo is readable over any hero colour */
-  background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 12px;
-  padding: 6px 12px 6px 8px;
-  border: 1px solid rgba(255,255,255,0.22);
-  transition: background var(--t-base), border-color var(--t-base);
+  justify-content: center;
+  transition: transform var(--t-base), padding var(--t-base), box-shadow var(--t-base);
+  z-index: 10;
 }
-.header--solid .header__logo,
+.header__logo:hover {
+  transform: translateY(6px);
+  box-shadow: 0 20px 48px rgba(10, 10, 112, 0.2), inset 0 -2px 0 var(--gold);
+}
 .header--scrolled .header__logo {
-  background: rgba(255,255,255,0.12);
-  border-color: rgba(255,255,255,0.15);
+  padding: 12px 16px 14px;
+  border-radius: 0 0 24px 24px;
 }
 .header__logo-img {
-  height: 72px;
+  height: 170px;
   width: auto;
-  max-width: 200px;
-  border-radius: 8px;
   object-fit: contain;
   transition: height var(--t-base);
   display: block;
+}
+.header--scrolled .header__logo-img {
+  height: 90px;
 }
 
 /* ── Desktop Nav ── */
@@ -296,11 +301,13 @@
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .mobile-nav__logo-img {
-  height: 54px;
+  height: 90px;
   width: auto;
   max-width: 180px;
-  border-radius: var(--r-sm);
   object-fit: contain;
+  background-color: #fff;
+  border-radius: var(--r-md);
+  padding: 8px;
 }
 .mobile-nav__close {
   width: 44px;
