@@ -1,0 +1,176 @@
+{
+  "report": [
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "body": 1440,
+      "html": 1440,
+      "images": [
+        {
+          "src": "assets/images/logo-original.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/logo-original.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/01-arrival-entrance.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/01-arrival-entrance.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/02-foundation-banner.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/03-provisions-table.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/04-team-with-supplies.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/05-provisions-and-banner.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/06-yellow-package.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/07-red-package.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/08-bag-of-potatoes.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/09-yellow-bag-handover.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/10-shared-provisions.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/11-green-package-handover.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/12-smiles-together.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/13-group-portrait.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/14-hall-together.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/logo-original.jpg",
+          "ok": true
+        }
+      ],
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "viewer": "All 14 photographs, wraparound, buttons, keyboard, thumbnails, focus trap/return, close passed",
+      "swipe": "not applicable"
+    },
+    {
+      "width": 390,
+      "viewport": 390,
+      "body": 390,
+      "html": 390,
+      "images": [
+        {
+          "src": "assets/images/logo-original.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/logo-original.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/01-arrival-entrance.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/01-arrival-entrance.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/02-foundation-banner.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/03-provisions-table.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/04-team-with-supplies.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/05-provisions-and-banner.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/06-yellow-package.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/07-red-package.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/08-bag-of-potatoes.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/09-yellow-bag-handover.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/10-shared-provisions.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/11-green-package-handover.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/12-smiles-together.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/13-group-portrait.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/events/inaugural-care-drive/14-hall-together.jpg",
+          "ok": true
+        },
+        {
+          "src": "assets/images/logo-original.jpg",
+          "ok": true
+        }
+      ],
+      "errors": [],
+      "bad": [],
+      "failed": [],
+      "viewer": "All 14 photographs, wraparound, buttons, keyboard, thumbnails, focus trap/return, close passed",
+      "swipe": "passed"
+    }
+  ],
+  "footerPages": 23,
+  "environment_note": "Google Fonts stylesheet and font requests were fulfilled with unchanged bytes downloaded from their original URLs because Chromium external font requests were unreliable in the execution environment. Application code and local assets were served by python3 -m http.server."
+}
