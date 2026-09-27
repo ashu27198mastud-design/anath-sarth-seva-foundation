@@ -19,4 +19,5 @@
   <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/contact.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/privacy.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/terms.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://[CLIENT: PRODUCTION DOMAIN]/inaugural-care-drive.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>
