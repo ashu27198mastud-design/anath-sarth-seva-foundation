@@ -223,7 +223,7 @@
   border-color: var(--white);
 }
 .header__btn--donate {
-  background: var(--gold);
+  background: var(--gold-button);
   color: var(--royal-blue);
   border: none;
 }
@@ -363,7 +363,7 @@
 
 .mobile-nav__sub-link {
   display: block;
-  padding: 11px var(--s3) 11px 48px;
+  padding: 14px var(--s3) 14px 48px; /* ≥44px tall rows */
   font: 400 var(--text-sm)/1.3 var(--font-body);
   color: rgba(255,255,255,.65);
   border-bottom: 1px solid rgba(255,255,255,.04);
@@ -373,7 +373,7 @@
 
 .mobile-nav__foot {
   padding: var(--s3);
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255,255,255,.1);
   display: flex;
   flex-direction: column;
   gap: var(--s1);
@@ -388,4 +388,27 @@
 }
 @media (min-width: 1025px) {
   .mobile-nav { display: none !important; }
+  .header__mobile-donate { display: none !important; }
+}
+
+/* ── Compact Donate in the mobile/tablet header ── */
+.header__mobile-donate {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .header__mobile-donate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 12px;
+    background: var(--gold-button);
+    color: var(--royal-blue);
+    font: 800 14px/1 var(--font-body);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .header__mobile-donate:hover { background: var(--gold-light); }
 }

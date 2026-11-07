@@ -6,10 +6,10 @@
 
   document.body.classList.add('upi-donation-page');
 
-  if (!document.querySelector('link[href="assets/css/donate-upi.css"]')) {
+  if (!document.querySelector('link[href^="assets/css/donate-upi.css"]')) {
     const stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'assets/css/donate-upi.css';
+    stylesheet.href = 'assets/css/donate-upi.css?v=20261107';
     document.head.appendChild(stylesheet);
   }
 
@@ -321,6 +321,85 @@
       }, 2200);
     });
   }
+
+  // ── Sticky bar: hide while typing, or while the main pay button is visible ──
+  const mobileBar = document.querySelector('.mobile-upi-bar');
+  const mainPayButton = document.querySelector('.upi-open-button');
+  let typing = false;
+  let mainVisible = false;
+  const syncBar = () => {
+    if (mobileBar) mobileBar.classList.toggle('is-hidden', typing || mainVisible);
+  };
+  document.addEventListener('focusin', (event) => {
+    typing = event.target.matches && event.target.matches('input, textarea, select');
+    syncBar();
+  });
+  document.addEventListener('focusout', () => { typing = false; syncBar(); });
+  if (mainPayButton && 'IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => {
+      mainVisible = entries[0].isIntersecting;
+      syncBar();
+    }, { threshold: 0.6 }).observe(mainPayButton);
+  }
+
+  // ── After the UPI app: ask how it went ──
+  // A UPI intent gives the website no success or failure signal, so ask the
+  // donor when they come back, and point them to the right next step.
+  let paymentStartedAt = 0;
+  upiLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (isValidAmount(selectedAmount)) paymentStartedAt = Date.now();
+    });
+  });
+
+  const answers = {
+    yes: 'Thank you for your gift. Please send us the transaction (UTR) number so we can acknowledge it and match it to you. It is a 12-digit number shown in your UPI app’s payment history.',
+    pending: 'UPI payments can take a few minutes to confirm. Please check the transaction status in your UPI app before paying again, so you are not charged twice.',
+    failed: 'No payment was completed. You can try again with the pay button above, or copy the UPI ID and pay from inside your UPI app. If money left your account but the payment shows as failed, contact your bank or UPI app with the UTR number.'
+  };
+
+  const showReturnPanel = () => {
+    if (document.querySelector('.upi-return-panel')) return;
+    const anchor = document.querySelector('.payment-confirmation');
+    if (!anchor) return;
+    anchor.insertAdjacentHTML('beforebegin', `
+      <div class="upi-return-panel" role="region" aria-labelledby="upi-return-title" tabindex="-1">
+        <h3 id="upi-return-title">Did your payment go through?</h3>
+        <p>Your UPI app shows the result. Choose what you saw:</p>
+        <div class="upi-return-panel__choices">
+          <button type="button" data-answer="yes" aria-pressed="false">Yes, it went through</button>
+          <button type="button" data-answer="pending" aria-pressed="false">It is pending</button>
+          <button type="button" data-answer="failed" aria-pressed="false">It failed</button>
+        </div>
+        <div class="upi-return-panel__answer" aria-live="polite"></div>
+      </div>`);
+    const panel = document.querySelector('.upi-return-panel');
+    const answerBox = panel.querySelector('.upi-return-panel__answer');
+    panel.querySelectorAll('[data-answer]').forEach((button) => {
+      button.addEventListener('click', () => {
+        panel.querySelectorAll('[data-answer]').forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+        const key = button.dataset.answer;
+        answerBox.innerHTML = '';
+        const text = document.createElement('p');
+        text.textContent = answers[key];
+        answerBox.appendChild(text);
+        if (key === 'yes' && confirmationLink) {
+          const link = document.createElement('a');
+          link.href = confirmationLink.href;
+          link.textContent = 'Email us the transaction number →';
+          answerBox.appendChild(link);
+        }
+      });
+    });
+    panel.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+    panel.focus({ preventScroll: true });
+  };
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && paymentStartedAt && Date.now() - paymentStartedAt > 1500) {
+      showReturnPanel();
+    }
+  });
 
   updateUI();
 })();
