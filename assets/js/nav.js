@@ -68,9 +68,24 @@
   if (closeBtn)  closeBtn.addEventListener('click', closeMenu);
   if (overlay)   overlay.addEventListener('click', closeMenu);
 
-  // Close on Escape
+  // Escape closes the drawer only when it is open; Tab stays inside it.
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeMenu();
+    if (!mobileNav || !mobileNav.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { closeMenu(); return; }
+    if (e.key !== 'Tab') return;
+    const panel = mobileNav.querySelector('.mobile-nav__panel') || mobileNav;
+    const focusable = Array.prototype.filter.call(
+      panel.querySelectorAll('a[href], button:not([disabled])'),
+      function (el) { return el.offsetParent !== null; }
+    );
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && (document.activeElement === first || !panel.contains(document.activeElement))) {
+      e.preventDefault(); last.focus();
+    } else if (!e.shiftKey && (document.activeElement === last || !panel.contains(document.activeElement))) {
+      e.preventDefault(); first.focus();
+    }
   });
 
   // ── Mobile accordions ─────────────────────────────────────
