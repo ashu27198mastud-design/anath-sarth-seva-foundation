@@ -296,5 +296,13 @@ input, textarea, select {
 .form-confirmation:focus { outline: 2px solid var(--gold); outline-offset: 3px; }
 .form-confirmation strong { display: block; margin-bottom: 6px; font: 700 var(--text-base)/1.3 var(--font-body); }
 .form-confirmation p { margin: 0; font: 400 var(--text-sm)/1.6 var(--font-body); }
+.form-confirmation { margin-bottom: var(--s3); }
+.form-confirmation__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: var(--s2); }
+.form-confirmation__actions a,
+.form-confirmation__actions button {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px;
+  border-radius: 12px; border: 1.5px solid var(--royal-blue); background: var(--white);
+  color: var(--royal-blue); font: 700 14px/1.2 var(--font-body); text-decoration: none; cursor: pointer;
+}
 .form-error { margin-top: var(--s2); color: #B3261E; font: 600 var(--text-sm)/1.5 var(--font-body); }
 .footer .form-error { color: #FFD7D2; }

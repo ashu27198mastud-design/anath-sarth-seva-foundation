@@ -119,7 +119,12 @@
     return lines;
   };
 
-  const showConfirmation = function (form, message) {
+  // keepForm: for the email-app hand-off we cannot know whether the visitor
+  // actually sent the email, so the filled-in form stays on the page and the
+  // panel offers to reopen the email or copy the message instead.
+  const showConfirmation = function (form, message, mailto) {
+    const previous = form.parentNode.querySelector('.form-confirmation');
+    if (previous) previous.remove();
     const panel = document.createElement('div');
     panel.className = 'form-confirmation';
     panel.setAttribute('role', 'status');
@@ -130,8 +135,31 @@
     text.textContent = message;
     panel.appendChild(heading);
     panel.appendChild(text);
-    form.hidden = true;
-    form.insertAdjacentElement('afterend', panel);
+    if (mailto) {
+      const actions = document.createElement('div');
+      actions.className = 'form-confirmation__actions';
+      const reopen = document.createElement('a');
+      reopen.href = mailto.href;
+      reopen.textContent = 'Open email again';
+      const copyBtn = document.createElement('button');
+      copyBtn.type = 'button';
+      copyBtn.textContent = 'Copy my message';
+      copyBtn.addEventListener('click', function () {
+        const done = function () { copyBtn.textContent = 'Copied. Paste it into an email to ' + CONTACT_EMAIL; };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(mailto.body).then(done, function () { window.prompt('Copy your message:', mailto.body); });
+        } else {
+          window.prompt('Copy your message:', mailto.body);
+        }
+      });
+      actions.appendChild(reopen);
+      actions.appendChild(copyBtn);
+      panel.appendChild(actions);
+      form.insertAdjacentElement('beforebegin', panel);
+    } else {
+      form.hidden = true;
+      form.insertAdjacentElement('afterend', panel);
+    }
     panel.focus();
   };
 
@@ -157,8 +185,9 @@
 
       if (!FORM_ENDPOINT) {
         const body = lines.join('\n') + '\n\nSent from the website (' + location.pathname + ')';
-        window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(copy.subject) + '&body=' + encodeURIComponent(body);
-        showConfirmation(form, copy.mail + ' If nothing opened, please email ' + CONTACT_EMAIL + '.');
+        const href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(copy.subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = href;
+        showConfirmation(form, copy.mail + ' If nothing opened, copy your message below and email it to ' + CONTACT_EMAIL + '. Your answers are still in the form.', { href: href, body: body });
         return;
       }
 
