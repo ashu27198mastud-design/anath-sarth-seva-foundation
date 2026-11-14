@@ -66,7 +66,7 @@ Based on the mobile UX / accessibility / conversion audit.
 - Test the UPI deep link on real Android/iOS phones with ₹1 payments.
 
 ### Resolved with the foundation's details (Nov 2026)
-- Domain is **ananthsarthsevafoundation.org**; all forms, mailto links and contact text now use **info@ananthsarthsevafoundation.org** (was `contact@anathsarthsevafoundation.org`, a domain the foundation doesn't use).
+- Domain is **ananthsarthsevafoundation.org**; all forms, mailto links and contact text now use **info@ananthsarthsevafoundation.org**; the old misspelt "anath…" address has been removed everywhere.
 - Meta tags (`og:url`, `og:image`) and `sitemap.xml` point at the production domain.
 - Footer social links restored with the real LinkedIn, Instagram, Facebook and X profiles (open in a new tab).
 - About page "The Team" now lists the four trustees and the area each leads.
