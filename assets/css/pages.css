@@ -510,6 +510,17 @@ select.form-control { appearance: none; cursor: pointer; }
   color: var(--charcoal);
 }
 
+/* Program detail: sustainability + measurement split */
+.prog-detail-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s7);
+  align-items: start;
+}
+@media (max-width: 640px) {
+  .prog-detail-split { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* ── Inner Page Responsive ── */
 @media (max-width: 1024px) {
   .page-hero__inner { grid-template-columns: 1fr; }
