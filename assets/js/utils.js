@@ -243,4 +243,23 @@
     }
   }
 
+  // ── Contact form: pre-fill from links such as ?purpose=other&event=Name ──
+  (function prefillContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form || !window.URLSearchParams) return;
+    var params = new URLSearchParams(window.location.search);
+    var purpose = params.get('purpose');
+    var event = (params.get('event') || '').slice(0, 120);
+    var select = form.querySelector('#contact-purpose');
+    if (select && purpose) {
+      for (var i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === purpose) { select.value = purpose; break; }
+      }
+    }
+    var message = form.querySelector('#contact-message');
+    if (message && event && !message.value) {
+      message.value = 'I would like to register my interest in: ' + event + '.\n\nPlease contact me when the date and details are confirmed.';
+    }
+  })();
+
 })();
