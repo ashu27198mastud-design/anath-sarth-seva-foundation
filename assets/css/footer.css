@@ -79,8 +79,8 @@
   gap: var(--s1);
 }
 .footer__social-link {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@
   color: var(--gold);
   background: rgba(201,154,61,.1);
 }
-.footer__social-link svg { width: 16px; height: 16px; }
+.footer__social-link svg { width: 18px; height: 18px; }
 
 /* Nav columns */
 .footer__col-title {

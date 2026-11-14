@@ -215,6 +215,12 @@
   }
 }
 
+/* Donate page on phones: the payment controls come first, not the artwork. */
+@media (max-width: 720px) {
+  .page-hero--donate .page-hero__image { display: none; }
+  .page-hero--donate { padding-bottom: 56px; }
+}
+
 /* Very narrow phones: retain the complete identity without crowding
    the menu control. */
 @media (max-width: 360px) {

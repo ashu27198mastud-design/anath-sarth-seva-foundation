@@ -452,8 +452,8 @@
 }
 
 .footer__social-link {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: var(--navy);
   color: #fff;
@@ -463,6 +463,8 @@
   text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
+.footer__social-link svg { width: 18px; height: 18px; }
 
 .footer__social-link:hover {
   background-color: var(--ink);

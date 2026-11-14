@@ -11,6 +11,8 @@
   --gold:          #C99A3D;
   --gold-light:    #E0BB6E;
   --gold-pale:     #F7EDCF;
+  --gold-text:     #86601C; /* gold for small text on light backgrounds (≥4.5:1 on ivory/white) */
+  --gold-button:   #D4AA55; /* primary button fill: navy text reaches 5.3:1 */
   --gold-tint:     rgba(201,154,61,.12);
   --gold-line:     rgba(201,154,61,.30);
   --ivory:         #F8F5EE;
@@ -19,7 +21,7 @@
   --charcoal:      #17212B;
   --border:        #E6E8EA;
   --muted:         #5A6775;
-  --muted-light:   #8E9BAA;
+  --muted-light:   #66727F; /* was #8E9BAA (2.6:1 on ivory); now 4.5:1 */
 
   /* ── Pillar Accents ── */
   --pillar-learning:     #1A5C9A;
