@@ -446,7 +446,7 @@ def build_program(slug, name, desc, img, img_alt, challenge, objectives, interve
 
     <section class="section section--tinted" aria-labelledby="prog-ownership-heading">
       <div class="container">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--s7); align-items:start;">
+        <div class="prog-detail-split">
           <div class="reveal">
             <span class="eyebrow" aria-hidden="true">Community Ownership</span>
             <h2 class="h3" id="prog-ownership-heading">Designed to be led by communities.</h2>
