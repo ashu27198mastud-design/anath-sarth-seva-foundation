@@ -127,7 +127,7 @@
           <div class="payment-confirmation">
             <h3>Completed the payment?</h3>
             <p>Share the transaction or UTR number with the Foundation for acknowledgement and reconciliation.</p>
-            <a id="payment-confirmation-link" href="mailto:contact@anathsarthsevafoundation.org">Share payment confirmation <span aria-hidden="true">→</span></a>
+            <a id="payment-confirmation-link" href="mailto:info@ananthsarthsevafoundation.org">Share payment confirmation <span aria-hidden="true">→</span></a>
           </div>
 
           <p class="payment-legal">Tax benefits, acknowledgements and receipts are subject to applicable law and the Foundation's valid statutory approvals. UPI payment limits and processing are controlled by your bank and UPI app.</p>
@@ -214,7 +214,7 @@
       '',
       'Please confirm receipt when convenient.'
     ].join('\n');
-    confirmationLink.href = `mailto:contact@anathsarthsevafoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    confirmationLink.href = `mailto:info@ananthsarthsevafoundation.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const setPaymentAvailability = (enabled, upiLink) => {

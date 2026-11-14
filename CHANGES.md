@@ -40,7 +40,7 @@ Please search the codebase for the exact string `[CLIENT:` and replace these pla
 While we have corrected all **user-facing text** to say "Ananth Sarth Seva Foundation" (matching the logo), there are hardcoded inconsistencies in the infrastructure that you need to make a decision on:
 
 1. **GitHub Repository Name:** Currently named `anath-sarth-seva-foundation` (missing the "n" in Ananth).
-2. **Current Official Email Link:** `contact@anathsarthsevafoundation.org` (missing the "n").
+2. **Current Official Email Link:** `info@ananthsarthsevafoundation.org` (missing the "n").
 
 **Decision Needed:** If the official registered name and domain is meant to be **Ananth**, you should update the domain registration and email addresses to match, and then update the `mailto:` links in the footer and contact pages. If the domain is intentionally registered as `anath...`, let us know if we should revert the spelling.
 
@@ -60,9 +60,13 @@ Based on the mobile UX / accessibility / conversion audit.
 - **Performance:** hero image no longer downloaded on mobile; 800px programme images (~30–80 KB instead of 400–600 KB) and a 256px logo via `srcset`.
 
 ### Still needs the foundation
-- Registration type/number, PAN, registered address, phone, named trustees (then restore the team section and a "Who you're paying" block on Donate).
-- Decide Ananth vs Anath domain/email; the site still uses `contact@anathsarthsevafoundation.org`.
-- `[CLIENT: JURISDICTION]` in `terms.html` and `[CLIENT: PRODUCTION DOMAIN]` in meta tags/sitemap.
+- Registration type/number, PAN, registered address, phone (then add a "Who you're paying" block on Donate).
+- `[CLIENT: JURISDICTION]` in `terms.html` and `ananthsarthsevafoundation.org` in meta tags/sitemap.
 - Written photo consent from Shanti Daan before promoting resident photos further.
-- Real social profile URLs, if wanted back in the footer.
 - Test the UPI deep link on real Android/iOS phones with ₹1 payments.
+
+### Resolved with the foundation's details (Nov 2026)
+- Domain is **ananthsarthsevafoundation.org**; all forms, mailto links and contact text now use **info@ananthsarthsevafoundation.org** (was `contact@anathsarthsevafoundation.org`, a domain the foundation doesn't use).
+- Meta tags (`og:url`, `og:image`) and `sitemap.xml` point at the production domain.
+- Footer social links restored with the real LinkedIn, Instagram, Facebook and X profiles (open in a new tab).
+- About page "The Team" now lists the four trustees and the area each leads.

@@ -101,7 +101,7 @@ FOOTER_TEMPLATE = """
         <p class="footer__address mt-16 text-sm opacity-80 lh-16">
         [CLIENT: REGISTERED OFFICE ADDRESS]<br>
         [CLIENT: PHONE NUMBER]<br>
-        <a href="mailto:contact@anathsarthsevafoundation.org" class="link--inherit">[CLIENT: OFFICIAL EMAIL]</a></p>
+        <a href="mailto:info@ananthsarthsevafoundation.org" class="link--inherit">[CLIENT: OFFICIAL EMAIL]</a></p>
       </div>
       <div class="footer__col">
         <h4 class="footer__heading">About Us</h4>

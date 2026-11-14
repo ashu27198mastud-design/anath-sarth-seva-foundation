@@ -74,7 +74,7 @@
   // there. Until then, the visitor's email app opens with every answer filled
   // in, addressed to the foundation, so nothing they typed is lost.
   const FORM_ENDPOINT = '';
-  const CONTACT_EMAIL = 'contact@anathsarthsevafoundation.org';
+  const CONTACT_EMAIL = 'info@ananthsarthsevafoundation.org';
 
   const FORM_COPY = {
     'Volunteer application form': {

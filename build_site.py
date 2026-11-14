@@ -180,7 +180,7 @@ def footer(root=''):
   </footer>'''
 
 def page(title, description, content, active='', root='', og_image='hero/hero-visual.jpg', path=''):
-    domain = '[CLIENT: PRODUCTION DOMAIN]'
+    domain = 'ananthsarthsevafoundation.org'
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>

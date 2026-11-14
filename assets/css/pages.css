@@ -540,3 +540,28 @@ select.form-control { appearance: none; cursor: pointer; }
   .partner-types { grid-template-columns: 1fr; }
   .careers-values { grid-template-columns: 1fr 1fr; }
 }
+
+/* ── About: Board of trustees ── */
+.trustee-grid {
+  list-style: none; margin: var(--s5) 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s3);
+}
+.trustee-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--r-md);
+  padding: var(--s4) var(--s3);
+  text-align: center;
+}
+.trustee-card__initials {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--gold-button); color: var(--royal-blue);
+  font: 700 22px/1 var(--font-body); letter-spacing: .04em;
+  margin-bottom: var(--s2);
+}
+.trustee-card__name { font: 600 var(--text-lg, 1.125rem)/1.25 var(--font-body); color: var(--white); margin: 0 0 4px; }
+.trustee-card__role { font: 600 12px/1.4 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.78); margin: 0 0 8px; }
+.trustee-card__area { font: 400 var(--text-sm)/1.5 var(--font-body); color: rgba(255,255,255,.88); margin: 0; }
+@media (max-width: 1024px) { .trustee-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px)  { .trustee-grid { grid-template-columns: 1fr; } }
